@@ -1,0 +1,160 @@
+<div class="container-Wrapper">
+  <div class="image"></div>
+  <div class="code">
+    <h1>{{ section.settings.text }}</h1>
+    {{ section.settings.textarea }}
+    {%  for block in section.blocks %}
+      {% case block.type %}
+        
+        {% when 'image'%}
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | img_url: 'master' }}" height="auto" width="auto"/>
+          {% endif %}
+        
+        {% when 'title' %}
+          <h3>{{ block.settings.title }}</h3>
+        
+        {% when 'description' %}
+          {{ block.settings.description }}
+
+        {% when 'code' %}
+          {{ block.settings.code }}
+        
+        {% when 'social' %}
+          {% if block.settings.social %}
+            {% render 'halo-social-media-icons' %}
+          {% endif %}
+        
+        {% endcase %}
+     {% endfor %}
+  </div>
+</div>
+{% style %}
+  .container-Wrapper{
+    display:flex;
+    min-height:680px;
+  }
+  .image{
+    background-image:url({{section.settings.img | img_url: 'master'}});
+    background-size:cover;
+    width:50%;
+    display:block !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+  .code{
+    background:{{section.settings.color}};
+    display:flex;
+      flex-direction:column;
+    justify-content:center;
+    align-items:center;
+      width:50%;
+      padding:20px;
+  }
+  .code h1{
+    font-family: NotoSerif, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  } 
+  @media only screen and (max-width:768px){
+    .container-Wrapper{
+      flex-direction:column;
+      min-height:100vh;
+    }
+    .image, .code{
+      width:100%;
+      height:62vh;
+    }
+  .image{
+    display:block !important;
+  }
+  }
+{% endstyle %}
+{% schema %}
+  {
+    "name": "Section Landing",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "image"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "textarea",
+        "label": "Code"
+      },
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Color BG"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          }
+        ]
+      },
+      {
+        "type": "title",
+        "name":"title",
+        "settings": [
+          {
+            "type": "text",
+            "label": "title",
+            "id": "title"
+          }
+        ]
+      },
+      {
+        "type": "description",
+        "name":"description",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "description"
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "name":"code",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "code",
+            "label": "Code | Js | HTML"
+          }
+        ]
+      },
+      {
+        "type": "social",
+        "name": "social",
+        "settings": [
+          {
+            "type": "checkbox",
+            "label": "enable social",
+            "id": "social",
+            "default":true
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Section Landing"
+      }
+    ]
+  }
+{% endschema %}

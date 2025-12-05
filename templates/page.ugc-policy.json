@@ -1,0 +1,100 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "rich_text_EANRbH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9gwF4F": {
+          "type": "heading",
+          "settings": {
+            "heading": "Laelia Tequila User Generated Content Policy:",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9gwF4F"
+      ],
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": 0,
+        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 70,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "rich_text_inEPFz": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9jXmWr": {
+          "type": "text",
+          "settings": {
+            "text": "● Do not encourage or condone underage drinking, drunk-driving, illegal, irresponsible, or excessive consumption of alcoholic beverages.<br>\n● Do not glorify the alcohol strength or intoxicating effect of a drink.<br>\n● Do not present abstinence or moderation in any negative way.<br>\n● Do not show people who appear to be drunk or in any way imply that drunkenness is acceptable.<br>\n● Do not feature any people who are or appear to be under twenty-one years of age.<br>\n● Do not post any content containing themes or images appealing to children, including Santa Claus.<br>\n● Do not associate a drink with performance, sexual, or social success.<br>\n● Do not suggest any association with violent, aggressive, dangerous, or anti-social behavior.<br>\n● Do not post any content that is defamatory, obscene, indecent, abusive, offensive, harassing, violent, hateful, inflammatory, or otherwise objectionable, in Laelia Tequila’s\nsole discretion.<br>\n● Do not post any content that promotes sexually explicit or pornographic material, violence, or discrimination based on race, sex, religion, nationality, disability, sexual\norientation, or age.<br>\n● Do not post any content that infringes any patent, trademark, trade secret, copyright, or other intellectual property or rights of any other person.<br>\n● Do not post any content that violates the legal rights (including the rights of publicity and privacy) of others or contains any material that could give rise to any civil or criminal liability under applicable laws or regulations or that may otherwise conflict with this User Generated Content Policy.<br>\n● Do not post any content that would be likely to deceive any person.<br>\n● Do not post any content that promotes any illegal activity or advocates, promotes, or assists any unlawful act.<br>\n● Do not post any content that impersonates any person or misrepresents your identity or\naffiliation with any person or organization.<br>\n● Do not post any content involving commercial activities or sales, such as contests, sweepstakes, and other sales promotions, barter, or advertising.",
+            "text_size": 16,
+            "text_size_mb": 14,
+            "text_line_height": 2,
+            "margin_top_text": 30,
+            "text_color": "#000000",
+            "text_width": "1200px"
+          }
+        }
+      },
+      "block_order": [
+        "text_9jXmWr"
+      ],
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": 0,
+        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "left",
+        "mg_top_desktop": 30,
+        "mg_top_tablet": 30,
+        "mg_top_mobile": 30,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_EANRbH",
+    "rich_text_inEPFz"
+  ]
+}

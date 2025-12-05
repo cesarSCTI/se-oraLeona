@@ -1,0 +1,156 @@
+<div class="container-fluid" style="background:{{ section.settings.bg }};padding:50px 0px" id="footer">
+  <div class="container">
+    <div class="row" style="font-family:'Roboto Mono'; font-size:20px; font-weight:600; gap:30px; align-items:center; padding:50px 0px;">
+      {{ section.settings.text1 }}
+      <div class="" style="
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        ">
+    </div>{{ section.settings.text2 }}
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        {% if section.settings.logo != blank %}
+          {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'logo' }}
+        {% endif %}
+        {% render 'footer-social', block: block, social_is_nested: true %}
+         {% if section.settings.logo2 != blank %}
+          {{ section.settings.logo2 | image_url: width: 300 | image_tag: class: 'echo' }}
+        {% endif %}
+      </div>
+      <div class="col-md-8 col-sm-12" style="text-align:center;">
+        <h5>{{ section.settings.title }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" style="justify-content: center; align-items:center;">
+      <div class="areaFooter">{{ section.settings.areaFooter }}</div>
+      <div class="areaFooterLinks">
+        {% assign menu_handle = section.settings.menu %}
+        {% if linklists[menu_handle] %}
+          <ul>
+            {% for link in linklists[menu_handle].links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No menu selected or menu is empty.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% style %}
+  .row{
+    display:flex;
+  }
+  .col-md-4{
+    width:33.3%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+  }
+  .col-md-8{
+    width:66.6%;
+  }
+  .col-12{
+    width:100%;
+  }
+  .areaFooter{
+    font-family: 'Roboto Mono';
+    text-transform:uppercase;
+    padding:30px 0px;
+    font-weight:600;
+  }
+  .areaFooterLinks ul {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    margin-left:20px;
+}
+  .areaFooterLinks li {
+    list-style:none;
+    font-family: 'Roboto Mono';
+    text-transform:uppercase;
+    font-weight:600;
+}
+  #footer a.link.link--text.list-social__link {
+    background: #000;
+}
+  #footer svg.icon {
+    fill: #fff !important;
+}
+  @media only screen and (max-width:768px){
+    .col-sm-12{
+      width:100%;
+    }
+    .areaFooterLinks ul{
+      flex-direction:column;
+      text-align:center;
+    }
+  }
+  {% endstyle %}
+{% schema %}
+  {
+    "name": "Footer 8",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text1",
+        "label": "text 1"
+      },
+      {
+        "type": "text",
+        "id": "text2",
+        "label": "text 2"
+      },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "bakcground"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo2",
+        "label": "logo 2"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "areaFooter",
+        "label": "Footer area"
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Footer 8",
+      }
+    ],
+    "enabled_on": {
+      "groups": ["footer"]
+    }
+  }
+{% endschema %}
