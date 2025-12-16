@@ -23,7 +23,7 @@
             {% assign main_img = section.settings.main_image %}
             {{
               main_img
-              | image_url: width: 1400
+              | image_url: width: 800
               | image_tag:
                 loading: section.settings.image_loading,
                 class: "tc-main-img",
@@ -52,7 +52,7 @@
                     <div class="tc-block tc-block--image">
                       {{
                         bimg
-                        | image_url: width: 1200
+                        | image_url: width: 400
                         | image_tag:
                           loading: section.settings.image_loading,
                           class: "tc-block-img",
