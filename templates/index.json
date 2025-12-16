@@ -192,11 +192,8 @@
         "mg_bottom_mobile": 0
       }
     },
-    "custom_press_banner_4VBQki": {
+    "custom_press_banner_MtnxpT": {
       "type": "custom-press-banner",
-      "custom_css": [
-        "* {text-align: right;}"
-      ],
       "settings": {
         "container": "1770",
         "padding_full_width": 0,
@@ -558,7 +555,7 @@
   "order": [
     "custom_liquid_wCKgqg",
     "slide_show_44T3WC",
-    "custom_press_banner_4VBQki",
+    "custom_press_banner_MtnxpT",
     "custom_press_banner2_8DPwBt",
     "spotlight_block_WFdN4K"
   ]
