@@ -194,7 +194,9 @@
     },
     "custom_press_banner_4VBQki": {
       "type": "custom-press-banner",
-      "custom_css": [],
+      "custom_css": [
+        "* {text-align: right;}"
+      ],
       "settings": {
         "container": "fullwidth",
         "padding_full_width": 0,
@@ -228,7 +230,7 @@
         "button_text": "LEARN ABOUT LEONA VICARIO",
         "button_link": "shopify://pages/provenance",
         "fontsize_btn": 16,
-        "button_width": 190,
+        "button_width": 465,
         "color_button": "#000000",
         "border_color_button": "#232323",
         "bg_color_button": "rgba(0,0,0,0)",
