@@ -902,7 +902,7 @@
       ".header-navigation-wrapper a {text-decoration: none !important; color: #000 !important;}",
       "a:visited,span.MsoHyperlinkFollowed,a:link,span.MsoHyperlink {color: inherit !important;}",
       ".group-btn a {color: #fff !important; text-decoration: none;}",
-      "a.button{border:none !important; border-bottom:solid 1px }",
+      "a.button {border-bottom: solid 3px #000 !important;}",
       "ul#HeaderLanguageList {font-family: \"Roboto Mono\";}",
       ".featured-product {padding: 20px 7% !important;}",
       ".product-customInformation__content .title {line-height: 1.2em !important;}",
