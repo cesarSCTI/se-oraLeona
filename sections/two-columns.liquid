@@ -14,7 +14,7 @@
     --tc-pad-y: {{ section.settings.pad_y }}px;
   "
 >
-  <div class="tc-builder__container page-width">
+  <div class="tc-builder__container page-width" style="max-width:1770px;">
     <div class="tc-builder__grid tc-builder__grid--{{ section.settings.layout }}">
       {%- comment -%} LEFT: Main image {%- endcomment -%}
       <div class="tc-builder__left">
@@ -130,7 +130,6 @@
 
   .tc-builder__container{
     width: 100%;
-    max-width:1770px;
   }
 
   .tc-builder__grid{
