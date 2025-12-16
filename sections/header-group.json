@@ -212,7 +212,7 @@
       "settings": {
         "container": "1170",
         "padding_full_width": 0,
-        "header_navigation_bg": "#fbf6f0",
+        "header_navigation_bg": "#f7f7e1",
         "header_navigation_bg_gradient": "",
         "sticky_header_type": "none",
         "sticky_header_width": "full"
