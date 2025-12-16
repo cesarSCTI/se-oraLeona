@@ -16,23 +16,23 @@
       </div>
     </div>
   </div>
-  <div class="container" style="background:#9F036D; color:#F7F7E1;">
-    <div class="row" style="justify-content: center; align-items:center;">
-      <div class="areaFooter">{{ section.settings.areaFooter }}</div>
-      <div class="areaFooterLinks">
-        {% assign menu_handle = section.settings.menu %}
-        {% if linklists[menu_handle] %}
-          <ul>
-            {% for link in linklists[menu_handle].links %}
-              <li>
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% else %}
-          <p>No menu selected or menu is empty.</p>
-        {% endif %}
-      </div>
+</div>
+<div class="container-fluid" style="background:#9F036D; color:#F7F7E1; padding:20px 0px;">
+  <div class="row" style="justify-content: center; align-items:center;">
+    <div class="areaFooter">{{ section.settings.areaFooter }}</div>
+    <div class="areaFooterLinks">
+      {% assign menu_handle = section.settings.menu %}
+      {% if linklists[menu_handle] %}
+        <ul>
+          {% for link in linklists[menu_handle].links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No menu selected or menu is empty.</p>
+      {% endif %}
     </div>
   </div>
 </div>
