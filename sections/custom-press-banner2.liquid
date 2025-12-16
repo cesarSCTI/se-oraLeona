@@ -71,7 +71,7 @@
                     {%- if title != blank -%}
                       <div class="combo-title">
                         <h3 class="title{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 1;{% endif %} --title-color: {% if title_color != blank %}{{ title_color }}{% endif %}; --title-fs: {{ title_font_size }}; --title-fs-mb: {{ title_font_size_mb }}; --title-fw: {{ title_font_weight }}; --title-mg: {{ mg_bottom_title }}; "><span>{{ title }}</span></h3>
-                        <div class="line"></div>
+                        <!--<div class="line"></div>-->
                       </div>
                     {%- endif -%}
                     {%- if sub_title != blank and sub_title_position == 'sub_title_below' -%}
