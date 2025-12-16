@@ -1,1 +1,31 @@
-{"type":"footer","name":"Footer Group","sections":{"footer_08_jy8NBP":{"type":"footer-08","custom_css":[".logo {margin-top: 30px !important; max-width: 200px !important; max-height: 52px !important;}",".echo {height: 70px !important; width: 70px;}"],"settings":{"text1":"LAELIA","text2":"TEQUILA","bg":"#fbf6f0","logo":"shopify:\/\/shop_images\/logo-LAELIA-Tequila-Blanco.png","logo2":"shopify:\/\/shop_images\/logo_hecho_en_mexico_blanco.png","title":"<div class=\"klaviyo-form-XVdfzC\" id=\"klaviyo-form-XVdfzC\"><\/div>\n<!-----MEXICO ---->\n<div class=\"_form_13\" id=\"_form_13\"><\/div><script src=\"https:\/\/nobazul.activehosted.com\/f\/embed.php?id=13\" charset=\"utf-8\"><\/script>\n<br>Email: info@casanatima.com","areaFooter":"COPYRIGHT © 2025 LAELIA TEQUILA. ALL RIGHTS RESERVED.","menu":"footer-1"}}},"order":["footer_08_jy8NBP"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer_08_jy8NBP": {
+      "type": "footer-08",
+      "custom_css": [],
+      "settings": {
+        "text1": "",
+        "text2": "",
+        "bg": "#1d181a",
+        "logo": "shopify://shop_images/Senora_Leona_Logo-blanco.png",
+        "title": "<div class=\"klaviyo-form-XVdfzC\" id=\"klaviyo-form-XVdfzC\"></div>\n<!-----MEXICO ---->\n<div class=\"_form_13\" id=\"_form_13\"></div><script src=\"https://nobazul.activehosted.com/f/embed.php?id=13\" charset=\"utf-8\"></script>\n<br>Email: info@casanatima.com",
+        "areaFooter": "",
+        "menu": "footer"
+      }
+    }
+  },
+  "order": [
+    "footer_08_jy8NBP"
+  ]
+}
