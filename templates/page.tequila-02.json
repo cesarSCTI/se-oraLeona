@@ -145,71 +145,25 @@
     "rich_text_gpPwCX": {
       "type": "rich-text",
       "blocks": {
-        "heading_kEdd8h": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": 30,
-            "heading_size_mb": 30,
-            "heading_line_height": 1,
-            "heading_color": "#000"
-          }
-        },
         "text_9frHcm": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "text_size": 16,
-            "text_size_mb": 12,
+            "text": "<p>Made from tahona-crushed agave and wild fermentation, Señora Leona is an “espíritu salvaje” from master distiller Carlos Huizar that channels the fierce, untamed power of the lioness.\n</p>\n<br>\n<p>\n Our tequilas are crafted from fully mature, tahona-crushed agave and mineral-rich mountain spring water, which is then naturally fermented, distilled in handmade copper pot stills and rested in American and French White Oak barrels.</p>",
+            "text_size": 18,
+            "text_size_mb": 14,
             "text_line_height": 1,
             "margin_top_text": 20,
             "text_color": "#000",
-            "text_width": "800px"
-          }
-        },
-        "button_G9cKyJ": {
-          "type": "button",
-          "settings": {
-            "button_style": "button_1",
-            "button_label": "Button label",
-            "margin_top_button": 30,
-            "button_link": "",
-            "button_color": "#fff",
-            "enable_underline_button": false,
-            "button_border_color": "#000",
-            "button_bg_color": "#000",
-            "button_bg_gradient": "",
-            "button_color_hover": "#000",
-            "button_border_color_hover": "#000",
-            "button_bg_color_hover": "#fff",
-            "button_bg_gradient_hover": "",
-            "button_width": "270px"
-          }
-        },
-        "social_media_rY6HV6": {
-          "type": "social_media",
-          "settings": {
-            "social_spacing_top": 0,
-            "social_spacing_bottom": 0,
-            "social_icon_color": "",
-            "social_icon_background_color": "",
-            "social_icon_background_gradient": "",
-            "social_icon_hover_color": "",
-            "social_icon_background_hover_color": "",
-            "social_icon_background_hover_gradient": "",
-            "social_icon_ring_color": ""
+            "text_width": "1200px"
           }
         }
       },
       "block_order": [
-        "heading_kEdd8h",
-        "text_9frHcm",
-        "button_G9cKyJ",
-        "social_media_rY6HV6"
+        "text_9frHcm"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "container": "container",
+        "container": "1170",
         "padding_full_width": 0,
         "enable_border_top": false,
         "enable_border_bottom": false,
@@ -219,8 +173,8 @@
         "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
-        "content_align": "center",
-        "mg_top_desktop": 50,
+        "content_align": "left",
+        "mg_top_desktop": 0,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 50,
