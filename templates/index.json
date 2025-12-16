@@ -200,7 +200,7 @@
       "settings": {
         "container": "1770",
         "padding_full_width": 0,
-        "press_bg": "#fbf6f0",
+        "press_bg": "#f7f7e1",
         "press_gradient": "",
         "align_items": "center",
         "press_image": "shopify://shop_images/img-the_inspiration-senora_leona1-min.png",
@@ -258,7 +258,7 @@
       "settings": {
         "container": "1320",
         "padding_full_width": 0,
-        "press_bg": "#fbf6f0",
+        "press_bg": "#f7f7e1",
         "press_gradient": "",
         "align_items": "center",
         "press_image": "shopify://shop_images/img-the_tequila-senora_leona-min.png",
