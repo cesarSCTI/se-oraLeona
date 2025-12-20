@@ -58,12 +58,28 @@
         "title_color": "#111111",
         "text_color": "#2b2b2b"
       }
+    },
+    "section1_fiaX99": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "COPPER POT STILL DISTILLATION & BOTTLING",
+        "image": "shopify://shop_images/img-tequila-copper_pot_still_distillation_y_bottling-min.png",
+        "image_alt": "Agave field",
+        "body_1": "<p>We double-distill Señora Leona Tequila in classic copper pot stills to refine the spirit while maintaining the agave’s character, then bottle it at 84 proof.</p>",
+        "body_2": "<p>We double-distill Señora Leona Tequila in classic copper pot stills to refine the spirit while maintaining the agave’s character, then bottle it at 84 proof.</p>",
+        "max_width": 1750,
+        "bg_color": "#f6f3e7",
+        "title_color": "#111111",
+        "text_color": "#2b2b2b"
+      }
     }
   },
   "order": [
     "main",
     "section1_XxNmqn",
     "section1_NdaFYa",
-    "section1_9YiDYK"
+    "section1_9YiDYK",
+    "section1_fiaX99"
   ]
 }
