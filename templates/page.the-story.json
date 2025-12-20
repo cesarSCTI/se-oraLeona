@@ -16,6 +16,9 @@
     },
     "section1_RUFcY7": {
       "type": "section1",
+      "custom_css": [
+        ".teq-hero__img{object-fit: contain;}"
+      ],
       "name": "Section 1",
       "settings": {
         "title": "“If I loved independence, it was because I considered it just and necessary.”",
