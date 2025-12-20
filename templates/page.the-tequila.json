@@ -31,6 +31,9 @@
     },
     "section1_NdaFYa": {
       "type": "section1",
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; }}"
+      ],
       "name": "Section 1",
       "settings": {
         "title": "TAHONA- PRESSED AGAVE",
@@ -78,7 +81,7 @@
       "type": "custom-press-banner",
       "custom_css": [
         "span {font-weight: 800; font-size: 30px;}",
-        ".custom-image-banner-block{padding-bottom:0px;}"
+        ".custom-image-banner-block {padding-bottom: 0px;}"
       ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
