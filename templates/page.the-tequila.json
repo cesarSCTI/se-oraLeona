@@ -73,6 +73,61 @@
         "title_color": "#111111",
         "text_color": "#2b2b2b"
       }
+    },
+    "custom_press_banner_aty7me": {
+      "type": "custom-press-banner",
+      "name": "t:sections.custom_press_banner.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "press_bg": "#fafafa",
+        "press_gradient": "",
+        "align_items": "start",
+        "press_image_width_ratio": 51,
+        "press_image_width": 320,
+        "sub_title": "",
+        "letter_spacing_sub_title": "",
+        "font_size_sub_title": 14,
+        "font_size_sub_title_mb": 14,
+        "margin_bottom_sub_title": 14,
+        "font_weight_sub_title": "700",
+        "sub_title_position": "sub_title_above",
+        "color_sub_title": "#232323",
+        "title": "Sale 70% OFF",
+        "title_font_size": 80,
+        "title_font_size_mb": 20,
+        "title_font_weight": "700",
+        "mg_bottom_title": 15,
+        "title_color": "#000000",
+        "des": "Limited Time Only. End ins:",
+        "des_font_size": 12,
+        "des_font_size_mb": 12,
+        "des_font_weight": "400",
+        "mg_bottom_des": 15,
+        "des_color": "#000000",
+        "item_spacing": 120,
+        "content_max_width": 260,
+        "button_text": "Subscribe",
+        "button_link": "",
+        "fontsize_btn": 16,
+        "button_width": 190,
+        "color_button": "#fff",
+        "border_color_button": "#232323",
+        "bg_color_button": "#232323",
+        "bg_gradient_color_button": "",
+        "color_button_hover": "#fff",
+        "border_color_button_hover": "#232323",
+        "bg_color_button_hover": "#232323",
+        "bg_gradient_color_button_hover": "",
+        "btn_text_transform": "uppercase",
+        "image_behavior": "none",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
     }
   },
   "order": [
@@ -80,6 +135,7 @@
     "section1_XxNmqn",
     "section1_NdaFYa",
     "section1_9YiDYK",
-    "section1_fiaX99"
+    "section1_fiaX99",
+    "custom_press_banner_aty7me"
   ]
 }
