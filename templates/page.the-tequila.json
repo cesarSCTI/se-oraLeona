@@ -77,7 +77,8 @@
     "custom_press_banner_aty7me": {
       "type": "custom-press-banner",
       "custom_css": [
-        "span {font-weight: 800; font-size: 30px;}"
+        "span {font-weight: 800; font-size: 30px;}",
+        ".custom-image-banner-block{padding-bottom:0px;}"
       ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
