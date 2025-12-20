@@ -76,6 +76,9 @@
     },
     "custom_press_banner_aty7me": {
       "type": "custom-press-banner",
+      "custom_css": [
+        "span {font-weight: 800; font-size: 30px;}"
+      ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
         "container": "1770",
@@ -100,8 +103,8 @@
         "title_font_weight": "700",
         "mg_bottom_title": 15,
         "title_color": "#000000",
-        "des": "Nose<br>\nCooked agave, caramel, green apple, pineapple, citrus, clove, thyme, ginger, walnuts.\n<br><br>\nTaste<br>\nPresent notes of cooked agave, herbal, citrus, nuts, spices.\n\n<br><br>\nBarrel aging<br>\nare made from the highest quality oak sourced from the most prized forest regions in central France and the American Midwest. The oak is then properly cured and exposed to the sun, wind, rain, and other elements that enhance its refined flavor qualities.",
-        "des_font_size": 20,
+        "des": "<span>Nose</span><br>\nCooked agave, caramel, green apple, pineapple, citrus, clove, thyme, ginger, walnuts.\n<br><br>\n<span>Taste</span><br>\nPresent notes of cooked agave, herbal, citrus, nuts, spices.\n\n<br><br>\n<span>Barrel aging</span><br>\nare made from the highest quality oak sourced from the most prized forest regions in central France and the American Midwest. The oak is then properly cured and exposed to the sun, wind, rain, and other elements that enhance its refined flavor qualities.",
+        "des_font_size": 25,
         "des_font_size_mb": 18,
         "des_font_weight": "400",
         "mg_bottom_des": 15,
