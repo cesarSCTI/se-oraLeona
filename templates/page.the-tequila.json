@@ -28,10 +28,42 @@
         "title_color": "#111111",
         "text_color": "#2b2b2b"
       }
+    },
+    "section1_NdaFYa": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "TAHONA- PRESSED AGAVE",
+        "image": "shopify://shop_images/img-tequila-tahona_pressed_agave-min.png",
+        "image_alt": "Agave field",
+        "body_1": "<p>Every bottle of Señora Leona begins with fully ripe agave, slow-cooked for 10 hours and crushed by a traditional tahona wheel. It’s raw and full of character—the first step toward the bold, untamed flavor that defines our tequila.</p>",
+        "body_2": "<p>Every bottle of Señora Leona begins with fully ripe agave, slow-cooked for 10 hours and crushed by a traditional tahona wheel. It’s raw and full of character—the first step toward the bold, untamed flavor that defines our tequila.</p>",
+        "max_width": 1750,
+        "bg_color": "#f6f3e7",
+        "title_color": "#111111",
+        "text_color": "#2b2b2b"
+      }
+    },
+    "section1_9YiDYK": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "WILD FERMENTATION",
+        "image": "shopify://shop_images/img-tequila-wild_fermentation-min.png",
+        "image_alt": "Agave field",
+        "body_1": "<p>After cooking and pressing, the agave honeys are transferred to open tanks with a steady flow of air, where they cool naturally. As they do, the wild yeasts native to the Casa Natima distillery environment begin to propagate. </p>",
+        "body_2": "<p>The cooled honeys are then blended with volcanic spring water drawn from a deep well on our property—water rich in the unique minerals that define the Amatitán Valley. This combination sparks a natural fermentation that unites the wild character of the native yeasts with the robust body of the cooked agave juice from our mineral milling, giving rise to our signature earthy, natural profile.</p>",
+        "max_width": 1750,
+        "bg_color": "#f6f3e7",
+        "title_color": "#111111",
+        "text_color": "#2b2b2b"
+      }
     }
   },
   "order": [
     "main",
-    "section1_XxNmqn"
+    "section1_XxNmqn",
+    "section1_NdaFYa",
+    "section1_9YiDYK"
   ]
 }
