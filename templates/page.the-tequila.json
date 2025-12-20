@@ -11,10 +11,27 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "section1_XxNmqn": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "THE TEQUILA",
+        "image": "shopify://shop_images/img-the_tequila-min.png",
+        "image_alt": "Agave field",
+        "body_1": "<p>Made from tahona-crushed agave and wild fermentation, Señora Leona is an “espíritu salvaje” from master distiller Carlos Huizar that channels the fierce, untamed power of the lioness.</p>",
+        "body_2": "<p>Our tequilas are crafted from fully mature, tahona-crushed agave and mineral-rich mountain spring water, which is then naturally fermented, distilled in handmade copper pot stills and rested in American and French White Oak barrels.</p>",
+        "max_width": 1200,
+        "bg_color": "#F6F3E7",
+        "title_color": "#111111",
+        "text_color": "#2B2B2B"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section1_XxNmqn"
   ]
 }
