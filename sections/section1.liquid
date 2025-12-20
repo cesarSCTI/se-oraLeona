@@ -1,0 +1,206 @@
+{% comment %}
+  Section: Tequila Hero
+  - Title centered
+  - Large image with framed margins
+  - Two paragraphs / rich text below
+{% endcomment %}
+
+<section
+  class="teq-hero"
+  style="
+    --teq-bg: {{ section.settings.bg_color }};
+    --teq-title: {{ section.settings.title_color }};
+    --teq-text: {{ section.settings.text_color }};
+    --teq-max: {{ section.settings.max_width }}px;
+  "
+>
+  <div class="teq-hero__wrap">
+    {% if section.settings.title != blank %}
+      <h2 class="teq-hero__title">{{ section.settings.title }}</h2>
+    {% endif %}
+
+    <div class="teq-hero__media">
+      {% if section.settings.image != blank %}
+        {{
+          section.settings.image
+          | image_url: width: 2400
+          | image_tag:
+            widths: '480, 768, 1024, 1440, 1920, 2400',
+            sizes: '(min-width: 990px) 900px, 92vw',
+            loading: 'lazy',
+            class: 'teq-hero__img',
+            alt: section.settings.image_alt | escape
+        }}
+      {% else %}
+        <div class="teq-hero__img teq-hero__placeholder">
+          Agrega una imagen en la configuración de la sección.
+        </div>
+      {% endif %}
+    </div>
+
+    {% if section.settings.body_1 != blank or section.settings.body_2 != blank %}
+      <div class="teq-hero__copy">
+        {% if section.settings.body_1 != blank %}
+          <div class="teq-hero__p rte">{{ section.settings.body_1 }}</div>
+        {% endif %}
+        {% if section.settings.body_2 != blank %}
+          <div class="teq-hero__p rte">{{ section.settings.body_2 }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% style %}
+  .teq-hero{
+    background: var(--teq-bg);
+    padding: clamp(28px, 4vw, 56px) 16px;
+  }
+
+  .teq-hero__wrap{
+    max-width: var(--teq-max);
+    margin: 0 auto;
+  }
+
+  .teq-hero__title{
+    margin: 0 0 clamp(14px, 2.2vw, 22px);
+    text-align: center;
+    color: var(--teq-title);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: clamp(34px, 6vw, 72px);
+  }
+
+  /* Imagen con “marco” (márgenes similares al screenshot) */
+  .teq-hero__media{
+    margin: 0 auto;
+    width: 100%;
+    max-width: min(100%, 980px);
+    background: rgba(0,0,0,0.02);
+    padding: clamp(10px, 1.4vw, 14px);
+  }
+
+  .teq-hero__img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .teq-hero__placeholder{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 260px;
+    border: 1px dashed rgba(0,0,0,0.25);
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+    text-align:center;
+    padding: 18px;
+  }
+
+  /* Texto inferior */
+  .teq-hero__copy{
+    margin: clamp(18px, 3vw, 34px) auto 0;
+    max-width: 820px;
+    color: var(--teq-text);
+  }
+
+  .teq-hero__p{
+    font-style: italic;
+    line-height: 1.9;
+    font-size: clamp(15px, 1.8vw, 18px);
+    letter-spacing: 0.01em;
+  }
+
+  .teq-hero__p + .teq-hero__p{
+    margin-top: 16px;
+  }
+
+  /* RTE básico para richtext */
+  .teq-hero .rte p{
+    margin: 0;
+  }
+
+  @media (min-width: 990px){
+    .teq-hero{
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .teq-hero__media{
+      padding: 16px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Section ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "THE TEQUILA"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen principal"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Alt de imagen",
+      "default": "Agave field"
+    },
+    {
+      "type": "richtext",
+      "id": "body_1",
+      "label": "Párrafo 1",
+      "default": "<p>Made from tahona-crushed agave and wild fermentation, Señora Leona is an “espíritu salvaje” from master distiller Carlos Huizar that channels the fierce, untamed power of the lioness.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "body_2",
+      "label": "Párrafo 2",
+      "default": "<p>Our tequilas are crafted from fully mature, tahona-crushed agave and mineral-rich mountain spring water, which is then naturally fermented, distilled in handmade copper pot stills and rested in American and French White Oak barrels.</p>"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Ancho máximo del contenedor (px)",
+      "min": 900,
+      "max": 1400,
+      "step": 20,
+      "default": 1200
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Color de fondo",
+      "default": "#F6F3E7"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color del título",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color del texto",
+      "default": "#2B2B2B"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section 1"
+    }
+  ]
+}
+{% endschema %}
