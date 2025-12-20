@@ -11,10 +11,27 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "section1_RUFcY7": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "“If I loved independence, it was because I considered it just and necessary.”",
+        "image": "shopify://shop_images/img-leona_vicario-min.png",
+        "image_alt": "the story",
+        "body_1": "<p>LEONA VICARIO was one of the most important figures in Mexico’s War of Independence—a patriot, journalist, and one of the first women recognized as a heroine of the nation.</p><p>Born into privilege, she chose purpose over comfort. And in a world that told women to stay silent, she funded a revolution, defied an empire, and spoke her truth with fearless clarity. When the independence movement began in 1810, Leona Vicario secretly joined the insurgent cause. She was part of Los Guadalupes, a secret network in Mexico City that gathered intelligence, raised funds, and smuggled supplies to the rebels fighting the Spanish crown. Using her wealth, she financed weapons and materials for the insurgents and passed along critical information.</p>",
+        "body_2": "<p>She was arrested in 1813 but refused to betray her fellow insurgents despite pressure from colonial authorities. After Mexico’s independence, Leona Vicario wrote essays and letters defending her role—and that of other women—in public life. She pushed back against critics who tried to portray her as merely a passive or emotional participant.</p>",
+        "max_width": 1800,
+        "bg_color": "#F6F3E7",
+        "title_color": "#111111",
+        "text_color": "#2B2B2B"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section1_RUFcY7"
   ]
 }
