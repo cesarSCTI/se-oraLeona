@@ -11,10 +11,75 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "section1_3jHGme": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "",
+        "image": "shopify://shop_images/img-recipe-spicy_batanga-grande-min.png",
+        "image_alt": "Recipe",
+        "body_1": "",
+        "body_2": "",
+        "max_width": 1800,
+        "bg_color": "#000000",
+        "title_color": "#111111",
+        "text_color": "#2B2B2B"
+      }
+    },
+    "section1_fAYTwb": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "",
+        "image": "shopify://shop_images/img-recipe-leona_rosita-grande-min.png",
+        "image_alt": "Recipe",
+        "body_1": "",
+        "body_2": "",
+        "max_width": 1800,
+        "bg_color": "#000000",
+        "title_color": "#111111",
+        "text_color": "#2B2B2B"
+      }
+    },
+    "section1_cMFwG4": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "",
+        "image": "shopify://shop_images/img-recipe-manzana_chicana-grande-min.png",
+        "image_alt": "Recipe",
+        "body_1": "",
+        "body_2": "",
+        "max_width": 1800,
+        "bg_color": "#000000",
+        "title_color": "#111111",
+        "text_color": "#2B2B2B"
+      }
+    },
+    "section1_86hRaL": {
+      "type": "section1",
+      "name": "Section 1",
+      "settings": {
+        "title": "",
+        "image": "shopify://shop_images/img-recipe-leona_blood-grande-min.png",
+        "image_alt": "Recipe",
+        "body_1": "",
+        "body_2": "",
+        "max_width": 1800,
+        "bg_color": "#000000",
+        "title_color": "#111111",
+        "text_color": "#2B2B2B"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section1_3jHGme",
+    "section1_fAYTwb",
+    "section1_cMFwG4",
+    "section1_86hRaL"
   ]
 }
