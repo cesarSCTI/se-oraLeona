@@ -35,7 +35,7 @@
     "section1_NdaFYa": {
       "type": "section1",
       "custom_css": [
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -25px; width: 40%; text-align: left; }}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 40%; text-align: left; padding-left:50px; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
@@ -72,7 +72,7 @@
     "section1_fiaX99": {
       "type": "section1",
       "custom_css": [
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -25px; width: 50%; text-align: left; }}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 50%; text-align: left; padding-left: 50px; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
