@@ -32,7 +32,7 @@
     "section1_NdaFYa": {
       "type": "section1",
       "custom_css": [
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; }}"
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap:50px; }}"
       ],
       "name": "Section 1",
       "settings": {
