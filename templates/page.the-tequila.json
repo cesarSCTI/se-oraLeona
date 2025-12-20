@@ -107,7 +107,7 @@
         "mg_bottom_des": 15,
         "des_color": "#000000",
         "item_spacing": 120,
-        "content_max_width": 260,
+        "content_max_width": 1000,
         "button_text": "Subscribe",
         "button_link": "",
         "fontsize_btn": 16,
