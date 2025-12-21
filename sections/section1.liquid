@@ -18,7 +18,9 @@
     {% if section.settings.title != blank %}
       <h2 class="teq-hero__title">{{ section.settings.title }}</h2>
     {% endif %}
-
+    {% if section.settings.url != blank %}
+        <a href="{{ section.settings.url}}">
+    {% endif %}
     <div class="teq-hero__media">
       {% if section.settings.image != blank %}
         {{
@@ -37,6 +39,9 @@
         </div>
       {% endif %}
     </div>
+    {% if section.settings.url != blank %}
+        </a>
+    {% endif %}
 
     {% if section.settings.body_1 != blank or section.settings.body_2 != blank %}
       <div class="teq-hero__copy">
