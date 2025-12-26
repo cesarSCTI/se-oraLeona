@@ -48,7 +48,7 @@
         "des_color": "#000000",
         "item_spacing": 25,
         "content_max_width": 500,
-        "button_text": "Subscribe",
+        "button_text": "",
         "button_link": "",
         "fontsize_btn": 16,
         "button_width": 190,
