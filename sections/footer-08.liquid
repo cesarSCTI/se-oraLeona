@@ -2,7 +2,7 @@
   
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-sm-12">
+      <div class="col-md-6 col-sm-12">
         {% if section.settings.logo != blank %}
           {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'logo' }}
         {% endif %}
@@ -11,7 +11,7 @@
           {{ section.settings.logo2 | image_url: width: 300 | image_tag: class: 'echo' }}
         {% endif %}
       </div>
-      <div class="col-md-8 col-sm-12" style="text-align:center;">
+      <div class="col-md-6 col-sm-12" style="text-align:center;">
         <h5>{{ section.settings.title }}</h5>
       </div>
     </div>
