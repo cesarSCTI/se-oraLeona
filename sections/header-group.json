@@ -201,7 +201,7 @@
       "custom_css": [
         ".header-navigation-wrapper {box-shadow: 0px 1px 10px #12121236;}",
         ".container {padding: 10px;}",
-        ".list-social__link {background: #fbf6f0;}",
+        ".list-social__link {background: #F7F7E1;}",
         ".icon-linkedin,.icon-facebook,.icon-youtube,.icon-pinterest {display: none;}",
         ".header-navigation .header-logo {max-width: 170px !important;}",
         ".header-nav-full-elements .header-item:nth-child(3) {max-width: 100px !important;}",
