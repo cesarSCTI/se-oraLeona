@@ -6,6 +6,20 @@
         {% if section.settings.logo != blank %}
           {{ section.settings.logo | image_url: height: 150 | image_tag: class: 'logo' }}
         {% endif %}
+        <div class="areaFooterLinks">
+      {% assign menu_handle = section.settings.menu2 %}
+      {% if linklists[menu_handle] %}
+        <ul>
+          {% for link in linklists[menu_handle].links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No menu selected or menu is empty.</p>
+      {% endif %}
+    </div>
          {% if section.settings.logo2 != blank %}
           {{ section.settings.logo2 | image_url: width: 300 | image_tag: class: 'echo' }}
         {% endif %}
@@ -141,6 +155,11 @@
         "type": "link_list",
         "id": "menu",
         "label": "Menu"
+      },
+      {
+        "type": "link_list",
+        "id": "menu2",
+        "label": "Menu 2"
       }
     ],
     "presets": [
