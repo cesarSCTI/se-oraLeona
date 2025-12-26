@@ -13,7 +13,9 @@
   "sections": {
     "footer_08_jy8NBP": {
       "type": "footer-08",
-      "custom_css": [],
+      "custom_css": [
+        "*{color:#fff !important;}"
+      ],
       "settings": {
         "text1": "",
         "text2": "",
