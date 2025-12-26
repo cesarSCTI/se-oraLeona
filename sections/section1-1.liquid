@@ -16,7 +16,9 @@
 >
   <div class="teq-hero__wrap">
     {% if section.settings.title != blank %}
-      <h2 class="teq-hero__title">{{ section.settings.title }}</h2>
+        <div class="overlay-hero">
+            <h2 class="teq-hero__title">{{ section.settings.title }}</h2>
+        </div>
     {% endif %}
     {% if section.settings.url != blank %}
         <a href="{{ section.settings.url}}">
