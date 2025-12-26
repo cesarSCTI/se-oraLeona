@@ -11,10 +11,68 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "custom_press_banner_qgknRj": {
+      "type": "custom-press-banner",
+      "name": "t:sections.custom_press_banner.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "press_bg": "#f7f7e1",
+        "press_gradient": "",
+        "align_items": "start",
+        "press_image": "shopify://shop_images/img-recipe-leona_rosita-min.png",
+        "press_image_width_ratio": 51,
+        "press_image_width": 550,
+        "sub_title": "<p>1½ OZ LEONA TEQUILA BLANCO <br/>½ OZ SWEET VERMOUTH<br/> ½ OZ DRY VERMOUTH <br/>½ OZ CAMPARI <br/>2 DASHES CHOCOLATE BITTERS</p>",
+        "letter_spacing_sub_title": "",
+        "font_size_sub_title": 24,
+        "font_size_sub_title_mb": 24,
+        "margin_bottom_sub_title": 14,
+        "font_weight_sub_title": "700",
+        "sub_title_position": "sub_title_below",
+        "color_sub_title": "#232323",
+        "title": "Leona Rosita",
+        "title_font_size": 55,
+        "title_font_size_mb": 20,
+        "title_font_weight": "700",
+        "mg_bottom_title": 15,
+        "title_color": "#000000",
+        "des": "Add all ingredients to a mixing glass with ice.Stir until well chilled and silky. Strain into a rocks glass over a large ice cube. Express an orange twist and drop it in. Garnish with chocolate.",
+        "des_font_size": 16,
+        "des_font_size_mb": 16,
+        "des_font_weight": "400",
+        "mg_bottom_des": 15,
+        "des_color": "#000000",
+        "item_spacing": 25,
+        "content_max_width": 500,
+        "button_text": "",
+        "button_link": "",
+        "fontsize_btn": 16,
+        "button_width": 190,
+        "color_button": "#ffffff",
+        "border_color_button": "#232323",
+        "bg_color_button": "#232323",
+        "bg_gradient_color_button": "",
+        "color_button_hover": "#ffffff",
+        "border_color_button_hover": "#232323",
+        "bg_color_button_hover": "#232323",
+        "bg_gradient_color_button_hover": "",
+        "btn_text_transform": "uppercase",
+        "image_behavior": "none",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_press_banner_qgknRj"
   ]
 }
