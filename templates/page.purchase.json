@@ -535,9 +535,9 @@
           "type": "heading",
           "settings": {
             "heading": "ENTER ZIP CODE TO CHECK AVAILABILITY NEAR YOU",
-            "heading_size": 18,
+            "heading_size": 35,
             "heading_size_mb": 16,
-            "heading_line_height": 1,
+            "heading_line_height": 1.5,
             "heading_color": "#000000"
           }
         }
@@ -563,7 +563,7 @@
         "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
-        "content_align": "center",
+        "content_align": "left",
         "mg_top_desktop": 20,
         "mg_top_tablet": 50,
         "mg_top_mobile": 0,
