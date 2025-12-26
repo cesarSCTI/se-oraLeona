@@ -35,14 +35,14 @@
       "name": "Section 1-1",
       "settings": {
         "url": "",
-        "title": "",
+        "title": "Leona Rosita",
         "image": "shopify://shop_images/img-recipe-leona_rosita-grande-min.png",
-        "image_alt": "Recipe",
+        "image_alt": "Recipe Leona Rosita",
         "body_1": "",
         "body_2": "",
         "max_width": 1800,
         "bg_color": "#000000",
-        "title_color": "#111111",
+        "title_color": "#ffffff",
         "text_color": "#2b2b2b"
       }
     },
@@ -51,14 +51,14 @@
       "name": "Section 1-1",
       "settings": {
         "url": "",
-        "title": "",
+        "title": "Manzana Chicana",
         "image": "shopify://shop_images/img-recipe-manzana_chicana-grande-min.png",
-        "image_alt": "Recipe",
+        "image_alt": "Recipe Manzana Chicana",
         "body_1": "",
         "body_2": "",
         "max_width": 1800,
         "bg_color": "#000000",
-        "title_color": "#111111",
+        "title_color": "#ffffff",
         "text_color": "#2b2b2b"
       }
     },
@@ -67,14 +67,14 @@
       "name": "Section 1-1",
       "settings": {
         "url": "",
-        "title": "",
+        "title": "Leona Blood Orange Margarita",
         "image": "shopify://shop_images/img-recipe-leona_blood-grande-min.png",
-        "image_alt": "Recipe",
+        "image_alt": "Recipe Leona Blood Orange Margarita",
         "body_1": "",
         "body_2": "",
         "max_width": 1800,
         "bg_color": "#000000",
-        "title_color": "#111111",
+        "title_color": "#ffffff",
         "text_color": "#2b2b2b"
       }
     }
