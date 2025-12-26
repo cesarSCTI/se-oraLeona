@@ -448,6 +448,44 @@
         "custom_liquid": "<div id=\"map\"></div>"
       }
     },
+    "rich_text_YaPm8c": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EEB8kL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Señora Leona is produced in limited quantities and may be found at the following locations or via specialty e-commerce sites.",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1.5,
+            "heading_color": "#000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EEB8kL"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#f7f7e1",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
     "rich_text_ggyYi6": {
       "type": "rich-text",
       "blocks": {
@@ -522,7 +560,7 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": -100,
-        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "center",
@@ -553,6 +591,7 @@
     "spotlight_block_x7aMFm",
     "spotlight_block_Cj6thn",
     "custom_liquid_jzfx6b",
+    "rich_text_YaPm8c",
     "rich_text_ggyYi6",
     "custom_liquid_nzfddx",
     "custom_liquid_Y7nzye"
