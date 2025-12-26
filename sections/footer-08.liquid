@@ -20,6 +20,7 @@
 <div class="container-fluid" style="background:#9F036D; color:#F7F7E1; padding:20px 0px;">
   <div class="row" style="justify-content: center; align-items:center;">
     <div class="areaFooter">{{ section.settings.areaFooter }}</div>
+     {% render 'footer-social', block: block, social_is_nested: true %}
     <div class="areaFooterLinks">
       {% assign menu_handle = section.settings.menu %}
       {% if linklists[menu_handle] %}
