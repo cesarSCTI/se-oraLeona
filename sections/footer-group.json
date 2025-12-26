@@ -14,7 +14,7 @@
     "footer_08_jy8NBP": {
       "type": "footer-08",
       "custom_css": [
-        "*{color:#fff !important;}"
+        "* {color: #fff !important;}"
       ],
       "settings": {
         "text1": "",
