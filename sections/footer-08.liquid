@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-12 firstPart">
         {% if section.settings.logo != blank %}
-          {{ section.settings.logo | image_url: width: 300 | image_tag: class: 'logo' }}
+          {{ section.settings.logo | image_url: height: 200 | image_tag: class: 'logo' }}
         {% endif %}
         {% render 'footer-social', block: block, social_is_nested: true %}
          {% if section.settings.logo2 != blank %}
