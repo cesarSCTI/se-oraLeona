@@ -16,6 +16,11 @@
     },
     "custom_press_banner_qgknRj": {
       "type": "custom-press-banner",
+      "custom_css": [
+        "h3 {font-family: \"Charmer TM\" !important;}",
+        "h4 p {font-family: \"colfax-web\" !important;}",
+        ".desc {font-family: Charter !important;}"
+      ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
         "container": "container",
