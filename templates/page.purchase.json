@@ -364,7 +364,8 @@
         "image_9Xf7TL"
       ],
       "custom_css": [
-        ".spotlight-inner .button {max-width: 250px !important;}"
+        ".spotlight-inner .button {max-width: 250px !important;}",
+        ".heading {font-family: colfax-web !important;}"
       ],
       "settings": {
         "container": "1200",
@@ -458,7 +459,7 @@
             "heading_size": 30,
             "heading_size_mb": 30,
             "heading_line_height": 1.5,
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         }
       },
@@ -549,7 +550,8 @@
       ],
       "custom_css": [
         ".rich-text__top {width: 100%; display: flex; justify-content: center;}",
-        ".rich-text__blocks h2 {padding-top: 30px !important;}"
+        ".rich-text__blocks h2 {padding-top: 30px !important;}",
+        "h2 {font-family: colfax-web !important;}"
       ],
       "name": "map",
       "settings": {
