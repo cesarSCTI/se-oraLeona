@@ -132,7 +132,7 @@
         "main_menu_rrbdMa": {
           "type": "main_menu",
           "settings": {
-            "menu": "main-menu",
+            "menu": "main",
             "menu_top_spacing": 10,
             "menu_bottom_spacing": 10,
             "grid_gap_menu_item": 10,
