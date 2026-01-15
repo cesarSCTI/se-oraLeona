@@ -18,7 +18,7 @@
       "type": "section1",
       "custom_css": [
         "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
-        ".teq-hero {padding-top: 100px !important;}",
+        ".teq-hero {padding-top: 100px !important; padding-bottom: 100px !important;}",
         "@media only screen and (min-width: 768px) {h2.teq-hero__title {position: absolute; top: -25px; width: 100%; }}"
       ],
       "name": "Section 1",
