@@ -450,7 +450,7 @@
           "settings": {
             "heading": "Señora Leona is produced in limited quantities and may be found at the following locations or via specialty e-commerce sites.",
             "heading_size": 30,
-            "heading_size_mb": 30,
+            "heading_size_mb": 20,
             "heading_line_height": 1.5,
             "heading_color": "#000000"
           }
@@ -458,6 +458,9 @@
       },
       "block_order": [
         "heading_EEB8kL"
+      ],
+      "custom_css": [
+        "h2 {font-family: Charter !important; font-weight: 500 !important; line-height: 1.5em !important;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -491,53 +494,11 @@
     "rich_text_ggyYi6": {
       "type": "rich-text",
       "blocks": {
-        "text_dqFK3a": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p style=\"font-style:italic\">Laelia is produced in limited quantities and may be found at the following locations or via specialty e-commerce sites.</p>",
-            "text_size": 20,
-            "text_size_mb": 16,
-            "text_line_height": 1.6,
-            "margin_top_text": 20,
-            "text_color": "#000000",
-            "text_width": "800px"
-          }
-        },
-        "content_9AMFD8": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "content_top": "<img src=\"https://cdn.shopify.com/s/files/1/0712/6515/7375/files/icono-Laelia_61d56c36-988a-4f25-9f2c-2f433af8f979.png?v=1725682216\" width=\"70\">",
-            "content_bottom": "",
-            "alignment_content": "center",
-            "content_size": 16,
-            "margin_top_content": 20,
-            "content_color": "#000000",
-            "content_width": "100vw",
-            "button_text_more": "",
-            "button_text_less": "",
-            "button_text_font_size": 14,
-            "button_text_font_weight": "500",
-            "margin_top_button_text": 30,
-            "button_text_color": "#ffffff",
-            "button_text_border_color": "#000000",
-            "button_text_bg_color": "#000000",
-            "button_text_bg_color_gradient": "",
-            "button_text_color_hover": "#000000",
-            "button_text_border_color_hover": "#000000",
-            "button_text_bg_color_hover": "#ffffff",
-            "button_text_bg_color_hover_gradient": "",
-            "button_text_more_width": 300,
-            "pd_top_button_text": 12,
-            "pd_bottom_button_text": 5
-          }
-        },
         "heading_6rJ8nn": {
           "type": "heading",
           "settings": {
             "heading": "ENTER ZIP CODE TO CHECK AVAILABILITY NEAR YOU",
-            "heading_size": 35,
+            "heading_size": 60,
             "heading_size_mb": 16,
             "heading_line_height": 1.5,
             "heading_color": "#000000"
@@ -545,14 +506,12 @@
         }
       },
       "block_order": [
-        "text_dqFK3a",
-        "content_9AMFD8",
         "heading_6rJ8nn"
       ],
       "custom_css": [
         ".rich-text__top {width: 100%; display: flex; justify-content: center;}",
         ".rich-text__blocks h2 {padding-top: 30px !important;}",
-        "h2 {font-family: colfax-web !important;}"
+        "h2 {font-family: colfax-web !important; line-height: 1.2em !important;}"
       ],
       "name": "map",
       "settings": {
@@ -570,7 +529,7 @@
         "mg_top_desktop": 20,
         "mg_top_tablet": 50,
         "mg_top_mobile": 0,
-        "mg_bottom_desktop": 50,
+        "mg_bottom_desktop": 90,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
