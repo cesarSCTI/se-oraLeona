@@ -14,7 +14,8 @@
     "footer_08_jy8NBP": {
       "type": "footer-08",
       "custom_css": [
-        "* {color: #fff !important;}"
+        "* {color: #fff !important;}",
+        ".icon-linkedin svg {fill: #fff;}"
       ],
       "settings": {
         "text1": "",
