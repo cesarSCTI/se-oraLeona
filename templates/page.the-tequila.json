@@ -138,7 +138,7 @@
         "des_font_weight": "400",
         "mg_bottom_des": 15,
         "des_color": "#000000",
-        "item_spacing": 120,
+        "item_spacing": 80,
         "content_max_width": 1000,
         "button_text": "",
         "button_link": "",
