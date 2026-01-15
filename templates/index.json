@@ -303,7 +303,7 @@
         "a.button {margin-left: 100px !important;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important; text-align: right !important;}",
         ".press-banner-block-wrapper .section-block-right .title {text-align: right !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; } .press-banner-block-wrapper .section-block-right .title {font-size: 40px !important;}}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
       ],
       "settings": {
         "container": "1770",
@@ -360,9 +360,7 @@
     },
     "custom_press_banner2_8DPwBt": {
       "type": "custom-press-banner2",
-      "custom_css": [
-        "@media screen and (max-width: 700px) {.combo-title {margin-bottom: -30px !important; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "container": "1320",
         "padding_full_width": 0,
@@ -384,13 +382,13 @@
         "title_font_size": 27,
         "title_font_size_mb": 20,
         "title_font_weight": "700",
-        "mg_bottom_title": 16,
+        "mg_bottom_title": 20,
         "title_color": "#000000",
         "des": "<br>Made from tahona-crushed agave and wild fermentation, Señora Leona is an “espíritu salvaje” from master distiller Carlos Huizar that channels the fierce, untamed power of the lioness.",
         "des_font_size": 20,
         "des_font_size_mb": 14,
         "des_font_weight": "400",
-        "mg_bottom_des": 40,
+        "mg_bottom_des": 20,
         "des_color": "#000000",
         "item_spacing": 20,
         "content_max_width": 1000,
