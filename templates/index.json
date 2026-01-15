@@ -241,7 +241,7 @@
       "custom_css": [
         "a.button:hover {color: #f7f7e1 !important;}",
         "a.button {margin-left: 220px !important; margin-top: 30px !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left:50px !important; margin-top: 20px !important; }}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; } .press-banner-block-wrapper .section-block-left {width: 50% !important;}}"
       ],
       "settings": {
         "container": "fullwidth",
