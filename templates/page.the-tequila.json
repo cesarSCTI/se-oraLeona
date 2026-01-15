@@ -38,6 +38,8 @@
     "section1_NdaFYa": {
       "type": "section1",
       "custom_css": [
+        "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero {padding-bottom: 100px !important;}",
         "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 40%; text-align: left; padding-left: 50px; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
