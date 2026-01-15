@@ -62,9 +62,10 @@
     "section1_9YiDYK": {
       "type": "section1",
       "custom_css": [
-        "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
-        ".teq-hero {padding-bottom: 100px !important;}",
-        "@media only screen and (min-width: 768px) {h2.teq-hero__title {position: absolute; top: -25px; width: 100%; }}"
+        "h2.teq-hero__title {font-size: 40px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero {padding-top: 100px !important; padding-bottom: 100px !important;}",
+        ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
+        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 100px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; }}"
       ],
       "name": "Section 1",
       "settings": {
@@ -83,15 +84,16 @@
     "section1_fiaX99": {
       "type": "section1",
       "custom_css": [
-        "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
-        ".teq-hero {padding-top: 100px !important; padding-bottom: 100px !important;}",
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 50%; text-align: left; padding-left: 50px; }}",
+        ".teq-hero__title {font-size: 40px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero {padding-bottom: 100px !important;}",
+        ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 100px !important; position: absolute; width: 70%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
       "settings": {
         "url": "",
-        "title": "COPPER POT STILL DISTILLATION &BOTTLING",
+        "title": "COPPER POT STILL DISTILLATION & BOTTLING",
         "image": "shopify://shop_images/img-tequila-copper_pot_still_distillation_y_bottling-min.png",
         "image_alt": "Agave field",
         "body_1": "<p>We double-distill Señora Leona Tequila in classic copper pot stills to refine the spirit while maintaining the agave’s character, then bottle it at 84 proof.</p>",
