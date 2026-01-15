@@ -52,15 +52,17 @@
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_bottom_mobile": 10
       }
     },
     "section1_RVRiJW": {
       "type": "section1",
       "custom_css": [
         ".teq-hero__img {object-fit: contain;}",
-        ".teq-hero__title {font-family: Charmer TM !important; font-size: 95px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
-        ".rte > p:last-child {margin-top: 20px !important;}"
+        ".teq-hero__title {font-family: Charmer TM !important; font-size: 40px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
+        ".rte > p:last-child {margin-top: 20px !important;}",
+        ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
+        "@media only screen and (min-width: 768px) {.teq-hero__title {font-size: 95px !important; } .teq-hero .rte p {font-size: 25px !important; }}"
       ],
       "name": "Section 1",
       "settings": {
