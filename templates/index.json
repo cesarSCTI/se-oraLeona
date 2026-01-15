@@ -241,7 +241,7 @@
       "custom_css": [
         "a.button:hover {color: #f7f7e1 !important;}",
         "a.button {margin-left: 220px !important; margin-top: 30px !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; } .press-banner-block-wrapper .section-block-left {width: 50% !important;}}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; } .press-banner-block-wrapper .section-block-left {width: 50% !important; }}"
       ],
       "settings": {
         "container": "fullwidth",
@@ -249,7 +249,7 @@
         "press_bg": "#f7f7e1",
         "press_gradient": "",
         "align_items": "center",
-        "press_image": "shopify://shop_images/Senora_Leona_botella-min.png",
+        "press_image": "shopify://shop_images/Senora_Leona_bottle.png",
         "press_image_width_ratio": 42,
         "press_image_width": 400,
         "sub_title": "",
@@ -296,58 +296,23 @@
         "mg_bottom_mobile": 10
       }
     },
-    "two_columns_pyxgDr": {
-      "type": "two-columns",
-      "blocks": {
-        "image_yjc7wK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/FOR_ESPIRITUS_SALVAJES_TEQUILA_BLANCO_AMATITAN_MADE_IN_MEXICO.png",
-            "alt": "Imagen"
-          }
-        },
-        "button_mxkwhz": {
-          "type": "button",
-          "settings": {
-            "align": "center",
-            "label": "Shop now",
-            "url": "",
-            "style": "outline",
-            "new_tab": false
-          }
-        }
-      },
-      "block_order": [
-        "image_yjc7wK",
-        "button_mxkwhz"
-      ],
-      "disabled": true,
-      "name": "Two Column Builder",
-      "settings": {
-        "layout": "image_left",
-        "main_image": "shopify://shop_images/Senora_Leona_botella-min.png",
-        "main_image_alt": "Imagen principal",
-        "image_loading": "lazy",
-        "bg_color": "#f7f7e1",
-        "text_color": "#111111",
-        "border_color": "rgba(0,0,0,0)",
-        "radius": 0,
-        "gap": 18,
-        "stack_gap": 16,
-        "pad_y": 0
-      }
-    },
     "custom_press_banner_hrkwyf": {
       "type": "custom-press-banner",
+      "custom_css": [
+        "a.button:hover {color: #f7f7e1 !important;}",
+        "a.button {margin-left: 100px !important;}",
+        ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important; text-align: right !important;}",
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; }}"
+      ],
       "settings": {
         "container": "1770",
         "padding_full_width": 0,
         "press_bg": "#f7f7e1",
         "press_gradient": "",
         "align_items": "center",
-        "press_image": "shopify://shop_images/img-the_inspiration-senora_leona1-min.png",
+        "press_image": "shopify://shop_images/img-the_inspiration-senora_leona1y2.png",
         "press_image_width_ratio": 50,
-        "press_image_width": 530,
+        "press_image_width": 600,
         "sub_title": "",
         "letter_spacing_sub_title": "",
         "font_size_sub_title": 14,
@@ -359,11 +324,11 @@
         "title": "THE INSPIRATION",
         "title_font_size": 27,
         "title_font_size_mb": 20,
-        "title_font_weight": "700",
+        "title_font_weight": "500",
         "mg_bottom_title": 15,
         "title_color": "#000000",
         "des": "<br>Our tequila takes its name from “the Lioness,” herself—Señora Leona Vicario, fearless heroine of Mexico’s War of Independence, revered as the “Mother of the Homeland” and the only woman immortalized at El Ángel de la Independencia.",
-        "des_font_size": 20,
+        "des_font_size": 25,
         "des_font_size_mb": 14,
         "des_font_weight": "400",
         "mg_bottom_des": 40,
@@ -371,7 +336,7 @@
         "item_spacing": 20,
         "content_max_width": 1000,
         "button_text": "LEARN ABOUT LEONA VICARIO",
-        "button_link": "shopify://pages/provenance",
+        "button_link": "shopify://pages/story",
         "fontsize_btn": 16,
         "button_width": 465,
         "color_button": "#000000",
@@ -380,7 +345,7 @@
         "bg_gradient_color_button": "",
         "color_button_hover": "#000000",
         "border_color_button_hover": "#232323",
-        "bg_color_button_hover": "#232323",
+        "bg_color_button_hover": "#9f006d",
         "bg_gradient_color_button_hover": "",
         "btn_text_transform": "uppercase",
         "image_behavior": "none",
@@ -448,6 +413,47 @@
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
+      }
+    },
+    "two_columns_pyxgDr": {
+      "type": "two-columns",
+      "blocks": {
+        "image_yjc7wK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FOR_ESPIRITUS_SALVAJES_TEQUILA_BLANCO_AMATITAN_MADE_IN_MEXICO.png",
+            "alt": "Imagen"
+          }
+        },
+        "button_mxkwhz": {
+          "type": "button",
+          "settings": {
+            "align": "center",
+            "label": "Shop now",
+            "url": "",
+            "style": "outline",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "image_yjc7wK",
+        "button_mxkwhz"
+      ],
+      "disabled": true,
+      "name": "Two Column Builder",
+      "settings": {
+        "layout": "image_left",
+        "main_image": "shopify://shop_images/Senora_Leona_botella-min.png",
+        "main_image_alt": "Imagen principal",
+        "image_loading": "lazy",
+        "bg_color": "#f7f7e1",
+        "text_color": "#111111",
+        "border_color": "rgba(0,0,0,0)",
+        "radius": 0,
+        "gap": 18,
+        "stack_gap": 16,
+        "pad_y": 0
       }
     },
     "spotlight_block_WFdN4K": {
@@ -701,9 +707,9 @@
     "custom_liquid_wCKgqg",
     "slide_show_44T3WC",
     "custom_press_banner_MtnxpT",
-    "two_columns_pyxgDr",
     "custom_press_banner_hrkwyf",
     "custom_press_banner2_8DPwBt",
+    "two_columns_pyxgDr",
     "spotlight_block_WFdN4K"
   ]
 }
