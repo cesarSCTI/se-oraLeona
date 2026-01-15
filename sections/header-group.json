@@ -61,6 +61,7 @@
         "550fbd21-75fb-4051-9dee-77d91b5239f0": {
           "type": "logo",
           "settings": {
+            "logo_mobile": "shopify://shop_images/Senora_Leona_Logo.png",
             "logo_width_mobile": 120,
             "logo_text": "",
             "logo_font_size": 20,
@@ -102,14 +103,14 @@
         ".button:hover,.button:focus,.button:active {background: #057; color: #fff;}"
       ],
       "settings": {
-        "background": "#fbf6f0",
+        "background": "#f7f7e1",
         "gradient": "",
         "sticky_header_type": "on_scroll",
         "enable_transparent": false,
         "transparent_color": "#ffffff",
         "transparent_border_color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 5,
+        "padding_bottom": 5
       }
     },
     "header_navigation_full_elements_B7Yp9Q": {
