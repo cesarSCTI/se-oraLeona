@@ -60,6 +60,8 @@
     "section1_9YiDYK": {
       "type": "section1",
       "custom_css": [
+        "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero {padding-bottom: 100px !important;}",
         "@media only screen and (min-width: 768px) {h2.teq-hero__title {position: absolute; top: -25px; width: 100%; }}"
       ],
       "name": "Section 1",
@@ -70,7 +72,7 @@
         "image_alt": "Agave field",
         "body_1": "<p>After cooking and pressing, the agave honeys are transferred to open tanks with a steady flow of air, where they cool naturally. As they do, the wild yeasts native to the Casa Natima distillery environment begin to propagate. </p>",
         "body_2": "<p>The cooled honeys are then blended with volcanic spring water drawn from a deep well on our property—water rich in the unique minerals that define the Amatitán Valley. This combination sparks a natural fermentation that unites the wild character of the native yeasts with the robust body of the cooked agave juice from our mineral milling, giving rise to our signature earthy, natural profile.</p>",
-        "max_width": 1750,
+        "max_width": 1250,
         "bg_color": "#f7f7e1",
         "title_color": "#111111",
         "text_color": "#2b2b2b"
@@ -79,18 +81,20 @@
     "section1_fiaX99": {
       "type": "section1",
       "custom_css": [
+        "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero {padding-top: 100px !important; padding-bottom: 100px !important;}",
         "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 50%; text-align: left; padding-left: 50px; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
       "settings": {
         "url": "",
-        "title": "COPPER POT STILL DISTILLATION & BOTTLING",
+        "title": "COPPER POT STILL DISTILLATION &BOTTLING",
         "image": "shopify://shop_images/img-tequila-copper_pot_still_distillation_y_bottling-min.png",
         "image_alt": "Agave field",
         "body_1": "<p>We double-distill Señora Leona Tequila in classic copper pot stills to refine the spirit while maintaining the agave’s character, then bottle it at 84 proof.</p>",
         "body_2": "<p>We double-distill Señora Leona Tequila in classic copper pot stills to refine the spirit while maintaining the agave’s character, then bottle it at 84 proof.</p>",
-        "max_width": 1750,
+        "max_width": 1250,
         "bg_color": "#f7f7e1",
         "title_color": "#111111",
         "text_color": "#2b2b2b"
