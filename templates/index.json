@@ -418,47 +418,6 @@
         "mg_bottom_mobile": 50
       }
     },
-    "two_columns_pyxgDr": {
-      "type": "two-columns",
-      "blocks": {
-        "image_yjc7wK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/FOR_ESPIRITUS_SALVAJES_TEQUILA_BLANCO_AMATITAN_MADE_IN_MEXICO.png",
-            "alt": "Imagen"
-          }
-        },
-        "button_mxkwhz": {
-          "type": "button",
-          "settings": {
-            "align": "center",
-            "label": "Shop now",
-            "url": "",
-            "style": "outline",
-            "new_tab": false
-          }
-        }
-      },
-      "block_order": [
-        "image_yjc7wK",
-        "button_mxkwhz"
-      ],
-      "disabled": true,
-      "name": "Two Column Builder",
-      "settings": {
-        "layout": "image_left",
-        "main_image": "shopify://shop_images/Senora_Leona_botella-min.png",
-        "main_image_alt": "Imagen principal",
-        "image_loading": "lazy",
-        "bg_color": "#f7f7e1",
-        "text_color": "#111111",
-        "border_color": "rgba(0,0,0,0)",
-        "radius": 0,
-        "gap": 18,
-        "stack_gap": 16,
-        "pad_y": 0
-      }
-    },
     "spotlight_block_WFdN4K": {
       "type": "spotlight-block",
       "blocks": {
@@ -640,16 +599,16 @@
         "spotlight_block_swipe_on_mobile": "slider",
         "column": "3",
         "column_mb": "1",
-        "enable_arrows": true,
-        "enable_arrows_mb": false,
+        "enable_arrows": false,
+        "enable_arrows_mb": true,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
-        "enable_dots_mb": true,
+        "enable_dots_mb": false,
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
         "spotlight_bg": "#1d181a",
         "spotlight_bg_gradient": "",
-        "spotlight_block_title": "RECIPES THAT <span class=\"cursi\">redefines</span> THE RULES",
+        "spotlight_block_title": "RECIPES THAT redefines THE RULES",
         "enable_border_title": false,
         "enable_custom_position_title": false,
         "color_title": "#f7f7e1",
@@ -712,7 +671,6 @@
     "custom_press_banner_MtnxpT",
     "custom_press_banner_hrkwyf",
     "custom_press_banner2_8DPwBt",
-    "two_columns_pyxgDr",
     "spotlight_block_WFdN4K"
   ]
 }
