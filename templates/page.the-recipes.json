@@ -14,6 +14,44 @@
       "disabled": true,
       "settings": {}
     },
+    "rich_text_mx3Jzp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KJY69b": {
+          "type": "heading",
+          "settings": {
+            "heading": "RECIPES",
+            "heading_size": 80,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#f7f7e1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KJY69b"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#000000",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "left",
+        "mg_top_desktop": 100,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 30,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
     "section1_3jHGme": {
       "type": "section1-1",
       "name": "Section 1-1",
@@ -81,6 +119,7 @@
   },
   "order": [
     "main",
+    "rich_text_mx3Jzp",
     "section1_3jHGme",
     "section1_fAYTwb",
     "section1_cMFwG4",
