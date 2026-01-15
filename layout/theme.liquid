@@ -16,121 +16,11 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}"{% if settings.enable_layout_rtl and enable_iso_rtl %} dir="rtl"{% endif %}>
     <head>
 {% render 'replo-head' %} 
-      {% if template.name == 'product' %}
-        <script> 
-         function getCountryPrincipal() {
-            var apiKey = '9b4a6b9cea79ee'; 
-            var url = `https://ipinfo.io/json?token=${apiKey}`;
-            var location = window.location.pathname;
-          
-           fetch(url)
-              .then(response => response.json())
-              .then(data => {
-                var country = data.country;
-                
-        if ( country == 'MX') {
-                  const style = document.createElement('style');
-                  style.textContent = `
-                    #product-add-to-cart{
-                      display:none;
-                      visivility:hidden;
-                      opacity:0;
-                    }
-                    .productView-options{
-                     display:none;
-                      visivility:hidden;
-                      opacity:0;
-                    }
-                    .productView-customText{
-                     display:none;
-                      visivility:hidden;
-                      opacity:0;
-                    }
-                    .price{
-                      display:none;
-                      visivility:hidden;
-                      opacity:0;
-                    }
-                  `;
-                  document.head.appendChild(style);
-
-                }
-                
-              })
-              .catch(error => console.error('Error al obtener la ubicación:', error));
-          }
-    
-           getCountryPrincipal()
-         </script> 
-        
-      {% endif %}
-<script>
-function getCountryPrincipal() {
-  const apiKey = '9b4a6b9cea79ee'; 
-  const url = `https://ipinfo.io/json?token=${apiKey}`;
-  const locationPath = window.location.pathname;
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const country = data.country;
-      const ip = data.ip;
-
-      // Redirección por país y URL
-      if (ip != '189.203.97.181' && ip != '189.203.100.181') {
-        if (
-          (locationPath === '/pages/purchase' && country === 'MX') ||
-          (locationPath === '/es/pages/purchase' && country === 'MX')
-        ) {
-          window.location.replace("https://laeliatequila.com/pages/comprar");
-        }
-      }
-
-      // Función auxiliar para esperar elementos
-      function waitForElement(selector, callback, timeout = 3000) {
-        const intervalTime = 100;
-        const startTime = Date.now();
-        const interval = setInterval(() => {
-          const element = document.querySelector(selector);
-          if (element) {
-            clearInterval(interval);
-            callback(element);
-          } else if (Date.now() - startTime > timeout) {
-            clearInterval(interval);
-            console.warn(`Elemento "${selector}" no encontrado después de ${timeout}ms`);
-          }
-        }, intervalTime);
-      }
-
-      // Ocultar formularios según país
-      if (country === 'MX') {
-        waitForElement('.klaviyo-form-XVdfzC', (form) => {
-          form.style.display = 'none';
-        });
-      }
-
-      if (country !== 'MX') {
-        waitForElement('#_form_13', (form) => {
-          form.style.display = 'none';
-        });
-      }
-    })
-    .catch(error => console.error('Error al obtener la ubicación:', error));
-}
-
-getCountryPrincipal();
-</script>
+      
 
     {{ content_for_header }}
 
-      <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PMQSJ9FP');</script>
-<!-- End Google Tag Manager -->
-<meta name="google-site-verification" content="sFtVmrJV8jmZiqbQNH-OIzwcAW1IXDxUc-syuvAd288" />
+      
       
       <style>
         .agp__birthdayType__buttonContainer {
@@ -138,7 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     justify-content: center;
 }
         </style>
-      {% if page.title == "Welcome to laelia" %}}
+      {% if page.title == "Welcome to Señora Leona" %}}
     <style>
 
 
