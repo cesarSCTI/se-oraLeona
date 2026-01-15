@@ -302,6 +302,7 @@
         "a.button:hover {color: #f7f7e1 !important;}",
         "a.button {margin-left: 100px !important;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important; text-align: right !important;}",
+        ".press-banner-block-wrapper .section-block-right .title {text-align: right !important;}",
         "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; }}"
       ],
       "settings": {
@@ -322,7 +323,7 @@
         "sub_title_position": "sub_title_above",
         "color_sub_title": "#232323",
         "title": "THE INSPIRATION",
-        "title_font_size": 27,
+        "title_font_size": 30,
         "title_font_size_mb": 20,
         "title_font_weight": "500",
         "mg_bottom_title": 15,
