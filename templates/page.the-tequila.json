@@ -104,7 +104,9 @@
       "type": "custom-press-banner",
       "custom_css": [
         "span {font-weight: 500; font-size: 60px; line-height: 1.1em !important; font-family: Charmer TM !important;}",
-        ".custom-image-banner-block {padding-bottom: 0px;}"
+        ".custom-image-banner-block {padding-bottom: 0px;}",
+        ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important;}",
+        "@media only screen and (max-width: 768px) {.press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; }}"
       ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
