@@ -60,7 +60,7 @@
       "custom_css": [
         ".teq-hero__img {object-fit: contain;}",
         ".teq-hero__title {font-family: Charmer TM !important; font-size: 95px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
-        ".rte>p:last-child {margin-top: 20px !important;}"
+        ".rte > p:last-child {margin-top: 20px !important;}"
       ],
       "name": "Section 1",
       "settings": {
@@ -80,7 +80,7 @@
       "type": "section1",
       "custom_css": [
         ".teq-hero {padding-bottom: 100px !important;}",
-        "h2 {font-size: 30px !important; line-height: 1.2em !important;}"
+        "h2 {font-size: 30px !important; line-height: 1.2em !important; margin-bottom: 5px !important;}"
       ],
       "name": "Section 1",
       "settings": {
