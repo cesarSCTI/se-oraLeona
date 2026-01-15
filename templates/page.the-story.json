@@ -14,20 +14,62 @@
       "disabled": true,
       "settings": {}
     },
-    "section1_RUFcY7": {
+    "rich_text_jUVr4M": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VMDHbi": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE STORY",
+            "heading_size": 80,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#1d181a"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VMDHbi"
+      ],
+      "custom_css": [
+        "h2 {font-family: Colfax !important; font-weight: 500 !important;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#f7f7e1",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 100,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
+    },
+    "section1_RVRiJW": {
       "type": "section1",
       "custom_css": [
-        ".teq-hero__img {object-fit: contain;}"
+        ".teq-hero__img {object-fit: contain;}",
+        ".teq-hero__title {font-family: Charmer TM !important; font-size: 95px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}"
       ],
       "name": "Section 1",
       "settings": {
         "url": "",
-        "title": "<span class=\"cursi\">“If I loved independence, it was because I considered it just and necessary.”</span>",
+        "title": "“If I loved independence, it was because I considered it just and necessary.”<br><br>",
         "image": "shopify://shop_images/img-leona_vicario-min.png",
         "image_alt": "the story",
         "body_1": "<p>LEONA VICARIO was one of the most important figures in Mexico’s War of Independence—a patriot, journalist, and one of the first women recognized as a heroine of the nation.</p><p>Born into privilege, she chose purpose over comfort. And in a world that told women to stay silent, she funded a revolution, defied an empire, and spoke her truth with fearless clarity. When the independence movement began in 1810, Leona Vicario secretly joined the insurgent cause. She was part of Los Guadalupes, a secret network in Mexico City that gathered intelligence, raised funds, and smuggled supplies to the rebels fighting the Spanish crown. Using her wealth, she financed weapons and materials for the insurgents and passed along critical information.</p>",
         "body_2": "<p>She was arrested in 1813 but refused to betray her fellow insurgents despite pressure from colonial authorities. After Mexico’s independence, Leona Vicario wrote essays and letters defending her role—and that of other women—in public life. She pushed back against critics who tried to portray her as merely a passive or emotional participant.</p>",
-        "max_width": 1800,
+        "max_width": 1250,
         "bg_color": "#f7f7e1",
         "title_color": "#111111",
         "text_color": "#2b2b2b"
@@ -52,7 +94,8 @@
   },
   "order": [
     "main",
-    "section1_RUFcY7",
+    "rich_text_jUVr4M",
+    "section1_RVRiJW",
     "section1_BPrqei"
   ]
 }
