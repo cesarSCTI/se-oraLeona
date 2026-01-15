@@ -303,7 +303,7 @@
         "a.button {margin-left: 100px !important;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important; text-align: right !important;}",
         ".press-banner-block-wrapper .section-block-right .title {text-align: right !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; }}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; } .press-banner-block-wrapper .section-block-right .title {font-size: 40px !important;}}"
       ],
       "settings": {
         "container": "1770",
@@ -338,8 +338,8 @@
         "content_max_width": 1000,
         "button_text": "LEARN ABOUT LEONA VICARIO",
         "button_link": "shopify://pages/story",
-        "fontsize_btn": 16,
-        "button_width": 465,
+        "fontsize_btn": 15,
+        "button_width": 600,
         "color_button": "#000000",
         "border_color_button": "#232323",
         "bg_color_button": "rgba(0,0,0,0)",
