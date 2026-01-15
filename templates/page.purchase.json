@@ -259,22 +259,22 @@
             "image": "shopify://shop_images/Senora_Leona_-purchase_750_ml-min.png",
             "title_align": "center",
             "enable_absolute": false,
-            "align_items": "center",
+            "align_items": "top",
             "align_items_spacing_top_bottom_position": 0,
             "align_items_spacing_top_bottom_position_mb": 0,
             "bg_color_content": "",
-            "align_items_spacing_top": 10,
-            "align_items_spacing_bottom": 10,
+            "align_items_spacing_top": 0,
+            "align_items_spacing_bottom": 0,
             "align_items_spacing_lr": 10,
             "sub_title": "",
             "border_sub_title": false,
             "color_sub_title": "#232323",
-            "fontsize_sub_title": 15,
+            "fontsize_sub_title": 50,
             "font_weight_sub_title": "500",
-            "mg_bottom_sub_title": 10,
-            "title": "",
+            "mg_bottom_sub_title": 0,
+            "title": "750ML",
             "color_title": "#232323",
-            "fontsize_title": 25,
+            "fontsize_title": 40,
             "fontsize_title_mb": 20,
             "font_weight_title": "500",
             "enable_style_italic": false,
@@ -286,17 +286,17 @@
             "mg_top_des": 20,
             "enable_des_hover": false,
             "button_style": "button_1",
-            "button": "",
+            "button": "SHOP NOW",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
-            "color_button": "#ffffff",
-            "border_color_button": "#232323",
-            "bg_color_button": "#232323",
+            "color_button": "#000000",
+            "border_color_button": "#000000",
+            "bg_color_button": "#f7f7e1",
             "bg_color_button_gradient": "",
             "color_button_hover": "#ffffff",
             "border_color_button_hover": "#232323",
-            "bg_color_button_hover": "#232323",
+            "bg_color_button_hover": "#9f006d",
             "bg_color_button_gradient_hover": "",
             "bg_opacity_button": 1,
             "enable_button_custom_border": false,
@@ -305,29 +305,29 @@
             "mg_top_btn": 30
           }
         },
-        "image_9Xf7TL": {
+        "image_TVWWnf": {
           "type": "image",
           "settings": {
             "enable_image": true,
             "image": "shopify://shop_images/enora_Leona_-purchase_1_Litro-min.png",
             "title_align": "center",
             "enable_absolute": false,
-            "align_items": "center",
+            "align_items": "top",
             "align_items_spacing_top_bottom_position": 0,
             "align_items_spacing_top_bottom_position_mb": 0,
             "bg_color_content": "",
-            "align_items_spacing_top": 10,
-            "align_items_spacing_bottom": 10,
+            "align_items_spacing_top": 0,
+            "align_items_spacing_bottom": 0,
             "align_items_spacing_lr": 10,
             "sub_title": "",
             "border_sub_title": false,
             "color_sub_title": "#232323",
-            "fontsize_sub_title": 20,
+            "fontsize_sub_title": 50,
             "font_weight_sub_title": "500",
-            "mg_bottom_sub_title": 10,
-            "title": "",
+            "mg_bottom_sub_title": 0,
+            "title": "1L",
             "color_title": "#232323",
-            "fontsize_title": 25,
+            "fontsize_title": 40,
             "fontsize_title_mb": 20,
             "font_weight_title": "500",
             "enable_style_italic": false,
@@ -339,17 +339,17 @@
             "mg_top_des": 20,
             "enable_des_hover": false,
             "button_style": "button_1",
-            "button": "",
+            "button": "SHOP NOW",
             "link": "",
             "fontsize_btn": 16,
             "button_width": 190,
-            "color_button": "#ffffff",
-            "border_color_button": "#232323",
-            "bg_color_button": "#232323",
+            "color_button": "#000000",
+            "border_color_button": "#000000",
+            "bg_color_button": "#f7f7e1",
             "bg_color_button_gradient": "",
             "color_button_hover": "#ffffff",
             "border_color_button_hover": "#232323",
-            "bg_color_button_hover": "#232323",
+            "bg_color_button_hover": "#9f006d",
             "bg_color_button_gradient_hover": "",
             "bg_opacity_button": 1,
             "enable_button_custom_border": false,
@@ -361,7 +361,7 @@
       },
       "block_order": [
         "image_DRGnbk",
-        "image_9Xf7TL"
+        "image_TVWWnf"
       ],
       "custom_css": [
         ".spotlight-inner .button {max-width: 250px !important;}",
@@ -442,13 +442,6 @@
         "mg_bottom_mobile": 25
       }
     },
-    "custom_liquid_jzfx6b": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div id=\"map\"></div>"
-      }
-    },
     "rich_text_YaPm8c": {
       "type": "rich-text",
       "blocks": {
@@ -479,12 +472,20 @@
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "center",
-        "mg_top_desktop": 50,
+        "mg_top_desktop": 100,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
+      }
+    },
+    "custom_liquid_jzfx6b": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div id=\"map\"></div>"
       }
     },
     "rich_text_ggyYi6": {
@@ -577,11 +578,12 @@
     "custom_liquid_nzfddx": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div id='storerocket-widget' style='width:100%;' data-storerocket-env='p' data-storerocket-id='BrJqjwZ8qE'><p style='text-align:center;font-size:13px;padding:10px;'>Store locator is loading from StoreRocket <a target='_blank' href='https://storerocket.io' style='font-size:13px;'>Store Locator App</a>..</p></div><script>(function(){var a=document.createElement('script');a.type='text/javascript';a.async=!0;a.src='https://cdn.storerocket.io/js/widget.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);}());</script>"
+        "custom_liquid": ""
       }
     },
     "custom_liquid_Y7nzye": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<style>\n.halo-block-header .title .text {\n        width: 100% !important;\n    }\n@media only screen and (min-width:768px){\n.featured-product {\n    padding: 0px 7% !important;\n}\n}\n</style>"
       }
@@ -592,8 +594,8 @@
     "texto_title_receta_wcATCV",
     "spotlight_block_x7aMFm",
     "spotlight_block_Cj6thn",
-    "custom_liquid_jzfx6b",
     "rich_text_YaPm8c",
+    "custom_liquid_jzfx6b",
     "rich_text_ggyYi6",
     "custom_liquid_nzfddx",
     "custom_liquid_Y7nzye"
