@@ -587,7 +587,8 @@
         "image_QfHLAb"
       ],
       "custom_css": [
-        "b {font-family: Charmer TM !important; font-size: 80px !important; font-weight: normal !important;}"
+        "b {font-family: Charmer TM !important; font-size: 80px !important; font-weight: normal !important;}",
+        ".halo-block-header.text-center h3 {line-height: 1.3em !important;}"
       ],
       "settings": {
         "container": "container",
@@ -602,7 +603,7 @@
         "enable_arrows_mb": true,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
-        "enable_dots_mb": false,
+        "enable_dots_mb": true,
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
         "spotlight_bg": "#1d181a",
