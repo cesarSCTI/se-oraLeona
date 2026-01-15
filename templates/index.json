@@ -240,7 +240,7 @@
       "type": "custom-press-banner",
       "custom_css": [
         "a.button:hover {color: #f7f7e1 !important;}",
-        "a.button {margin-left: 170px !important; margin-top: 30px !important;}",
+        "a.button {margin-left: 150px !important; margin-top: 30px !important;}",
         "@media only screen and (max-width: 768px) {a.button {margin-left: 50px !important; margin-top: 20px !important; } .press-banner-block-wrapper .section-block-left {width: 50% !important; }}"
       ],
       "settings": {
@@ -250,7 +250,7 @@
         "press_gradient": "",
         "align_items": "center",
         "press_image": "shopify://shop_images/Senora_Leona_bottle.png",
-        "press_image_width_ratio": 40,
+        "press_image_width_ratio": 43,
         "press_image_width": 300,
         "sub_title": "",
         "letter_spacing_sub_title": "",
@@ -273,7 +273,7 @@
         "mg_bottom_des": 40,
         "des_color": "#000000",
         "item_spacing": 20,
-        "content_max_width": 550,
+        "content_max_width": 500,
         "button_text": "SHOP NOW",
         "button_link": "shopify://collections/all",
         "fontsize_btn": 16,
