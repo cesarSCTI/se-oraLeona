@@ -607,7 +607,7 @@
         "border_color": "#e3e3e3",
         "spotlight_bg": "#1d181a",
         "spotlight_bg_gradient": "",
-        "spotlight_block_title": "RECIPES THAT redefines THE RULES",
+        "spotlight_block_title": "RECIPES THAT <b>redefines</b> THE RULES",
         "enable_border_title": false,
         "enable_custom_position_title": false,
         "color_title": "#f7f7e1",
