@@ -17,16 +17,18 @@
     "section1_XxNmqn": {
       "type": "section1",
       "custom_css": [
+        "h2.teq-hero__title {font-size: 100px !important; font-weight: 500 !important; top: -45px !important;}",
         "@media only screen and (min-width: 768px) {h2.teq-hero__title {position: absolute; top: -25px; width: 100%; }}"
       ],
       "name": "Section 1",
       "settings": {
+        "url": "",
         "title": "THE TEQUILA",
         "image": "shopify://shop_images/img-the_tequila-min.png",
         "image_alt": "Agave field",
         "body_1": "<p>Made from tahona-crushed agave and wild fermentation, Señora Leona is an “espíritu salvaje” from master distiller Carlos Huizar that channels the fierce, untamed power of the lioness.</p>",
         "body_2": "<p>Our tequilas are crafted from fully mature, tahona-crushed agave and mineral-rich mountain spring water, which is then naturally fermented, distilled in handmade copper pot stills and rested in American and French White Oak barrels.</p>",
-        "max_width": 1750,
+        "max_width": 1250,
         "bg_color": "#f7f7e1",
         "title_color": "#111111",
         "text_color": "#2b2b2b"
@@ -35,11 +37,12 @@
     "section1_NdaFYa": {
       "type": "section1",
       "custom_css": [
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 40%; text-align: left; padding-left:50px; }}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; gap: 50px; } .teq-hero__title {position: absolute; top: -55px; width: 40%; text-align: left; padding-left: 50px; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
       "settings": {
+        "url": "",
         "title": "TAHONA- PRESSED AGAVE",
         "image": "shopify://shop_images/img-tequila-tahona_pressed_agave-min.png",
         "image_alt": "Agave field",
@@ -58,6 +61,7 @@
       ],
       "name": "Section 1",
       "settings": {
+        "url": "",
         "title": "WILD FERMENTATION",
         "image": "shopify://shop_images/img-tequila-wild_fermentation-min.png",
         "image_alt": "Agave field",
@@ -77,6 +81,7 @@
       ],
       "name": "Section 1",
       "settings": {
+        "url": "",
         "title": "COPPER POT STILL DISTILLATION & BOTTLING",
         "image": "shopify://shop_images/img-tequila-copper_pot_still_distillation_y_bottling-min.png",
         "image_alt": "Agave field",
