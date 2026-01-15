@@ -587,8 +587,7 @@
         "image_QfHLAb"
       ],
       "custom_css": [
-        "/.halo-block-header.text-center h3 {font-family: \"adobe-handwriting-ernie\"; letter-spacing: 0.9px;}",
-        "h3.title.custom-text-style.has--border_hover {font-family: \"Noto Serif Display\"; font-style: italic;}"
+        "b {font-family: Charmer TM !important; font-size: 80px !important; font-weight: normal !important;}"
       ],
       "settings": {
         "container": "container",
@@ -608,7 +607,7 @@
         "border_color": "#e3e3e3",
         "spotlight_bg": "#1d181a",
         "spotlight_bg_gradient": "",
-        "spotlight_block_title": "RECIPES THAT redefines THE RULES",
+        "spotlight_block_title": "RECIPES THAT <b>redefines</b> THE RULES",
         "enable_border_title": false,
         "enable_custom_position_title": false,
         "color_title": "#f7f7e1",
