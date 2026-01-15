@@ -499,7 +499,7 @@
           "settings": {
             "heading": "ENTER ZIP CODE TO CHECK AVAILABILITY NEAR YOU",
             "heading_size": 60,
-            "heading_size_mb": 16,
+            "heading_size_mb": 40,
             "heading_line_height": 1.5,
             "heading_color": "#000000"
           }
