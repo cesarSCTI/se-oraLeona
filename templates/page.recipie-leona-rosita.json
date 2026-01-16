@@ -68,10 +68,10 @@
         "bg_gradient_color_button_hover": "",
         "btn_text_transform": "uppercase",
         "image_behavior": "none",
-        "mg_top_desktop": 50,
+        "mg_top_desktop": 80,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
+        "mg_bottom_desktop": 80,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
