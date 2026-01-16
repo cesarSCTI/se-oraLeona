@@ -275,7 +275,7 @@
         "item_spacing": 20,
         "content_max_width": 500,
         "button_text": "SHOP NOW",
-        "button_link": "shopify://collections/all",
+        "button_link": "shopify://products/tequila-blanco-750-ml",
         "fontsize_btn": 16,
         "button_width": 210,
         "color_button": "#000000",
