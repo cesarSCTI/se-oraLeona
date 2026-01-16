@@ -14,19 +14,21 @@
     --teq-max: {{ section.settings.max_width }}px;
   "
 >
+  {% if section.settings.url != blank %}
+    <a href="{{ section.settings.url }}" class="teq-hero__link">
+  {% endif %}
+
   <div class="teq-hero__wrap">
+
     {% if section.settings.title != blank %}
-        <div class="overlay-hero">
-            <h2 class="teq-hero__title">{{ section.settings.title }}</h2>
-        </div>
+      <div class="overlay-hero">
+        <h2 class="teq-hero__title">{{ section.settings.title }}</h2>
+      </div>
     {% endif %}
-    {% if section.settings.url != blank %}
-        <a href="{{ section.settings.url}}">
-    {% endif %}
+
     <div class="teq-hero__media">
       {% if section.settings.image != blank %}
-        {{
-          section.settings.image
+        {{ section.settings.image
           | image_url: width: 2400
           | image_tag:
             widths: '480, 768, 1024, 1440, 1920, 2400',
@@ -35,15 +37,8 @@
             class: 'teq-hero__img',
             alt: section.settings.image_alt | escape
         }}
-      {% else %}
-        <div class="teq-hero__img teq-hero__placeholder">
-          Agrega una imagen en la configuración de la sección.
-        </div>
       {% endif %}
     </div>
-    {% if section.settings.url != blank %}
-        </a>
-    {% endif %}
 
     {% if section.settings.body_1 != blank or section.settings.body_2 != blank %}
       <div class="teq-hero__copy">
@@ -55,8 +50,14 @@
         {% endif %}
       </div>
     {% endif %}
+
   </div>
+
+  {% if section.settings.url != blank %}
+    </a>
+  {% endif %}
 </section>
+
 
 {% style %}
 .teq-hero__wrap:hover .overlay-hero{
@@ -78,12 +79,15 @@
     background: var(--teq-bg);
     padding: clamp(28px, 4vw, 56px) 16px;
   }
-
-  .teq-hero__wrap{
-    max-width: var(--teq-max);
-    margin: 0 auto;
-    position:relative;
-  }
+.teq-hero__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.teq-hero__wrap {
+  position: relative;
+  cursor: pointer;
+}
 
   .teq-hero__title{
     margin: 0 0 clamp(14px, 2.2vw, 22px);
