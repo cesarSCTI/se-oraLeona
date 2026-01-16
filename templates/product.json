@@ -278,7 +278,7 @@
         "icon_color": "#000000",
         "show_thumbnail_mobile": true,
         "thumnail_layout": "1",
-        "thumbnail_to_show": 5,
+        "thumbnail_to_show": 6,
         "show_sidebar": false,
         "sidebar_collapse": "collapse",
         "enable_sticky": false,
