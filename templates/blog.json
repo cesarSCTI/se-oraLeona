@@ -1,1 +1,126 @@
-{"sections":{"texto_title_receta_EHkPr4":{"type":"textoTitleReceta","blocks":{"heading_TNbng4":{"type":"heading","settings":{"heading":"Blog","heading_size":70,"heading_size_mb":50,"heading_line_height":1,"heading_color":"#000000"}}},"block_order":["heading_TNbng4"],"custom_css":["h2 {font-family: \"adobe-handwriting-ernie\"; font-weight: 400;}",".rich-text__blocks.text-center {display: flex; gap: 30px;}",".line {height: 4px; background: #000; display: block !important; width: 100%;}","@media only screen and (max-width: 768px) {.line {display: none !important; } .rich-text__blocks.text-center {justify-content: center; }}"],"settings":{"container":"container","padding_full_width":0,"enable_border_top":false,"enable_border_bottom":false,"color_border_bottom":"#e8e8e8","enable_minus_mg_top":false,"minus_spacing_top":-100,"rich_text_bg":"#fbf6f0","rich_text_bg_gradient":"","enable_column":false,"content_align":"center","mg_top_desktop":50,"mg_top_tablet":50,"mg_top_mobile":50,"mg_bottom_desktop":50,"mg_bottom_tablet":50,"mg_bottom_mobile":0}},"main":{"type":"main-blog","custom_css":["span.article-label {display: none;}",".blog-summary {line-height: 1.2em !important;}"],"settings":{"show_breadcrumb":false,"breadcrumb_alignment":"left","breadcrumb_bg":"#fbf6f0","breadcrumb_gradient":"","breadcrumb_bg_mb":"#fbf6f0","breadcrumb_gradient_mb":"","show_page_title":false,"page_title_alignment":"left","container":"1770","mg_top_desktop":0,"mg_top_tablet":0,"mg_top_mobile":0,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0,"show_sidebar":false,"show_collapse":false,"enable_sticky":false,"sidebar_layout":"layout_2","sidebar_collapse_default":"expand","sidebar_position":"left","sidebar_heading_font":"font_2","sidebar_heading_font_size":13,"sidebar_heading_font_weight":"900","sidebar_heading_text_transform":"uppercase","image_ratio":"square","portrait_aspect_ratio":70,"limit":7,"item_per_row":"4","show_placeholder":false,"show_date":true,"show_author":false,"show_comment":false,"show_summary":true,"show_read_more":false,"blog_text_align":"left","background_color":"#fbf6f0","title_color":"#232323","text_color":"#3c3c3c","info_color":"#999999","title_font_size":20,"title_mobile_font_size":18,"title_font_weight":"600","title_text_transform":"capitalize","text_font_size":13,"text_font_weight":"400","text_text_transform":"none","info_font_size":12,"info_font_weight":"400","info_text_transform":"none","info_font_style":"italic"}},"custom_liquid_r64DwQ":{"type":"custom-liquid","settings":{"custom_liquid":"<style>\n@media only screen and (min-width:768px){\nul.list-unstyled.list-social.clearfix {\n    display: flex;\n}}\n<\/style>"}}},"order":["texto_title_receta_EHkPr4","main","custom_liquid_r64DwQ"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "texto_title_receta_EHkPr4": {
+      "type": "textoTitleReceta",
+      "blocks": {
+        "heading_TNbng4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Blog",
+            "heading_size": 70,
+            "heading_size_mb": 50,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TNbng4"
+      ],
+      "custom_css": [
+        "h2 {font-family: \"Colfax\"; font-weight: 500;}",
+        ".rich-text__blocks.text-center {display: flex; gap: 30px;}",
+        "@media only screen and (max-width: 768px) {.line {display: none !important; } .rich-text__blocks.text-center {justify-content: center; }}"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#f7f7e1",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 50,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "custom_css": [
+        "span.article-label {display: none;}",
+        ".blog-summary {line-height: 1.2em !important;}"
+      ],
+      "settings": {
+        "show_breadcrumb": false,
+        "breadcrumb_alignment": "left",
+        "breadcrumb_bg": "#f7f7e1",
+        "breadcrumb_gradient": "",
+        "breadcrumb_bg_mb": "#fbf6f0",
+        "breadcrumb_gradient_mb": "",
+        "show_page_title": false,
+        "page_title_alignment": "left",
+        "container": "1770",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "show_sidebar": false,
+        "show_collapse": false,
+        "enable_sticky": false,
+        "sidebar_layout": "layout_2",
+        "sidebar_collapse_default": "expand",
+        "sidebar_position": "left",
+        "sidebar_heading_font": "font_2",
+        "sidebar_heading_font_size": 13,
+        "sidebar_heading_font_weight": "900",
+        "sidebar_heading_text_transform": "uppercase",
+        "image_ratio": "square",
+        "portrait_aspect_ratio": 70,
+        "limit": 7,
+        "item_per_row": "4",
+        "show_placeholder": false,
+        "show_date": true,
+        "show_author": false,
+        "show_comment": false,
+        "show_summary": true,
+        "show_read_more": false,
+        "blog_text_align": "left",
+        "background_color": "#fbf6f0",
+        "title_color": "#232323",
+        "text_color": "#3c3c3c",
+        "info_color": "#999999",
+        "title_font_size": 20,
+        "title_mobile_font_size": 18,
+        "title_font_weight": "600",
+        "title_text_transform": "capitalize",
+        "text_font_size": 13,
+        "text_font_weight": "400",
+        "text_text_transform": "none",
+        "info_font_size": 12,
+        "info_font_weight": "400",
+        "info_text_transform": "none",
+        "info_font_style": "italic"
+      }
+    },
+    "custom_liquid_r64DwQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n@media only screen and (min-width:768px){\nul.list-unstyled.list-social.clearfix {\n    display: flex;\n}}\n</style>"
+      }
+    }
+  },
+  "order": [
+    "texto_title_receta_EHkPr4",
+    "main",
+    "custom_liquid_r64DwQ"
+  ]
+}
