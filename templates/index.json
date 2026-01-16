@@ -21,7 +21,7 @@
         "image_Kyg69D": {
           "type": "image",
           "settings": {
-            "image_slide": "shopify://shop_images/VIDEO-CARACTURA_NO_FINAL-min.png",
+            "image_slide": "shopify://shop_images/intro.png",
             "alignment": "left",
             "enable_custom_position": false,
             "custom_horizontal": "",
