@@ -17,9 +17,10 @@
     "custom_press_banner_qgknRj": {
       "type": "custom-press-banner",
       "custom_css": [
-        "h3 {font-family: \"Charmer TM\" !important;}",
+        "h3 {font-family: \"Charmer TM\" !important; font-size: 50px !important; font-weight: 500 !important; margin-top: 20px !important;}",
         "h4 p {font-family: \"colfax-web\" !important;}",
-        ".desc {font-family: Charter !important;}"
+        ".desc {font-family: Charter !important;}",
+        "@media only screen and (min-width: 768px) {h3 {font-size: 80px !important; }}"
       ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
@@ -29,7 +30,7 @@
         "press_gradient": "",
         "align_items": "start",
         "press_image": "shopify://shop_images/img-recipe-manzana_chicana-min.png",
-        "press_image_width_ratio": 51,
+        "press_image_width_ratio": 50,
         "press_image_width": 550,
         "sub_title": "<p>2 OZ LEONA TEQUILA BLANCO <br/>6 OZ MUNDET (COLD) <br/>JUICE OF 1 LIME <br/>1 CUP CRUSHED ICE</p>",
         "letter_spacing_sub_title": "",
@@ -46,7 +47,7 @@
         "mg_bottom_title": 15,
         "title_color": "#000000",
         "des": "Blend until slushy and serve in a tall glass.",
-        "des_font_size": 16,
+        "des_font_size": 20,
         "des_font_size_mb": 16,
         "des_font_weight": "400",
         "mg_bottom_des": 15,
@@ -67,10 +68,10 @@
         "bg_gradient_color_button_hover": "",
         "btn_text_transform": "uppercase",
         "image_behavior": "none",
-        "mg_top_desktop": 50,
+        "mg_top_desktop": 80,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
+        "mg_bottom_desktop": 80,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
