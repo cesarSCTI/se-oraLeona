@@ -43,7 +43,7 @@
         "rich_text_bg": "#000000",
         "rich_text_bg_gradient": "",
         "enable_column": false,
-        "content_align": "center",
+        "content_align": "left",
         "mg_top_desktop": 100,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
