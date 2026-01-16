@@ -1,1 +1,472 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title_RcpwdL":{"type":"title","settings":{"fontsize_text":20,"fontsize_text_mb":18,"color_title":"#232323","spacing_top":0,"spacing_bottom":8}},"klaviyo_reviews_average_rating_fNYr33":{"type":"shopify:\/\/apps\/klaviyo-reviews\/blocks\/average-rating\/db20e365-d984-4ac4-9655-e1588d951ca9","settings":{"product":"{{product}}"}},"4f95b592-8369-4ab0-b30d-24e463fb6890":{"type":"price","settings":{"fontsize_text":30,"spacing_top":10,"spacing_bottom":15}},"4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c":{"type":"short_description","settings":{"word_number":"1000","fontsize_text":20,"color_text":"#000000","spacing_top":0,"spacing_bottom":12}},"custom_information_Pxx6AE":{"type":"custom_information","settings":{"icon":"","text":"AGAVE  {{ product.metafields.custom.agave.value }}","color_title":"#232323","text_description":"","color_des":"#999999","content_popup":"","fontsize_text":16,"spacing_top":0,"spacing_bottom":0}},"custom_information_bnBJVn":{"type":"custom_information","settings":{"icon":"","text":"BARREL AGED <span>{{ product.metafields.custom.barrel_aged.value }}<\/span>","color_title":"#232323","text_description":"","color_des":"#999999","content_popup":"","fontsize_text":16,"spacing_top":0,"spacing_bottom":0}},"custom_information_mAAGHE":{"type":"custom_information","settings":{"icon":"","text":"BARREL TYPE <span>{{ product.metafields.custom.barrel_type.value }}<\/span>","color_title":"#232323","text_description":"","color_des":"#999999","content_popup":"","fontsize_text":16,"spacing_top":0,"spacing_bottom":0}},"custom_information_bmnCjg":{"type":"custom_information","settings":{"icon":"","text":"NOSE <span>{{ product.metafields.custom.nose.value }}<\/span>","color_title":"#232323","text_description":"","color_des":"#999999","content_popup":"","fontsize_text":16,"spacing_top":0,"spacing_bottom":0}},"custom_information_NtHWW9":{"type":"custom_information","settings":{"icon":"","text":"TASTE<span> {{ product.metafields.custom.taste.value }}<\/span>","color_title":"#232323","text_description":"","color_des":"#999999","content_popup":"","fontsize_text":16,"spacing_top":0,"spacing_bottom":0}},"custom_img_irD8Ew":{"type":"customImg","settings":{"customTextImg":"RECOGNITIONS","customImg":"{{ product.metafields.custom.recognition.value }}","image_height":80}},"product_text_3th8H6":{"type":"product_text","settings":{"text":"Laelia Holiday Engraving","text_icon":"","text_description":"Make your gift feel more personal. Choose from three seasonal engravings and add a thoughtful, intentional touch to any bottle of Laelia Tequila. Available across all expressions, crafted in-house, and ready for holiday delivery.<br>\n<b>Order by December 8 for delivery before December 25.<br><\/b>\n(Price for engraving add-on is $20 USD. Engraving is added to your selected expression at checkout)","fontsize_text":14,"content_spacing":0,"custom_block_align":"left","color_title":"#232323","background_color_block":"#fbf6f0","background_gradient_color_block":"","spacing_top":30,"spacing_bottom":0}},"d98e243b-3682-495a-965a-1c7f7d460880":{"type":"variant_picker","settings":{"picker_type":"dropdown","show_variant_image_group":true,"enable_border_top":false,"enable_border_bottom":false,"color_border":"#e6e6e6","spacing_top":20,"spacing_bottom":0}},"f1b31d90-1e43-4948-9fe3-97ba43f6fb34":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_gift_card_recipient":false,"spacing_top":30,"spacing_bottom":10,"atc_animation":"none","atc_color":"#ffffff","atc_border_color":"#232323","atc_bg_color":"#232323","atc_bg_color_gradient":"","atc_color_hover":"#232323","atc_border_color_hover":"#232323","atc_bg_color_hover":"#ffffff","atc_bg_color_gradient_hover":"","bin_color":"#232323","bin_border_color":"#acacac","bin_bg_color":"#ffffff","bin_bg_color_gradient":"","bin_color_hover":"#ffffff","bin_border_color_hover":"#232323","bin_bg_color_hover":"#232323","bin_bg_color_hover_gradient":""}},"custom_information_j33CLN":{"type":"custom_information","settings":{"icon":"","text":"We guarantee the security of transactions and payments with our customers.","color_title":"#232323","text_description":"","color_des":"#999999","content_popup":"","fontsize_text":10,"spacing_top":5,"spacing_bottom":10}},"d97e417a-941b-4a5d-bef3-a651adb918d8":{"type":"variant_description","disabled":true,"settings":{"spacing_top":0,"spacing_bottom":12}},"b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a":{"type":"custom","settings":{"open_tab_mobile":true,"title":"Suggested Experience","type":"all","content":"{{ product.metafields.custom.uses | metafield_tag }}","enable_btn_show_more":false,"maximum_des_to_show":2000,"product_custom_source":"key_text","product_tab_key_metafield":""}},"custom_UHCNUy":{"type":"custom","settings":{"open_tab_mobile":false,"title":"Details","type":"all","content":"<p>{{ product.metafields.custom.details.value }}<\/p>","enable_btn_show_more":false,"maximum_des_to_show":2000,"product_custom_source":"dynamic","product_tab_key_metafield":""}},"custom_liquid_h7NeCm":{"type":"custom_liquid","settings":{"custom_liquid":"<style>\ndiv#tab-details .text {\n  font-family: \"Roboto Mono\";\n}\n.toggle-content p{\nfont-size:18px;\ncolor:#000;\n}\n.customImg {\n    display: flex;\n    gap: 20px;\n    align-items: flex-start;\n    flex-direction: column;\n    align-content: flex-start;\n    flex-wrap: wrap;\n    padding-top: 10px;\n    font-size: 18px;\n    font-family: 'Roboto mono';\n    font-weight: 600 !important;\n}\n<\/style>"}}},"block_order":["title_RcpwdL","klaviyo_reviews_average_rating_fNYr33","4f95b592-8369-4ab0-b30d-24e463fb6890","4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c","custom_information_Pxx6AE","custom_information_bnBJVn","custom_information_mAAGHE","custom_information_bmnCjg","custom_information_NtHWW9","custom_img_irD8Ew","product_text_3th8H6","d98e243b-3682-495a-965a-1c7f7d460880","f1b31d90-1e43-4948-9fe3-97ba43f6fb34","custom_information_j33CLN","d97e417a-941b-4a5d-bef3-a651adb918d8","b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a","custom_UHCNUy","custom_liquid_h7NeCm"],"custom_css":["h2.title span {font-family: \"Noto Serif Display\"; font-style: italic; font-weight: 400 !important;}","h1.productView-title {text-align: left; font-size: 40px; \/*padding: 50px 170px 10px 0px;*\/ font-weight: 500 !important;}",".productView-desc.halo-text-format {font-style: italic !important; line-height: 1.6em !important; padding-bottom: 20px !important;}","div .text {font-family: \"Roboto Mono\";}",".productView-customText {line-height: 22px !important;}",".productView-customText>*:first-child {font-size: 20px !important;}"],"settings":{"container":"1170","padding_full_width":0,"show_sticky_info":true,"mg_top_desktop":0,"mg_top_tablet":0,"mg_top_mobile":0,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0,"main_image_arrows_desktop":false,"main_image_arrows_mobile":false,"main_image_counter_mobile":false,"main_image_enable_parallax_mb":false,"main_image_show_zoom_icon_mb":false,"main_image_position":"left","main_image_layout":"1","main_image_show_custom_cursor":true,"count_color":"#191919","icon_color":"#000000","show_thumbnail_mobile":true,"thumnail_layout":"3","thumbnail_to_show":5,"show_sidebar":false,"sidebar_collapse":"collapse","enable_sticky":false,"sidebar_layout":"layout_1","sidebar_collapse_default":"close","sidebar_position":"left","sidebar_heading_font":"font_1","sidebar_heading_font_size":16,"sidebar_heading_font_weight":"700","sidebar_heading_text_transform":"uppercase","product_image_ratio":"adapt","portrait_aspect_ratio":101,"zoomed_image":true,"media_fit":"unset","product_image_popup":"fancybox","video_layout":"thumbnail","show_badge":true,"show_qty":false,"show_subtotal":false,"subtotal_style":"1","show_sticky_add_to_cart":false,"enable_sticky_add_to_cart_always_mobile":false,"show_sticky_vendor":false,"sticky_atc_layout":"1","show_tab":true,"tab_layout":"vertical","tab_layout_mobile":"vertical","icon_style_layout":"style_1","title_font_size":18,"title_font_size_mb":15,"font_weight_title":"400","title_text_transform":"none","title_padding_top_bottom":15,"tab_border_color":"#000000","tab_border_color_rgb":"","show_product_bundle":true,"background_color":"#f8f8f8","padding_top":30,"padding_top_tablet":30,"padding_top_mobile":30,"padding_bottom":60,"padding_bottom_tablet":40,"padding_bottom_mobile":30,"block_title":"Frequently Bought Together","block_title_align":"center","block_dots":false,"block_arrows":true,"product_style":"1","block_image_ratio":"adapt","bundle_discount":false,"bundle_discount_text":"Get a [discount]% discount buying these products together","bundle_discount_text_color":"#232323","total_btn_color":"#ffffff","total_btn_border":"#232323","total_btn_bg":"#232323","total_btn_bg_gradient":"","total_btn_color_hover":"#232323","total_btn_border_hover":"#232323","total_btn_bg_hover":"#ffffff","total_btn_bg_gradient_hover":""}},"1745528623cd042ce2":{"type":"apps","blocks":{"klaviyo_reviews_product_reviews_Y6TWjm":{"type":"shopify:\/\/apps\/klaviyo-reviews\/blocks\/product-reviews\/db20e365-d984-4ac4-9655-e1588d951ca9","settings":{}}},"block_order":["klaviyo_reviews_product_reviews_Y6TWjm"],"custom_css":[".kl_reviews__review__author {margin-top: 10px !important;}",".kl_reviews__review__title {line-height: 1.2em !important;}","@media only screen and (max-width: 768px) {.reviews_all_container {margin-left: 10px !important; margin-right: 10px !important; }}"],"settings":{"include_margins":true}},"product-recommendations":{"type":"product-recommendations","disabled":true,"settings":{"display_product_block":true,"product_block_container":"container","padding_full_width":0,"enable_border_top":true,"enable_border_bottom":false,"color_border_bottom":"#e8e8e8","border_style":"container","mg_top_desktop":40,"mg_top_tablet":35,"mg_top_mobile":35,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0,"product_block_layout":"slider","product_bg":"#ffffff","style_block_header":"style1","product_block_title":"Related Products","enable_border_title":false,"mg_top_title":27,"mg_bottom_title":3,"fontsize_title":18,"fontsize_title_mb":18,"color_title":"#232323","border_color_title":"#232323","product_block_title_align":"center","product_block_limit":6,"grid_gap":30,"product_block_per_row":"4","product_block_swipe_on_mobile":true,"product_block_dots":false,"product_block_dots_mb":true,"product_block_arrows":true,"product_block_arrows_mb":false,"product_block_show":"4","product_block_per_view":"4","show_half":true,"scroll_height":4,"scroll_track_bg":"#f1f1f1","scroll_thumb_color":"#000000","scroll_thumb_hover_color":"#444444","enable_hover_drag_icon":true,"enable_layout_special":false,"bg_card":"#ffffff","padding_card":15,"border_radius_card":5,"border_layout_card":"full","border_width_card":5,"border_color_card":"#f0f1f4"}},"product-recently-viewed":{"type":"product-recently-viewed","disabled":true,"settings":{"display_product_recently_viewed":true,"product_recently_viewed_container":"container","padding_full_width":0,"enable_border_top":true,"enable_border_bottom":false,"color_border_bottom":"#e8e8e8","border_style":"container","mg_top_desktop":80,"mg_top_tablet":50,"mg_top_mobile":30,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0,"product_recently_viewed_layout":"slider","product_bg":"#ffffff","product_bg_gradient":"","style_block_header":"style1","product_recently_viewed_title":"Recently Viewed Products","enable_border_title":false,"mg_top_title":27,"mg_bottom_title":3,"fontsize_title":18,"fontsize_title_mb":18,"border_color_title":"#232323","color_title":"#232323","product_recently_viewed_title_align":"center","product_recently_viewed_limit":10,"product_recently_viewed_image_ratio":"adapt","grid_gap":30,"product_recently_viewed_per_row":"4","product_recently_viewed_swipe_on_mobile":true,"product_recently_viewed_dots":false,"product_recently_viewed_dots_mb":true,"product_recently_viewed_arrows":true,"product_recently_viewed_arrows_mb":false,"product_recently_viewed_show":"4","product_block_per_view":"4","show_half":true,"scroll_height":4,"scroll_track_bg":"#f1f1f1","scroll_thumb_color":"#000000","scroll_thumb_hover_color":"#444444","enable_hover_drag_icon":false,"enable_layout_special":false,"bg_card":"#ffffff","padding_card":15,"border_radius_card":5,"border_layout_card":"full","border_width_card":5,"border_color_card":"#f0f1f4"}}},"order":["main","1745528623cd042ce2","product-recommendations","product-recently-viewed"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_RcpwdL": {
+          "type": "title",
+          "settings": {
+            "fontsize_text": 20,
+            "fontsize_text_mb": 18,
+            "color_title": "#232323",
+            "spacing_top": 0,
+            "spacing_bottom": 8
+          }
+        },
+        "4f95b592-8369-4ab0-b30d-24e463fb6890": {
+          "type": "price",
+          "settings": {
+            "fontsize_text": 30,
+            "spacing_top": 10,
+            "spacing_bottom": 15
+          }
+        },
+        "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c": {
+          "type": "short_description",
+          "settings": {
+            "word_number": "1000",
+            "fontsize_text": 20,
+            "color_text": "#000000",
+            "spacing_top": 0,
+            "spacing_bottom": 12
+          }
+        },
+        "custom_information_Pxx6AE": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "",
+            "text": "AGAVE  {{ product.metafields.custom.agave.value }}",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "content_popup": "",
+            "fontsize_text": 16,
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_information_bnBJVn": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "",
+            "text": "BARREL AGED <span>{{ product.metafields.custom.barrel_aged.value }}</span>",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "content_popup": "",
+            "fontsize_text": 16,
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_information_mAAGHE": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "",
+            "text": "BARREL TYPE <span>{{ product.metafields.custom.barrel_type.value }}</span>",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "content_popup": "",
+            "fontsize_text": 16,
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_information_bmnCjg": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "",
+            "text": "NOSE <span>{{ product.metafields.custom.nose.value }}</span>",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "content_popup": "",
+            "fontsize_text": 16,
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_information_NtHWW9": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "",
+            "text": "TASTE<span> {{ product.metafields.custom.taste.value }}</span>",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "content_popup": "",
+            "fontsize_text": 16,
+            "spacing_top": 0,
+            "spacing_bottom": 0
+          }
+        },
+        "custom_img_irD8Ew": {
+          "type": "customImg",
+          "settings": {
+            "customTextImg": "RECOGNITIONS",
+            "customImg": "{{ product.metafields.custom.recognition.value }}",
+            "image_height": 80
+          }
+        },
+        "product_text_3th8H6": {
+          "type": "product_text",
+          "disabled": true,
+          "settings": {
+            "text": "Laelia Holiday Engraving",
+            "text_icon": "",
+            "text_description": "Make your gift feel more personal. Choose from three seasonal engravings and add a thoughtful, intentional touch to any bottle of Laelia Tequila. Available across all expressions, crafted in-house, and ready for holiday delivery.<br>\n<b>Order by December 8 for delivery before December 25.<br></b>\n(Price for engraving add-on is $20 USD. Engraving is added to your selected expression at checkout)",
+            "fontsize_text": 14,
+            "content_spacing": 0,
+            "custom_block_align": "left",
+            "color_title": "#232323",
+            "background_color_block": "#fbf6f0",
+            "background_gradient_color_block": "",
+            "spacing_top": 30,
+            "spacing_bottom": 0
+          }
+        },
+        "d98e243b-3682-495a-965a-1c7f7d460880": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "dropdown",
+            "show_variant_image_group": true,
+            "enable_border_top": false,
+            "enable_border_bottom": false,
+            "color_border": "#e6e6e6",
+            "spacing_top": 20,
+            "spacing_bottom": 0
+          }
+        },
+        "f1b31d90-1e43-4948-9fe3-97ba43f6fb34": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "spacing_top": 30,
+            "spacing_bottom": 10,
+            "atc_animation": "none",
+            "atc_color": "#ffffff",
+            "atc_border_color": "#232323",
+            "atc_bg_color": "#232323",
+            "atc_bg_color_gradient": "",
+            "atc_color_hover": "#232323",
+            "atc_border_color_hover": "#232323",
+            "atc_bg_color_hover": "#ffffff",
+            "atc_bg_color_gradient_hover": "",
+            "bin_color": "#232323",
+            "bin_border_color": "#acacac",
+            "bin_bg_color": "#ffffff",
+            "bin_bg_color_gradient": "",
+            "bin_color_hover": "#ffffff",
+            "bin_border_color_hover": "#232323",
+            "bin_bg_color_hover": "#232323",
+            "bin_bg_color_hover_gradient": ""
+          }
+        },
+        "custom_information_j33CLN": {
+          "type": "custom_information",
+          "settings": {
+            "icon": "",
+            "text": "We guarantee the security of transactions and payments with our customers.",
+            "color_title": "#232323",
+            "text_description": "",
+            "color_des": "#999999",
+            "content_popup": "",
+            "fontsize_text": 10,
+            "spacing_top": 5,
+            "spacing_bottom": 10
+          }
+        },
+        "d97e417a-941b-4a5d-bef3-a651adb918d8": {
+          "type": "variant_description",
+          "disabled": true,
+          "settings": {
+            "spacing_top": 0,
+            "spacing_bottom": 12
+          }
+        },
+        "b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a": {
+          "type": "custom",
+          "settings": {
+            "open_tab_mobile": true,
+            "title": "Suggested Experience",
+            "type": "all",
+            "content": "",
+            "enable_btn_show_more": false,
+            "maximum_des_to_show": 2000,
+            "product_custom_source": "key_text",
+            "product_tab_key_metafield": ""
+          }
+        },
+        "custom_UHCNUy": {
+          "type": "custom",
+          "settings": {
+            "open_tab_mobile": false,
+            "title": "Details",
+            "type": "all",
+            "content": "<p></p>",
+            "enable_btn_show_more": false,
+            "maximum_des_to_show": 2000,
+            "product_custom_source": "dynamic",
+            "product_tab_key_metafield": ""
+          }
+        },
+        "custom_liquid_h7NeCm": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\ndiv#tab-details .text {\n  font-family: \"Roboto Mono\";\n}\n.toggle-content p{\nfont-size:18px;\ncolor:#000;\n}\n.customImg {\n    display: flex;\n    gap: 20px;\n    align-items: flex-start;\n    flex-direction: column;\n    align-content: flex-start;\n    flex-wrap: wrap;\n    padding-top: 10px;\n    font-size: 18px;\n    font-family: 'Roboto mono';\n    font-weight: 600 !important;\n}\n</style>"
+          }
+        }
+      },
+      "block_order": [
+        "title_RcpwdL",
+        "4f95b592-8369-4ab0-b30d-24e463fb6890",
+        "4036f89b-c2c5-49a4-9d6b-2fd29ce7c46c",
+        "custom_information_Pxx6AE",
+        "custom_information_bnBJVn",
+        "custom_information_mAAGHE",
+        "custom_information_bmnCjg",
+        "custom_information_NtHWW9",
+        "custom_img_irD8Ew",
+        "product_text_3th8H6",
+        "d98e243b-3682-495a-965a-1c7f7d460880",
+        "f1b31d90-1e43-4948-9fe3-97ba43f6fb34",
+        "custom_information_j33CLN",
+        "d97e417a-941b-4a5d-bef3-a651adb918d8",
+        "b9d6eb19-10f4-41f8-bfdc-ea10e8b3182a",
+        "custom_UHCNUy",
+        "custom_liquid_h7NeCm"
+      ],
+      "custom_css": [
+        "h2.title span {font-family: \"Noto Serif Display\"; font-style: italic; font-weight: 400 !important;}",
+        "h1.productView-title {text-align: left; font-size: 40px; /*padding: 50px 170px 10px 0px;*/ font-weight: 500 !important;}",
+        ".productView-desc.halo-text-format {font-style: italic !important; line-height: 1.6em !important; padding-bottom: 20px !important;}",
+        "div .text {font-family: \"Roboto Mono\";}",
+        ".productView-customText {line-height: 22px !important;}",
+        ".productView-customText > *:first-child {font-size: 20px !important;}"
+      ],
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 0,
+        "show_sticky_info": true,
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "main_image_arrows_desktop": false,
+        "main_image_arrows_mobile": false,
+        "main_image_counter_mobile": false,
+        "main_image_enable_parallax_mb": false,
+        "main_image_show_zoom_icon_mb": false,
+        "main_image_position": "left",
+        "main_image_layout": "1",
+        "main_image_show_custom_cursor": true,
+        "count_color": "#191919",
+        "icon_color": "#000000",
+        "show_thumbnail_mobile": true,
+        "thumnail_layout": "3",
+        "thumbnail_to_show": 5,
+        "show_sidebar": false,
+        "sidebar_collapse": "collapse",
+        "enable_sticky": false,
+        "sidebar_layout": "layout_1",
+        "sidebar_collapse_default": "close",
+        "sidebar_position": "left",
+        "sidebar_heading_font": "font_1",
+        "sidebar_heading_font_size": 16,
+        "sidebar_heading_font_weight": "700",
+        "sidebar_heading_text_transform": "uppercase",
+        "product_image_ratio": "adapt",
+        "portrait_aspect_ratio": 101,
+        "zoomed_image": true,
+        "media_fit": "unset",
+        "product_image_popup": "fancybox",
+        "video_layout": "thumbnail",
+        "show_badge": true,
+        "show_qty": false,
+        "show_subtotal": false,
+        "subtotal_style": "1",
+        "show_sticky_add_to_cart": false,
+        "enable_sticky_add_to_cart_always_mobile": false,
+        "show_sticky_vendor": false,
+        "sticky_atc_layout": "1",
+        "show_tab": true,
+        "tab_layout": "vertical",
+        "tab_layout_mobile": "vertical",
+        "icon_style_layout": "style_1",
+        "title_font_size": 18,
+        "title_font_size_mb": 15,
+        "font_weight_title": "400",
+        "title_text_transform": "none",
+        "title_padding_top_bottom": 15,
+        "tab_border_color": "#000000",
+        "tab_border_color_rgb": "",
+        "show_product_bundle": true,
+        "background_color": "#f8f8f8",
+        "padding_top": 30,
+        "padding_top_tablet": 30,
+        "padding_top_mobile": 30,
+        "padding_bottom": 60,
+        "padding_bottom_tablet": 40,
+        "padding_bottom_mobile": 30,
+        "block_title": "Frequently Bought Together",
+        "block_title_align": "center",
+        "block_dots": false,
+        "block_arrows": true,
+        "product_style": "1",
+        "block_image_ratio": "adapt",
+        "bundle_discount": false,
+        "bundle_discount_text": "Get a [discount]% discount buying these products together",
+        "bundle_discount_text_color": "#232323",
+        "total_btn_color": "#ffffff",
+        "total_btn_border": "#232323",
+        "total_btn_bg": "#232323",
+        "total_btn_bg_gradient": "",
+        "total_btn_color_hover": "#232323",
+        "total_btn_border_hover": "#232323",
+        "total_btn_bg_hover": "#ffffff",
+        "total_btn_bg_gradient_hover": ""
+      }
+    },
+    "1745528623cd042ce2": {
+      "type": "apps",
+      "custom_css": [
+        ".kl_reviews__review__author {margin-top: 10px !important;}",
+        ".kl_reviews__review__title {line-height: 1.2em !important;}",
+        "@media only screen and (max-width: 768px) {.reviews_all_container {margin-left: 10px !important; margin-right: 10px !important; }}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "display_product_block": true,
+        "product_block_container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": true,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "border_style": "container",
+        "mg_top_desktop": 40,
+        "mg_top_tablet": 35,
+        "mg_top_mobile": 35,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "product_block_layout": "slider",
+        "product_bg": "#ffffff",
+        "style_block_header": "style1",
+        "product_block_title": "Related Products",
+        "enable_border_title": false,
+        "mg_top_title": 27,
+        "mg_bottom_title": 3,
+        "fontsize_title": 18,
+        "fontsize_title_mb": 18,
+        "color_title": "#232323",
+        "border_color_title": "#232323",
+        "product_block_title_align": "center",
+        "product_block_limit": 6,
+        "grid_gap": 30,
+        "product_block_per_row": "4",
+        "product_block_swipe_on_mobile": true,
+        "product_block_dots": false,
+        "product_block_dots_mb": true,
+        "product_block_arrows": true,
+        "product_block_arrows_mb": false,
+        "product_block_show": "4",
+        "product_block_per_view": "4",
+        "show_half": true,
+        "scroll_height": 4,
+        "scroll_track_bg": "#f1f1f1",
+        "scroll_thumb_color": "#000000",
+        "scroll_thumb_hover_color": "#444444",
+        "enable_hover_drag_icon": true,
+        "enable_layout_special": false,
+        "bg_card": "#ffffff",
+        "padding_card": 15,
+        "border_radius_card": 5,
+        "border_layout_card": "full",
+        "border_width_card": 5,
+        "border_color_card": "#f0f1f4"
+      }
+    },
+    "product-recently-viewed": {
+      "type": "product-recently-viewed",
+      "disabled": true,
+      "settings": {
+        "display_product_recently_viewed": true,
+        "product_recently_viewed_container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": true,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "border_style": "container",
+        "mg_top_desktop": 80,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 30,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "product_recently_viewed_layout": "slider",
+        "product_bg": "#ffffff",
+        "product_bg_gradient": "",
+        "style_block_header": "style1",
+        "product_recently_viewed_title": "Recently Viewed Products",
+        "enable_border_title": false,
+        "mg_top_title": 27,
+        "mg_bottom_title": 3,
+        "fontsize_title": 18,
+        "fontsize_title_mb": 18,
+        "border_color_title": "#232323",
+        "color_title": "#232323",
+        "product_recently_viewed_title_align": "center",
+        "product_recently_viewed_limit": 10,
+        "product_recently_viewed_image_ratio": "adapt",
+        "grid_gap": 30,
+        "product_recently_viewed_per_row": "4",
+        "product_recently_viewed_swipe_on_mobile": true,
+        "product_recently_viewed_dots": false,
+        "product_recently_viewed_dots_mb": true,
+        "product_recently_viewed_arrows": true,
+        "product_recently_viewed_arrows_mb": false,
+        "product_recently_viewed_show": "4",
+        "product_block_per_view": "4",
+        "show_half": true,
+        "scroll_height": 4,
+        "scroll_track_bg": "#f1f1f1",
+        "scroll_thumb_color": "#000000",
+        "scroll_thumb_hover_color": "#444444",
+        "enable_hover_drag_icon": false,
+        "enable_layout_special": false,
+        "bg_card": "#ffffff",
+        "padding_card": 15,
+        "border_radius_card": 5,
+        "border_layout_card": "full",
+        "border_width_card": 5,
+        "border_color_card": "#f0f1f4"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1745528623cd042ce2",
+    "product-recommendations",
+    "product-recently-viewed"
+  ]
+}
