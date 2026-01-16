@@ -886,7 +886,7 @@
     "custom_css": [
       ".section-block-right.content-press {padding: 0px 5%;}",
       "a {text-decoration: none !important;}",
-      "h4.sub-title {font-family: \"adobe-handwriting-ernie\", sans-serif; font-weight: 400 !important;}",
+      "h4.sub-title {font-family: \"Colfax\", sans-serif; font-weight: 400 !important;}",
       ".wrapper-body {padding-bottom: 0px !important;}",
       "main#MainContent {background: #f7f7e1;}",
       ".container-1170 {margin-top: 0px !important;}",
