@@ -68,7 +68,7 @@
       "settings": {
         "url": "",
         "title": "“If I loved independence, it was because I considered it just and necessary.”",
-        "image": "shopify://shop_images/img-leona_vicario-min.png",
+        "image": "shopify://shop_images/img-leona-vicario1.png",
         "image_alt": "the story",
         "body_1": "<p><strong>LEONA VICARIO</strong> was one of the most important figures in Mexico’s War of Independence—a patriot, journalist, and one of the first women recognized as a heroine of the nation.</p><p>Born into privilege, she chose purpose over comfort. And in a world that told women to stay silent, she funded a revolution, defied an empire, and spoke her truth with fearless clarity. </p><p>When the independence movement began in 1810, Leona Vicario secretly joined the insurgent cause. She was part of Los Guadalupes, a secret network in Mexico City that gathered intelligence, raised funds, and smuggled supplies to the rebels fighting the Spanish crown. Using her wealth, she financed weapons and materials for the insurgents and passed along critical information.</p>",
         "body_2": "<p>She was arrested in 1813 but refused to betray her fellow insurgents despite pressure from colonial authorities. </p><p>After Mexico’s independence, Leona Vicario wrote essays and letters defending her role—and that of other women—in public life. She pushed back against critics who tried to portray her as merely a passive or emotional participant.</p>",
@@ -84,7 +84,7 @@
         ".teq-hero {padding-bottom: 100px !important;}",
         "h2 {font-size: 20px !important; line-height: 1.2em !important; margin-bottom: 5px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {h2 {font-size: 30px !important;} .teq-hero .rte p {font-size: 25px !important; }}"
+        "@media only screen and (min-width: 768px) {h2 {font-size: 30px !important; } .teq-hero .rte p {font-size: 25px !important; }}"
       ],
       "name": "Section 1",
       "settings": {
