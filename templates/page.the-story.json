@@ -14,10 +14,10 @@
       "disabled": true,
       "settings": {}
     },
-    "rich_text_jUVr4M": {
+    "rich_text_NGKb7K": {
       "type": "rich-text",
       "blocks": {
-        "heading_VMDHbi": {
+        "heading_BUiB9e": {
           "type": "heading",
           "settings": {
             "heading": "THE STORY",
@@ -29,7 +29,7 @@
         }
       },
       "block_order": [
-        "heading_VMDHbi"
+        "heading_BUiB9e"
       ],
       "custom_css": [
         "h2 {font-family: colfax-web; font-weight: 500 !important;}"
@@ -73,29 +73,6 @@
         "body_1": "",
         "body_2": "",
         "max_width": 1400,
-        "bg_color": "#f7f7e1",
-        "title_color": "#111111",
-        "text_color": "#2b2b2b"
-      }
-    },
-    "section1_BPrqei": {
-      "type": "section1",
-      "disabled": true,
-      "custom_css": [
-        ".teq-hero {padding-bottom: 100px !important;}",
-        "h2 {font-size: 20px !important; line-height: 1.2em !important; margin-bottom: 5px !important;}",
-        ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {h2 {font-size: 30px !important; } .teq-hero .rte p {font-size: 25px !important; }}"
-      ],
-      "name": "Section 1",
-      "settings": {
-        "url": "",
-        "title": "",
-        "image": "shopify://shop_images/img-story-senora_leona.jpg-min.png",
-        "image_alt": "",
-        "body_1": "<h2><strong>HER STORY IS NOT JUST ABOUT REBELLION</strong> —</h2><p>it’s about ownership of one’s voice, choices, and destiny. This is the spirit that drives everything we create and support.</p>",
-        "body_2": "",
-        "max_width": 1250,
         "bg_color": "#f7f7e1",
         "title_color": "#111111",
         "text_color": "#2b2b2b"
@@ -218,14 +195,68 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
+    },
+    "rich_text_jUVr4M": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VMDHbi": {
+          "type": "heading",
+          "settings": {
+            "heading": "HER STORY IS NOT JUST ABOUT REBELLION",
+            "heading_size": 20,
+            "heading_size_mb": 18,
+            "heading_line_height": 1.5,
+            "heading_color": "#1d181a"
+          }
+        },
+        "text_GR6qCT": {
+          "type": "text",
+          "settings": {
+            "text": "<p> —it’s about ownership of one’s voice, choices, and destiny. This is the spirit that drives everything we create and support.</p>",
+            "text_size": 18,
+            "text_size_mb": 16,
+            "text_line_height": 1.5,
+            "margin_top_text": 0,
+            "text_color": "#000000",
+            "text_width": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_VMDHbi",
+        "text_GR6qCT"
+      ],
+      "custom_css": [
+        "h2 {font-family: colfax-web; font-weight: 500 !important;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#f7f7e1",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "left",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 50
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_jUVr4M",
+    "rich_text_NGKb7K",
     "section1_RVRiJW",
-    "section1_BPrqei",
     "custom_press_banner2_my7k8r",
-    "custom_press_banner_6t9rP4"
+    "custom_press_banner_6t9rP4",
+    "rich_text_jUVr4M"
   ]
 }
