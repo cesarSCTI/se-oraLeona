@@ -103,6 +103,9 @@
     },
     "custom_press_banner2_my7k8r": {
       "type": "custom-press-banner2",
+      "custom_css": [
+        "@media only screen and (min-width: 768px) {.section-block-right.content-press {padding-left:0;;}}"
+      ],
       "name": "custom press banner 2",
       "settings": {
         "container": "1320",
