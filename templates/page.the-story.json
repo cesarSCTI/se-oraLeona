@@ -104,7 +104,7 @@
     "custom_press_banner2_my7k8r": {
       "type": "custom-press-banner2",
       "custom_css": [
-        "@media only screen and (min-width: 768px) {.section-block-right.content-press {padding-left:0;;}}"
+        "@media only screen and (min-width: 768px) {.section-block-right.content-press {padding-left: 0; }}"
       ],
       "name": "custom press banner 2",
       "settings": {
@@ -136,7 +136,7 @@
         "des_font_weight": "400",
         "mg_bottom_des": 15,
         "des_color": "#000000",
-        "item_spacing": 120,
+        "item_spacing": 0,
         "content_max_width": 1000,
         "button_text": "",
         "button_link": "",
