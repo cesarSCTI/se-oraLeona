@@ -21,7 +21,7 @@
           "type": "heading",
           "settings": {
             "heading": "THE STORY",
-            "heading_size": 80,
+            "heading_size": 45,
             "heading_size_mb": 30,
             "heading_line_height": 1,
             "heading_color": "#1d181a"
@@ -32,7 +32,7 @@
         "heading_VMDHbi"
       ],
       "custom_css": [
-        "h2 {font-family: Colfax !important; font-weight: 500 !important;}"
+        "h2 {font-family: colfax-web; font-weight: 500 !important;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -59,10 +59,10 @@
       "type": "section1",
       "custom_css": [
         ".teq-hero__img {object-fit: contain; max-height: 450px;}",
-        ".teq-hero__title {font-family: Charmer TM !important; font-size: 25px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
+        ".teq-hero__title {font-family: Charmer TM !important; font-size: 35px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
         ".rte > p:last-child {margin-top: 20px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {.teq-hero__title {font-size: 65px !important; padding: 0px 180px 0px 180px !important; } .teq-hero .rte p {font-size: 25px !important; }}"
+        "@media only screen and (min-width: 768px) {}"
       ],
       "name": "Section 1",
       "settings": {
