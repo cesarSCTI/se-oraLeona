@@ -58,7 +58,7 @@
     "section1_RVRiJW": {
       "type": "section1",
       "custom_css": [
-        ".teq-hero__img {object-fit: contain; max-width: 60% !important;}",
+        ".teq-hero__img {object-fit: contain;}",
         ".teq-hero__title {font-family: Charmer TM !important; font-size: 25px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
         ".rte > p:last-child {margin-top: 20px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
@@ -68,7 +68,7 @@
       "settings": {
         "url": "",
         "title": "“If I loved independence, it was because I considered it just and necessary.”",
-        "image": "shopify://shop_images/img-leona-vicario1.png",
+        "image": "shopify://shop_images/img-leona_vicario-min_8a321159-a0b1-4bd8-95a0-427a5f265ee4.png",
         "image_alt": "the story",
         "body_1": "<p><strong>LEONA VICARIO</strong> was one of the most important figures in Mexico’s War of Independence—a patriot, journalist, and one of the first women recognized as a heroine of the nation.</p><p>Born into privilege, she chose purpose over comfort. And in a world that told women to stay silent, she funded a revolution, defied an empire, and spoke her truth with fearless clarity. </p><p>When the independence movement began in 1810, Leona Vicario secretly joined the insurgent cause. She was part of Los Guadalupes, a secret network in Mexico City that gathered intelligence, raised funds, and smuggled supplies to the rebels fighting the Spanish crown. Using her wealth, she financed weapons and materials for the insurgents and passed along critical information.</p>",
         "body_2": "<p>She was arrested in 1813 but refused to betray her fellow insurgents despite pressure from colonial authorities. </p><p>After Mexico’s independence, Leona Vicario wrote essays and letters defending her role—and that of other women—in public life. She pushed back against critics who tried to portray her as merely a passive or emotional participant.</p>",
