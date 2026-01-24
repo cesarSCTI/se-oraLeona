@@ -227,7 +227,8 @@
         "text_GR6qCT"
       ],
       "custom_css": [
-        "h2 {font-family: colfax-web; font-weight: 500 !important;}"
+        "h2 {font-family: colfax-web; font-weight: 500 !important;}",
+        "p {font-family: Charter;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
