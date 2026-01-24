@@ -58,7 +58,7 @@
     "section1_RVRiJW": {
       "type": "section1",
       "custom_css": [
-        ".teq-hero__img {object-fit: contain;}",
+        ".teq-hero__img {object-fit: contain; max-height: 450px;}",
         ".teq-hero__title {font-family: Charmer TM !important; font-size: 25px !important; text-transform: lowercase !important; font-weight: 500 !important; letter-spacing: 0em !important;}",
         ".rte > p:last-child {margin-top: 20px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
