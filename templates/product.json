@@ -100,7 +100,7 @@
           "type": "custom_information",
           "settings": {
             "icon": "",
-            "text": "TASTE {{ product.metafields.custom.taste.value }}",
+            "text": "TASTE<span> {{ product.metafields.custom.taste.value }}</span>",
             "color_title": "#232323",
             "text_description": "",
             "color_des": "#999999",
