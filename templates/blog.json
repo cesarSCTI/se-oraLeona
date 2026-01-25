@@ -53,6 +53,7 @@
     },
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "custom_css": [
         "span.article-label {display: none;}",
         ".blog-summary {line-height: 1.2em !important;}"
@@ -113,14 +114,30 @@
     },
     "custom_liquid_r64DwQ": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<style>\n@media only screen and (min-width:768px){\nul.list-unstyled.list-social.clearfix {\n    display: flex;\n}}\n</style>"
+      }
+    },
+    "blog_recipes_list_arFUa8": {
+      "type": "Blog-Recipes-list",
+      "name": "Blog - Recipes list",
+      "settings": {
+        "heading": "RECIPES",
+        "bg_color": "#141414",
+        "heading_color": "#F2EFEA",
+        "overlay_color": "#B00078",
+        "overlay_opacity": 35,
+        "gap": 24,
+        "articles_limit": 12,
+        "show_pagination": true
       }
     }
   },
   "order": [
     "texto_title_receta_EHkPr4",
     "main",
-    "custom_liquid_r64DwQ"
+    "custom_liquid_r64DwQ",
+    "blog_recipes_list_arFUa8"
   ]
 }
