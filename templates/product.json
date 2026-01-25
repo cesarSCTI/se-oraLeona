@@ -250,7 +250,7 @@
       ],
       "custom_css": [
         "h2.title span {font-family: Charter !important; font-style: italic; font-weight: 400 !important; display: block;}",
-        ".customImg span {font-size: xxx-large; font-family: Charmer TM !important; letter-spacing: 1px;}",
+        ".customImg span {font-size: xxx-large; font-family: Charmer TM !important; letter-spacing: 1px; margin-top:20px;}",
         "h2.title {margin-bottom: 20px;}",
         "h1.productView-title {text-align: left; font-size: 40px; font-weight: 500 !important;}",
         ".productView-desc.halo-text-format {font-family: \"Charter BT Pro\"; line-height: 1.6em !important; padding-bottom: 20px !important; font-style: italic !important;}",
