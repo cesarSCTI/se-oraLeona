@@ -12,7 +12,55 @@
     "main": {
       "type": "main-article",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "show_breadcrumb": false,
+        "breadcrumb_alignment": "left",
+        "breadcrumb_bg": "",
+        "breadcrumb_gradient": "",
+        "breadcrumb_bg_mb": "#f6f6f6",
+        "breadcrumb_gradient_mb": "",
+        "show_page_title": true,
+        "page_title_alignment": "left",
+        "container": "container",
+        "mg_top_desktop": 0,
+        "mg_top_tablet": 0,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "show_sidebar": true,
+        "show_collapse": false,
+        "enable_sticky": false,
+        "sidebar_layout": "layout_1",
+        "sidebar_collapse_default": "expand",
+        "sidebar_position": "left",
+        "sidebar_heading_font": "font_1",
+        "sidebar_heading_font_size": 14,
+        "sidebar_heading_font_weight": "700",
+        "sidebar_heading_text_transform": "uppercase",
+        "show_main_img": false,
+        "show_author": true,
+        "show_date": true,
+        "show_tags": true,
+        "show_share": true,
+        "show_next_prev": true,
+        "background_color": "",
+        "title_font": "font_1",
+        "title_font_size": 18,
+        "title_mobile_font_size": 18,
+        "title_font_weight": "600",
+        "title_text_transform": "capitalize",
+        "title_color": "#232323",
+        "text_font_size": 12,
+        "text_font_weight": "400",
+        "text_text_transform": "none",
+        "text_color": "#3c3c3c",
+        "info_font_size": 12,
+        "info_font_weight": "400",
+        "info_text_transform": "capitalize",
+        "info_font_style": "normal",
+        "info_color": "#999999"
+      }
     },
     "custom_press_banner_qgknRj": {
       "type": "custom-press-banner",
@@ -75,10 +123,23 @@
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
+    },
+    "recipies_thumbails_nRbAzQ": {
+      "type": "recipies-thumbails",
+      "name": "Blog thumbnails",
+      "settings": {
+        "blog": "recipies",
+        "limit": 8,
+        "thumb_size": 90,
+        "gap": 12,
+        "radius": 0,
+        "bg_color": "#f7f7e1"
+      }
     }
   },
   "order": [
     "main",
-    "custom_press_banner_qgknRj"
+    "custom_press_banner_qgknRj",
+    "recipies_thumbails_nRbAzQ"
   ]
 }
