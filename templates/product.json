@@ -100,7 +100,7 @@
           "type": "custom_information",
           "settings": {
             "icon": "",
-            "text": "TASTE<span> {{ product.metafields.custom.taste.value }}</span>",
+            "text": "TASTE {{ product.metafields.custom.taste.value }}",
             "color_title": "#232323",
             "text_description": "",
             "color_des": "#999999",
@@ -113,7 +113,7 @@
         "custom_img_irD8Ew": {
           "type": "customImg",
           "settings": {
-            "customTextImg": "RECOGNITIONS",
+            "customTextImg": "Recognitions",
             "customImg": "{{ product.metafields.custom.recognition.value }}",
             "image_height": 80
           }
@@ -250,6 +250,7 @@
       ],
       "custom_css": [
         "h2.title span {font-family: Charter !important; font-style: italic; font-weight: 400 !important; display: block;}",
+        ".customImg span {font-size: xxx-large; font-family: Charmer TM !important; letter-spacing: 1px;}",
         "h2.title {margin-bottom: 20px;}",
         "h1.productView-title {text-align: left; font-size: 40px; font-weight: 500 !important;}",
         ".productView-desc.halo-text-format {font-family: \"Charter BT Pro\"; line-height: 1.6em !important; padding-bottom: 20px !important; font-style: italic !important;}",
