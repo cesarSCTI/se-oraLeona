@@ -1,12 +1,268 @@
+
+{%- liquid
+  assign articles_limit = section.settings.articles_limit | default: 12
+-%}
+
+<section class="recipes-blog" style="
+  --recipes-bg: {{ section.settings.bg_color }};
+  --recipes-heading: {{ section.settings.heading_color }};
+  --recipes-overlay: {{ section.settings.overlay_color }};
+  --recipes-overlay-opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  --recipes-gap: {{ section.settings.gap }}px;
+">
+  <div class="recipes-blog__inner page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="recipes-blog__heading">{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+
+    <div class="recipes-blog__list">
+      {% paginate blog.articles by articles_limit %}
+        {% for article in blog.articles %}
+          <article class="recipes-card">
+            <a class="recipes-card__link" href="{{ article.url }}">
+              <div class="recipes-card__media">
+                {% if article.image %}
+                  {{
+                    article.image
+                    | image_url: width: 2400
+                    | image_tag:
+                      loading: 'lazy',
+                      class: 'recipes-card__img',
+                      alt: article.image.alt | default: article.title | escape
+                  }}
+                {% else %}
+                  <div class="recipes-card__placeholder"></div>
+                {% endif %}
+
+                <div class="recipes-card__overlay"></div>
+
+                <div class="recipes-card__titleWrap">
+                  <h3 class="recipes-card__title">{{ article.title }}</h3>
+                </div>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+
+        {% if paginate.pages > 1 and section.settings.show_pagination %}
+          <nav class="recipes-blog__pagination" role="navigation" aria-label="Pagination">
+            <div class="recipes-blog__pagination-inner">
+              {% if paginate.previous %}
+                <a class="recipes-blog__pageLink" href="{{ paginate.previous.url }}">Anterior</a>
+              {% endif %}
+
+              <span class="recipes-blog__pageStatus">
+                Página {{ paginate.current_page }} de {{ paginate.pages }}
+              </span>
+
+              {% if paginate.next %}
+                <a class="recipes-blog__pageLink" href="{{ paginate.next.url }}">Siguiente</a>
+              {% endif %}
+            </div>
+          </nav>
+        {% endif %}
+      {% endpaginate %}
+    </div>
+  </div>
+</section>
+
+{% style %}
+  .recipes-blog {
+    background: var(--recipes-bg);
+    padding: 48px 0;
+  }
+
+  .recipes-blog__heading {
+    color: var(--recipes-heading);
+    font-size: 28px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0 0 22px;
+    font-weight: 700;
+  }
+
+  .recipes-blog__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--recipes-gap);
+  }
+
+  .recipes-card {
+    border-radius: 0; /* look tipo editorial */
+    overflow: hidden;
+  }
+
+  .recipes-card__link {
+    display: block;
+    text-decoration: none;
+  }
+
+  .recipes-card__media {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+  }
+
+  /* Alto fijo “hero card” como en tu captura */
+  .recipes-card__media::before {
+    content: "";
+    display: block;
+    padding-top: 46%; /* ajusta 40–60% según tu gusto */
+  }
+
+  .recipes-card__img,
+  .recipes-card__placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .recipes-card__img {
+    object-fit: cover;
+    transform: scale(1.01);
+  }
+
+  .recipes-card__placeholder {
+    background: #222;
+  }
+
+  /* Overlay (tinte magenta/oscuro) */
+  .recipes-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, var(--recipes-overlay) 100%, transparent);
+    opacity: var(--recipes-overlay-opacity);
+    pointer-events: none;
+  }
+
+  /* Título centrado */
+  .recipes-card__titleWrap {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .recipes-card__title {
+    margin: 0;
+    color: #fff;
+    font-size: 44px;
+    line-height: 1.05;
+    font-weight: 600;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.55);
+  }
+
+  /* Hover editorial sutil */
+  @media (hover: hover) {
+    .recipes-card__link:hover .recipes-card__img {
+      transform: scale(1.04);
+      transition: transform 260ms ease;
+    }
+  }
+
+  .recipes-blog__pagination {
+    margin-top: 28px;
+  }
+
+  .recipes-blog__pagination-inner {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    color: #cfcfcf;
+  }
+
+  .recipes-blog__pageLink {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* Responsive */
+  @media (max-width: 749px) {
+    .recipes-blog {
+      padding: 34px 0;
+    }
+    .recipes-card__title {
+      font-size: 30px;
+    }
+    .recipes-card__media::before {
+      padding-top: 62%;
+    }
+  }
+{% endstyle %}
+
 {% schema %}
 {
-  "name": "List recipies",
+  "name": "Blog - Recipes list",
   "settings": [
-    
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "RECIPES"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Color de fondo",
+      "default": "#141414"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color del título",
+      "default": "#F2EFEA"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Color del overlay (tinte)",
+      "default": "#B00078"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Opacidad overlay (%)",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "default": 35
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Espaciado entre cards (px)",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "articles_limit",
+      "label": "Artículos por página",
+      "min": 3,
+      "max": 24,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Mostrar paginación",
+      "default": true
+    }
   ],
   "presets": [
     {
-      "name": "List recipies"
+      "name": "Blog - Recipes list"
     }
   ]
 }
