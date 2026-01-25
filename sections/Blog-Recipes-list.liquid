@@ -133,13 +133,17 @@
   }
 
   /* Overlay (tinte magenta/oscuro) */
-  .recipes-card__overlay {
-    position: absolute;
-    inset: 0;
-    background: color-mix(in srgb, var(--recipes-overlay) 100%, transparent);
-    opacity: var(--recipes-overlay-opacity);
-    pointer-events: none;
-  }
+.recipes-card__overlay{
+  position:absolute;
+  inset:0;
+  background: var(--recipes-overlay);
+  opacity: var(--recipes-overlay-opacity);
+  pointer-events:none;
+  z-index: 2;
+}
+.recipes-card__img{ z-index: 1; position:absolute; inset:0; }
+.recipes-card__titleWrap{ z-index: 3; }
+
 
   /* Título centrado */
   .recipes-card__titleWrap {
