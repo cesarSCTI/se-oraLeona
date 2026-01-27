@@ -72,7 +72,9 @@
         </div>
       {% endfor %}
     </div>
-    <a href="{{ section.settings.link }}" class="linkRecipies">{{ section.settings.linkButton }}</a>
+    <div class="og-link">
+        <a href="{{ section.settings.link }}" class="linkRecipies">{{ section.settings.linkButton }}</a>
+    </div>
   </div>
 </section>
 
@@ -81,6 +83,13 @@
         border-bottom:solid 2px #F7F7E1;
         color:#F7F7E1;
         padding: 10px 25px;
+    }
+    .og-link{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:50px 0px;
     }
   .og-section {
     padding: 24px 0;
