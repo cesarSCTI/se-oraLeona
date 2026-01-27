@@ -470,7 +470,7 @@
         "cols_tablet": 2,
         "cols_mobile": 1,
         "linkButton": "VIEW ALL RECIPES",
-        "link": ""
+        "link": "shopify://blogs/recipies"
       }
     }
   },
