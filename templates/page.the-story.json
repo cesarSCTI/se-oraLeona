@@ -229,7 +229,7 @@
       "custom_css": [
         "h2 {font-family: colfax-web; font-weight: 500 !important;}",
         "p {font-family: Charter;}",
-        ".container {max-width: 1350px; padding:0px}",
+        ".container {max-width: 1350px; padding:0px;}",
         "@media only screen and (max-width: 768px) {.container {padding: 0px 35px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
