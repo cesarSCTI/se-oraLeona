@@ -1,0 +1,304 @@
+{% comment %}
+  Section: Overlay Grid (blocks)
+{% endcomment %}
+
+<section
+  class="og-section"
+  style="
+    --og-gap: {{ section.settings.gap }}px;
+    --og-radius: {{ section.settings.radius }}px;
+  "
+>
+  <div class="og-wrapper page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="og-heading">{{ section.settings.heading | escape }}</h2>
+    {% endif %}
+
+    <div
+      class="og-grid"
+      style="
+        --og-cols-desktop: {{ section.settings.cols_desktop }};
+        --og-cols-tablet: {{ section.settings.cols_tablet }};
+        --og-cols-mobile: {{ section.settings.cols_mobile }};
+      "
+    >
+      {% for block in section.blocks %}
+        {% assign has_link = false %}
+        {% if block.settings.link != blank %}
+          {% assign has_link = true %}
+        {% endif %}
+
+        <div class="og-item" {{ block.shopify_attributes }}>
+          {% if has_link %}
+            <a class="og-card" href="{{ block.settings.link }}">
+          {% else %}
+            <div class="og-card" role="group" aria-label="{{ block.settings.title | escape }}">
+          {% endif %}
+
+              <div
+                class="og-media"
+                style="
+                  --og-overlay-color: {{ block.settings.overlay_color }};
+                  --og-overlay-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};
+                "
+              >
+                {% if block.settings.image != blank %}
+                  {{
+                    block.settings.image
+                    | image_url: width: 2000
+                    | image_tag:
+                      loading: 'lazy',
+                      class: 'og-img',
+                      alt: block.settings.title | escape
+                  }}
+                {% else %}
+                  <div class="og-img og-placeholder"></div>
+                {% endif %}
+
+                <div class="og-overlay" aria-hidden="true"></div>
+
+                {% if block.settings.title != blank %}
+                  <div class="og-title-wrap" aria-hidden="true">
+                    <div class="og-title">{{ block.settings.title | escape }}</div>
+                  </div>
+                {% endif %}
+              </div>
+
+          {% if has_link %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .og-section {
+    padding: 24px 0;
+  }
+
+  .og-heading {
+    margin: 0 0 16px;
+  }
+
+  .og-grid {
+    display: grid;
+    gap: var(--og-gap);
+    grid-template-columns: repeat(var(--og-cols-desktop), minmax(0, 1fr));
+  }
+
+  /* Tablet */
+  @media (max-width: 990px) {
+    .og-grid {
+      grid-template-columns: repeat(var(--og-cols-tablet), minmax(0, 1fr));
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 749px) {
+    .og-grid {
+      grid-template-columns: repeat(var(--og-cols-mobile), minmax(0, 1fr));
+    }
+  }
+
+  .og-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--og-radius);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .og-media {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Puedes cambiarlo si quieres */
+    border-radius: var(--og-radius);
+    overflow: hidden;
+    background: #f3f3f3;
+  }
+
+  .og-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: transform 220ms ease;
+  }
+
+  .og-placeholder {
+    background: repeating-linear-gradient(
+      45deg,
+      #eee,
+      #eee 10px,
+      #f6f6f6 10px,
+      #f6f6f6 20px
+    );
+  }
+
+  /* Overlay y título ocultos por defecto */
+  .og-overlay {
+    position: absolute;
+    inset: 0;
+    background: var(--og-overlay-color);
+    opacity: 0;
+    transition: opacity 220ms ease;
+    pointer-events: none;
+  }
+
+  .og-title-wrap {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 220ms ease, transform 220ms ease;
+    pointer-events: none;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .og-title {
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: 700;
+    /* Por defecto blanco, pero puedes ajustarlo a tu gusto */
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,.35);
+  }
+
+  /* Hover: mostrar overlay + título */
+  .og-card:hover .og-overlay {
+    opacity: var(--og-overlay-opacity);
+  }
+
+  .og-card:hover .og-title-wrap {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .og-card:hover .og-img {
+    transform: scale(1.04);
+  }
+
+  /* Accesibilidad: focus con teclado */
+  .og-card:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Overlay Grid (Blocks)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título de sección",
+      "default": "Featured"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Separación entre items",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "cols_desktop",
+      "label": "Columnas (desktop)",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "cols_tablet",
+      "label": "Columnas (tablet)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "cols_mobile",
+      "label": "Columnas (mobile)",
+      "min": 1,
+      "max":5,
+      "step": 1,
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título (aparece en hover)",
+          "default": "Título"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Color overlay",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Opacidad overlay (%)",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "default": 40
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Overlay Grid (Blocks)",
+      "blocks": [
+        { "type": "item" },
+        { "type": "item" },
+        { "type": "item" }
+      ]
+    }
+  ]
+}
+{% endschema %}
