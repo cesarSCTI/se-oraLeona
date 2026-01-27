@@ -11,7 +11,7 @@
 >
   <div class="og-wrapper page-width">
     {% if section.settings.heading != blank %}
-      <h2 class="og-heading">{{ section.settings.heading | escape }}</h2>
+      <h2 class="og-heading">{{ section.settings.heading}}</h2>
     {% endif %}
 
     <div
@@ -32,7 +32,7 @@
           {% if has_link %}
             <a class="og-card" href="{{ block.settings.link }}">
           {% else %}
-            <div class="og-card" role="group" aria-label="{{ block.settings.title | escape }}">
+            <div class="og-card" role="group" aria-label="{{ block.settings.title}}">
           {% endif %}
 
               <div
