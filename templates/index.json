@@ -673,7 +673,7 @@
             "image": "shopify://shop_images/img-recipe-spicy_batanga-home_90570fe5-332d-4731-a9e1-e1ac2536c2c2.png",
             "title": "Título",
             "link": "",
-            "overlay_color": "#000000",
+            "overlay_color": "#9f006c",
             "overlay_opacity": 40
           }
         },
@@ -683,7 +683,7 @@
             "image": "shopify://shop_images/img-recipe-leona_blood-home.png",
             "title": "Título",
             "link": "",
-            "overlay_color": "#000000",
+            "overlay_color": "#9f006c",
             "overlay_opacity": 40
           }
         },
@@ -693,7 +693,7 @@
             "image": "shopify://shop_images/img-recipe-manzana_chicana-home.png",
             "title": "Título",
             "link": "",
-            "overlay_color": "#000000",
+            "overlay_color": "#9f006c",
             "overlay_opacity": 40
           }
         }
@@ -706,6 +706,7 @@
       "name": "Overlay Grid (Blocks)",
       "settings": {
         "heading": "Featured",
+        "bg": "#1d181a",
         "gap": 16,
         "radius": 10,
         "cols_desktop": 3,
