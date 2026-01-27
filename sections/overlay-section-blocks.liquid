@@ -72,10 +72,16 @@
         </div>
       {% endfor %}
     </div>
+    <a href="{{ section.settings.linkButton }}" class="linkRecipies">{{ section.settings.link }}</a>
   </div>
 </section>
 
 <style>
+    .linkRecipies{
+        border-bottom:solid 2px #F7F7E1;
+        color:#F7F7E1;
+        padding: 10px 25px;
+    }
   .og-section {
     padding: 24px 0;
     background:{{ section.settings.bg }};
