@@ -79,7 +79,6 @@
   .og-section {
     padding: 24px 0;
     background:{{ section.settings.bg }};
-    max-width:1366px;
   }
 
   .og-heading {
@@ -89,6 +88,7 @@
   .og-grid {
     display: grid;
     gap: var(--og-gap);
+    max-width:1366px;
     grid-template-columns: repeat(var(--og-cols-desktop), minmax(0, 1fr));
   }
 
