@@ -21,7 +21,7 @@
         "@media only screen and (max-width: 768px) {.areaFooterLinks ul {gap: 15px !important; font-size: 13px !important; flex-direction: row !important; line-height: 1.2em !important; }}"
       ],
       "settings": {
-        "text1": "",
+        "text1": "A tequila Crafted by Casa Natima",
         "text2": "",
         "bg": "#1d181a",
         "logo": "shopify://shop_images/Senora_Leona_Logo-blanco.png",
