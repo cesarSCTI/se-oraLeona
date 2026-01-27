@@ -6,6 +6,8 @@
         {% if section.settings.logo != blank %}
           {{ section.settings.logo | image_url: height: 150 | image_tag: class: 'logo' }}
         {% endif %}
+       <div class="customtext1">{{ section.settings.text1 }}</div>
+       <div class="customtext2">{{ section.settings.text2 }}</div> 
         <div class="areaFooterLinks">
       {% assign menu_handle = section.settings.menu2 %}
       {% if linklists[menu_handle] %}
