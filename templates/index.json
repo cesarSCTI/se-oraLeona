@@ -703,6 +703,9 @@
         "item_xJzMgw",
         "item_BDV8Fx"
       ],
+      "custom_css": [
+        ".og-heading span{font-family: 'Charmer TM' !important;}"
+      ],
       "name": "Overlay Grid (Blocks)",
       "settings": {
         "heading": "RECIPES THAT <span>redefines</span> THE RULES",
