@@ -414,8 +414,8 @@
         "mg_top_tablet": 70,
         "mg_top_mobile": 70,
         "mg_bottom_desktop": 100,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50
+        "mg_bottom_tablet": 100,
+        "mg_bottom_mobile": 100
       }
     },
     "overlay_section_blocks_e4NXA6": {
