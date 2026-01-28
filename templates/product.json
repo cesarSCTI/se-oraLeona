@@ -225,7 +225,7 @@
         "custom_liquid_h7NeCm": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\ndiv#tab-details .text {\n  font-family: \"Roboto Mono\";\n}\n.toggle-content p {\n    font-size: 16px;\n    color: #000;\n    font-family: \"Roboto Mono\";\n}\n.toggle-title .text {\n    font-weight: 800;\n    font-family: 'Roboto Mono' !important;\n}\n.customImg {\n    display: flex;\n    gap: 20px;\n    align-items: flex-start;\n    flex-direction: column;\n    align-content: flex-start;\n    flex-wrap: wrap;\n    padding-top: 10px;\n    font-size: 18px;\n    font-family: 'Roboto mono';\n    font-weight: 600 !important;\n}\n</style>"
+            "custom_liquid": "<style>\ndiv#tab-details .text {\n  font-family: \"Roboto Mono\";\n}\n.toggle-content p {\n    font-size: 16px;\n    color: #000;\n    font-family: \"Roboto Mono\";\n}\n.toggle-title .text {\n    font-weight: 800;\n    font-family: 'Roboto Mono' !important;\n}\n.customImg {\n    display: flex;\n    gap: 20px;\n    align-items: flex-start;\n    flex-direction: column;\n    align-content: flex-start;\n    flex-wrap: wrap;\n    padding-top: 10px;\n    font-size: 18px;\n    font-family: 'Roboto mono';\n    font-weight: 600 !important;\n}\n.product-form__buttons button {\n    font-family: \"Roboto Mono\" !important;\n    font-size: large;\n}\n</style>"
           }
         }
       },
@@ -250,10 +250,10 @@
       ],
       "custom_css": [
         "h2.title span {font-family: Charter !important; font-style: italic; font-weight: 400 !important; display: block;}",
-        ".customImg span {font-size: xx-large; font-family: Charmer TM !important; letter-spacing: 1px; margin-top: 20px; line-height:1;}",
+        ".customImg span {font-size: xx-large; font-family: Charmer TM !important; letter-spacing: 1px; margin-top: 20px; line-height: 1;}",
         "h2.title {margin-bottom: 20px;}",
         "h1.productView-title {text-align: left; font-size: 40px; font-weight: 500 !important;}",
-        ".productView-desc{font-family: \"Charter BT Pro\"; line-height: 1.6em !important; padding-bottom: 20px !important; font-style: italic !important;}",
+        ".productView-desc {font-family: \"Charter BT Pro\"; line-height: 1.6em !important; padding-bottom: 20px !important; font-style: italic !important;}",
         "div .text {font-family: \"Charter BT Pro\";}"
       ],
       "settings": {
