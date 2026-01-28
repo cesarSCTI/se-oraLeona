@@ -35,7 +35,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n#footer img{\nobject-fit: contain;\n    padding: 0px 20px;\n}\n.customtext1{\nfont-family: 'Charter';\n}\n@media only screen and (max-width:768px;){\n.areaFooterLinks{\n    margin-top:20px !important;\n  }\n}\n</style>"
+        "custom_liquid": "<style>\n#footer img{\nobject-fit: contain;\n    padding: 0px 20px;\n}\n.customtext1{\nfont-family: 'Charter';\n}\nmedia only screen and (max-width:768px){\n.areaFooterLinks{\n    margin-top:20px !important;\n  }\n}\n</style>"
       }
     }
   },
