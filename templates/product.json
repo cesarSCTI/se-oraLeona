@@ -225,7 +225,7 @@
         "custom_liquid_h7NeCm": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\ndiv#tab-details .text {\n  font-family: \"Roboto Mono\";\n}\n.toggle-content p {\n    font-size: 16px;\n    color: #000;\n    font-family: \"Roboto Mono\";\n}\n.toggle-title .text {\n    font-weight: 800;\n    font-family: 'Roboto Mono' !important;\n}\n.customImg {\n    display: flex;\n    gap: 20px;\n    align-items: flex-start;\n    flex-direction: column;\n    align-content: flex-start;\n    flex-wrap: wrap;\n    padding-top: 10px;\n    font-size: 18px;\n    font-family: 'Roboto mono';\n    font-weight: 600 !important;\n}\n.product-form__buttons button {\n    font-family: \"Roboto Mono\" !important;\n    font-size: large;\n}\n</style>"
+            "custom_liquid": "<style>\ndiv#tab-details .text {\n  font-family: \"Roboto Mono\";\n}\n.toggle-content p {\n    font-size: 16px;\n    color: #000;\n    font-family: \"Roboto Mono\";\n}\n.toggle-title .text {\n    font-weight: 800;\n    font-family: 'Roboto Mono' !important;\n}\n.customImg {\n    display: flex;\n    gap: 20px;\n    align-items: flex-start;\n    flex-direction: column;\n    align-content: flex-start;\n    flex-wrap: wrap;\n    padding-top: 10px;\n    font-size: 18px;\n    font-family: 'Roboto mono';\n    font-weight: 600 !important;\n}\n.product-form__buttons button {\n    font-family: \"Roboto Mono\" !important;\n    font-size: large;\n}\n@media only screen and (max-width:768px){\n.halo-productView-right{\nmargin-top:50px;\npadding: 0px 10px;\n}\n}\n</style>"
           }
         }
       },
