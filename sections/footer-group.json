@@ -30,9 +30,17 @@
         "menu": "footer",
         "menu2": "main-menu"
       }
+    },
+    "custom_liquid_rpfW4X": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\nfooter img{\nobject-fit: contain;\n    padding: 20px;\n}\n</style>"
+      }
     }
   },
   "order": [
-    "footer_08_jy8NBP"
+    "footer_08_jy8NBP",
+    "custom_liquid_rpfW4X"
   ]
 }
