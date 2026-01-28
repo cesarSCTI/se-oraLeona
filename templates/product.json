@@ -44,7 +44,7 @@
           "type": "custom_information",
           "settings": {
             "icon": "",
-            "text": "AGAVE  {{ product.metafields.custom.agave.value }}",
+            "text": "AGAVE<span>  {{ product.metafields.custom.agave.value }}</span>",
             "color_title": "#232323",
             "text_description": "",
             "color_des": "#999999",
