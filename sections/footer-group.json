@@ -35,7 +35,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n#footer img{\nobject-fit: contain;\n    padding: 20px;\n}\n</style>"
+        "custom_liquid": "<style>\n#footer img{\nobject-fit: contain;\n    padding: 0px 20px;\n}\n</style>"
       }
     }
   },
