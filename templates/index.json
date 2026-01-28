@@ -303,7 +303,7 @@
         "a.button {margin-left: 260px !important;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important; text-align: right !important;}",
         ".press-banner-block-wrapper .section-block-right .title {text-align: right !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; font-size:12px; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
       ],
       "settings": {
         "container": "1770",
@@ -363,7 +363,7 @@
       "custom_css": [
         "a.button:hover {color: #f7f7e1 !important;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; font-size: 12px; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
       ],
       "settings": {
         "container": "1320",
@@ -459,7 +459,7 @@
       ],
       "custom_css": [
         ".og-heading span {font-family: \"Charmer TM\" !important; font-size: 70px;}",
-        "@media only screen and (max-width:768px){.og-heading{padding:20px; line-height: 1.1; }}"
+        "@media only screen and (max-width: 768px) {.og-heading {padding: 20px; line-height: 1.1; }}"
       ],
       "name": "Overlay Grid (Blocks)",
       "settings": {
