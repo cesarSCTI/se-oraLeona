@@ -9,49 +9,6 @@
  */
 {
   "sections": {
-    "texto_title_receta_EHkPr4": {
-      "type": "textoTitleReceta",
-      "blocks": {
-        "heading_TNbng4": {
-          "type": "heading",
-          "settings": {
-            "heading": "Blog",
-            "heading_size": 70,
-            "heading_size_mb": 50,
-            "heading_line_height": 1,
-            "heading_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "heading_TNbng4"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-family: \"Colfax\"; font-weight: 500;}",
-        ".rich-text__blocks.text-center {display: flex; gap: 30px;}",
-        "@media only screen and (max-width: 768px) {.line {display: none !important; } .rich-text__blocks.text-center {justify-content: center; }}"
-      ],
-      "settings": {
-        "container": "container",
-        "padding_full_width": 0,
-        "enable_border_top": false,
-        "enable_border_bottom": false,
-        "color_border_bottom": "#e8e8e8",
-        "enable_minus_mg_top": false,
-        "minus_spacing_top": -100,
-        "rich_text_bg": "#f7f7e1",
-        "rich_text_bg_gradient": "",
-        "enable_column": false,
-        "content_align": "center",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 0
-      }
-    },
     "main": {
       "type": "main-blog",
       "disabled": true,
@@ -113,21 +70,14 @@
         "info_font_style": "italic"
       }
     },
-    "custom_liquid_r64DwQ": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<style>\n@media only screen and (min-width:768px){\nul.list-unstyled.list-social.clearfix {\n    display: flex;\n}}\n</style>"
-      }
-    },
     "blog_recipes_list_arFUa8": {
       "type": "Blog-Recipes-list",
       "name": "Blog - Recipes list",
       "settings": {
         "heading": "RECIPES",
         "bg_color": "#141414",
-        "heading_color": "#F2EFEA",
-        "overlay_color": "#B00078",
+        "heading_color": "#f2efea",
+        "overlay_color": "#b00078",
         "overlay_opacity": 35,
         "gap": 24,
         "articles_limit": 12,
@@ -136,9 +86,7 @@
     }
   },
   "order": [
-    "texto_title_receta_EHkPr4",
     "main",
-    "custom_liquid_r64DwQ",
     "blog_recipes_list_arFUa8"
   ]
 }
