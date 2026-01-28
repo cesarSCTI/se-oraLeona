@@ -110,6 +110,7 @@
         "span {font-weight: 500; font-size: 60px; line-height: 1.1em !important; font-family: Charmer TM !important;}",
         ".custom-image-banner-block {padding-bottom: 0px;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important;}",
+        "a.button span {font-family: \"Roboto Mono\" !important; font-size: larger;}",
         "@media only screen and (max-width: 768px) {.press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; }}"
       ],
       "name": "t:sections.custom_press_banner.presets.name",
@@ -147,7 +148,7 @@
         "button_text": "SHOP NOW",
         "button_link": "shopify://products/tequila-blanco-1-l",
         "fontsize_btn": 16,
-        "button_width": 295,
+        "button_width": 180,
         "color_button": "#ffffff",
         "border_color_button": "#232323",
         "bg_color_button": "#f7f7e1",
