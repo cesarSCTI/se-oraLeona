@@ -458,7 +458,8 @@
         "item_BDV8Fx"
       ],
       "custom_css": [
-        ".og-heading span {font-family: \"Charmer TM\" !important;}"
+        ".og-heading span {font-family: \"Charmer TM\" !important; font-size: 70px;}",
+        "@media only screen and (max-width:768px){.og-heading{padding:20px; line-height: 1.1; }}"
       ],
       "name": "Overlay Grid (Blocks)",
       "settings": {
