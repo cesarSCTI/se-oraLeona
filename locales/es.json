@@ -22,7 +22,8 @@
       "wishlist": "Wishlist",
       "video": "Click to watch video",
       "scroll_down": "Scroll Down",
-      "lang_cur": "Language / Currency Sidebar"
+      "lang_cur": "Language / Currency Sidebar",
+      "video_alt": "Vídeo alternativo"
     },
     "password_page": {
       "login_form_heading": "Enter store using password:",
@@ -126,7 +127,8 @@
       "enter_coupo_code": "Ingresar Cupon de Descuento",
       "soldout_text": "sold out",
       "already_text": "all",
-      "are_saving": "Discount:"
+      "are_saving": "Discount:",
+      "my_cart": "Mi carrito"
     },
     "share": {
       "copy_to_clipboard": "Copy link",
@@ -251,7 +253,13 @@
         "label__2": "Quantity:",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
-        "decrease": "Decrease quantity for {{ product }}"
+        "decrease": "Decrease quantity for {{ product }}",
+        "minimum_of": "Mínimo de {{ quantity }}",
+        "maximum_of": "Máximo de {{ quantity }}",
+        "multiples_of": "Incrementos de {{ quantity }}",
+        "max_of": "Máxima {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> en el carrito",
+        "note": "Ver reglas de cantidad"
       },
       "pickup_availability": {
         "view_store_info": "View store information",
@@ -328,7 +336,16 @@
         "included": "including",
         "select_options": "Select Option",
         "total_price": "Price Total:"
-      }
+      },
+      "add_to_cart_success_message_2": "Producto añadido al carrito correctamente",
+      "volume_pricing": {
+        "title": "Precios por volumen",
+        "note": "Precios por volumen disponibles",
+        "minimum": "{{ quantity }} +",
+        "price_at_each": "a {{ price }} /ea"
+      },
+      "new_arrivals": "Recién llegados",
+      "view_full_details": "Ver detalles completos"
     },
     "modal": {
       "label": "Media gallery"
@@ -433,7 +450,16 @@
       },
       "update": "Actuaizar",
       "upsell": "Los siguientes articulos fueron agregados:",
-      "your_order": "Tu pedido"
+      "your_order": "Tu pedido",
+      "checkout": "Verificar",
+      "taxes_included_shipping_at_checkout_without_policy": "Impuestos incluidos. Descuentos y gastos de envío calculados al finalizar la compra.",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Aranceles e impuestos incluidos. Descuentos y <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">gastos de envío</a> calculados al finalizar la compra.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Aranceles e impuestos incluidos. Descuentos y gastos de envío calculados al finalizar la compra.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Impuestos incluidos. Descuentos y <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">gastos de envío</a> calculados al finalizar la compra.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Impuestos incluidos. Impuestos, descuentos y <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">envío</a> calculados al finalizar la compra.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Impuestos incluidos. Impuestos, descuentos y envío calculados al finalizar la compra.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Impuestos, descuentos y <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">envío</a> calculados al finalizar la compra.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Impuestos, descuentos y envío calculados al finalizar la compra."
     },
     "footer": {
       "payment": "Payment methods"
@@ -450,7 +476,8 @@
     "collection_list": {
       "title": "Collections",
       "view_all": "View all",
-      "count": "{{ count }} products"
+      "count": "{{ count }} products",
+      "shop_the_collection": "Compra la colección"
     },
     "collection_template": {
       "all_tags": "All products",
@@ -492,13 +519,40 @@
       "qty": "Qty",
       "options": "Options",
       "show_variants": "Show Variants",
-      "results": "results"
+      "results": "results",
+      "product_count_simple": {
+        "one": "{{ count }} producto",
+        "other": "{{ count }} productos"
+      }
     },
     "collection_list_template": {
       "product_count": "{{ count }} products"
     },
     "sidebar": {
       "title": "Sidebar"
+    },
+    "quick_order_list": {
+      "product_total": "Subtotal del producto",
+      "view_cart": "Ver carrito",
+      "each": "/cada uno",
+      "product": "Producto",
+      "variant": "Variante",
+      "variant_total": "Variante total",
+      "items_added": {
+        "one": "{{ quantity }} artículo añadido",
+        "other": "{{ quantity }} artículos añadidos"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} artículo eliminado",
+        "other": "{{ quantity }} artículos eliminados"
+      },
+      "product_variants": "Variantes del producto",
+      "total_items": "Total de artículos",
+      "remove_all": "Eliminar todo",
+      "cancel": "Cancelar",
+      "min_error": "Este artículo tiene un mínimo de {{ min }}",
+      "max_error": "Este artículo tiene un máximo de {{ max }}",
+      "step_error": "Solo puedes agregar este elemento en incrementos de {{ step }}"
     }
   },
   "localization": {
@@ -664,7 +718,8 @@
       "remove": "Remove",
       "share": "Share my Wish List via email",
       "empty": "No product is added to your wishlist",
-      "continue_shopping": "Continue Shopping"
+      "continue_shopping": "Continue Shopping",
+      "text_icon": "Mis listas de deseos"
     }
   },
   "compare": {
@@ -812,6 +867,71 @@
       "max_characters": "{{ max_chars }} characters max",
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
+    }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "payment_confirmation": {
+        "payment_received": "¡Gracias! Se recibió su pago de {{amount}} .",
+        "full_payment_received": "¡Gracias! Recibimos su pago de {{amount}} y este pedido ya está pagado en su totalidad.",
+        "dismiss_label": "Descartar confirmación de pago"
+      }
+    },
+    "account_menu": {
+      "aria_labels": {
+        "close_menu": "Cerrar menú",
+        "back_to_main_menu": "Regresar al menú principal desde {{title}}",
+        "open_submenu": "{{title}} , abre el submenú",
+        "loading_menu": "Cargando menú",
+        "account": "Cuenta",
+        "sign_in_with_email": "Iniciar sesión con correo electrónico",
+        "sign_in": "Iniciar sesión"
+      }
+    },
+    "B2B": {
+      "draft_order_details": {
+        "payment_status": {
+          "pending": {
+            "banner_due_today_for_multiple_fulfillments": "El pago vence hoy por {{count}} cumplimientos",
+            "banner_overdue_for_multiple_fulfillments": "Pago pendiente por {{count}} cumplimientos",
+            "description_due_on_fulfillment_partially_paid_next": "Este pedido se pagó parcialmente. Tiene un saldo pendiente."
+          }
+        }
+      }
+    },
+    "errors": {
+      "not_upgraded": "Las cuentas de clientes no se actualizan.",
+      "failed_to_revert": "No se pudo revertir la configuración de la cuenta del cliente.",
+      "revert_window_expired": "La ventana de reversión ha expirado."
+    },
+    "payment_methods": {
+      "add_payment_method": {
+        "missing_customer_error": "Algo salió mal. Inténtalo de nuevo o contacta con el servicio de asistencia.",
+        "subscription_contracts": {
+          "title": "Utilice el método de pago para pedidos recurrentes",
+          "more_items": {
+            "one": "{{count}} producto más",
+            "other": "{{count}} productos más"
+          },
+          "product_count": {
+            "one": "{{count}} producto",
+            "other": "{{count}} productos"
+          },
+          "product_details": "Detalles del producto",
+          "load_more": "Cargar más"
+        },
+        "updating_contracts": {
+          "one": "Actualizando {{count}} contrato de suscripción...",
+          "other": "Actualizando {{count}} contratos de suscripción..."
+        },
+        "contracts_updated": {
+          "one": "Contrato de suscripción actualizado correctamente {{count}}",
+          "other": "{{count}} contratos de suscripción actualizados correctamente"
+        },
+        "contracts_update_failed": "No se pudieron actualizar algunos contratos de suscripción",
+        "subscription_contracts_updated": "Se actualizaron {{succeeded}} de {{total}} suscripciones",
+        "invalid_wallet_type_error": "Tipo de billetera no válido."
+      }
     }
   }
 }
