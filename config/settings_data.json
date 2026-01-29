@@ -282,10 +282,10 @@
     "share_telegram": false,
     "share_email": false,
     "social_twitter_link": "",
-    "social_facebook_link": "#",
+    "social_facebook_link": "",
     "social_linkedin_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "#",
+    "social_instagram_link": "https://www.instagram.com/senoraleonatequila/",
     "social_tiktok_link": "",
     "social_youtube_link": "",
     "social_vimeo_link": "",
@@ -912,7 +912,7 @@
       ".product-customInformation__content .title {line-height: 1.2em !important;}",
       ".toggle-content p {line-height: 1.2em !important;}",
       ".shopify-policy__body {line-height: 1.3em;}",
-      "@media only screen and (max-width: 768px) {.customer-links.last-link {display: none !important; } .row {flex-direction: column; } .section-block-right.content-press {padding: 5% !important; } .customImg {height: auto !important; flex-wrap: nowrap; } .customImg img{object-fit: contain; } .press-banner-block-wrapper .section-block-right .title {font-size: 40px !important; }}"
+      "@media only screen and (max-width: 768px) {.customer-links.last-link {display: none !important; } .row {flex-direction: column; } .section-block-right.content-press {padding: 5% !important; } .customImg {height: auto !important; flex-wrap: nowrap; } .customImg img {object-fit: contain; } .press-banner-block-wrapper .section-block-right .title {font-size: 40px !important; }}"
     ]
   }
 }
