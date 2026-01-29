@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-blog",
-      "disabled": true,
       "custom_css": [
         "span.article-label {display: none;}",
         ".blog-summary {line-height: 1.2em !important;}"
@@ -72,7 +71,6 @@
     },
     "blog_recipes_list_arFUa8": {
       "type": "Blog-Recipes-list",
-      "disabled": true,
       "name": "Blog - Recipes list",
       "settings": {
         "heading": "Blog",
@@ -87,6 +85,7 @@
     },
     "featured_blog_k6gCHR": {
       "type": "featured-blog",
+      "disabled": true,
       "name": "t:sections.featured_blog.presets.name",
       "settings": {
         "container": "container",
@@ -143,16 +142,16 @@
         "block_button_fw": "400",
         "enable_border_box": false,
         "color_border_box": "#f7f7e1",
-        "color_title_item": "#FFFFFF",
-        "color_date_item": "#FFFFFF",
-        "color_des_item": "#FFFFFF",
+        "color_title_item": "#ffffff",
+        "color_date_item": "#ffffff",
+        "color_des_item": "#ffffff",
         "enable_blog_button": true,
         "color_button_item": "#232323",
         "color_button_item_border": "#1e1e1e",
         "color_button_item_bg": "#f7f7e1",
-        "color_button_item_hover": "#000",
+        "color_button_item_hover": "#000000",
         "color_button_item_border_hover": "#f7f7e1",
-        "color_button_item_bg_hover": "#fff",
+        "color_button_item_bg_hover": "#ffffff",
         "content_on_image": true,
         "content_bg": "#232323",
         "content_gradient": "",
