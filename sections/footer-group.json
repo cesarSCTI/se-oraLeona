@@ -14,9 +14,8 @@
     "footer_08_jy8NBP": {
       "type": "footer-08",
       "custom_css": [
-        "* {color: #f7f7e1 !important;}",
+        "* {color: #f7f7e1 !important; line-height: 1; text-align:center;}",
         ".areaFooterLinks ul {gap: 80px !important; margin-left: 0px !important; font-size: 18px !important;}",
-        ".footer-block__list-social {opacity: 1 !important; margin: 0px !important; transform: none !important; margin-right: 30px !important;}",
         "svg.icon {fill: #f7f7e1 !important; width: 15px !important; height: 15px !important;}",
         "@media only screen and (max-width: 768px) {.areaFooterLinks ul {gap: 25px !important; font-size: 13px !important; flex-direction: column !important; line-height: 1.2em !important; }}"
       ],
@@ -35,7 +34,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n#footer img{\nobject-fit: contain;\n    padding: 0px 20px;\n}\n.customtext1{\nfont-family: 'Charter';\n}\nmedia only screen and (max-width:768px){\n.areaFooterLinks{\n    margin-top:20px !important;\n  }\n}\n</style>"
+        "custom_liquid": "<style>\n#footer img{\nobject-fit: contain;\n    padding: 0px 20px;\n}\n.customtext1{\nfont-family: 'Charter';\n}\n.footer-block__list-social {\n  opacity: 1 !important;\n  margin: 0px !important;\n  transform: none !important;\n  margin-right: 30px !important;\n}\nmedia only screen and (max-width:768px){\n.areaFooterLinks{\n    margin-top:20px !important;\n  }\n}\n</style>"
       }
     }
   },
