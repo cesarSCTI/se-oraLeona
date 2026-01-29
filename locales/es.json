@@ -147,7 +147,8 @@
       "default": "Show more",
       "loading": "Loading...",
       "view_all": "View All Collection",
-      "no_more": "No More Product"
+      "no_more": "No More Product",
+      "no_more_collection": "No más colección"
     }
   },
   "brands_page": {
@@ -345,7 +346,8 @@
         "price_at_each": "a {{ price }} /ea"
       },
       "new_arrivals": "Recién llegados",
-      "view_full_details": "Ver detalles completos"
+      "view_full_details": "Ver detalles completos",
+      "hot_stock_text": "Stock caliente"
     },
     "modal": {
       "label": "Media gallery"
