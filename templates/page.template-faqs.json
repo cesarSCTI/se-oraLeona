@@ -1,1 +1,175 @@
-{"sections":{"rich_text_Cf9JHj":{"type":"rich-text","blocks":{"heading_qRti8Q":{"type":"heading","settings":{"heading":"Frequently Asked Questions","heading_size":60,"heading_size_mb":40,"heading_line_height":1,"heading_color":"#000000"}}},"block_order":["heading_qRti8Q"],"custom_css":["* {font-family: \"adobe-handwriting-ernie\", sans-serif; font-weight: 400;}",".heading {padding: 40px 0px; line-height: 1.4em;}"],"settings":{"container":"container","padding_full_width":0,"enable_border_top":false,"enable_border_bottom":false,"color_border_bottom":"#e8e8e8","enable_minus_mg_top":false,"minus_spacing_top":-100,"rich_text_bg":"#fbf6f0","rich_text_bg_gradient":"","enable_column":false,"content_align":"center","mg_top_desktop":50,"mg_top_tablet":50,"mg_top_mobile":50,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0}},"main":{"type":"main-faqs-page","blocks":{"15d9d2f4-1bdd-49c8-9a99-58246020f05c":{"type":"paragraph","settings":{"title":"","question_1":"Q1: Which is the NOM of Laelia?","answer_1":"<p>We proudly hold the NOM 1607 for Laelia under Grupo Solave, the holding company of Casa Natima. As a distillery-owned brand crafted in-house, we ensure a seamless journey from our fields to your experience. This commitment guarantees not only traceability but also the highest quality in every sip. <\/p>","question_2":"Q2: Who is the Master Distiller of Laelia?","answer_2":"<p>Carlos R. Huizar, our Master Distiller for Laelia, whose two decades of experience elevate our distillery. As a guardian of tradition, Carlos blends heritage and creativity, ensuring that the essence of this noble spirit shines in every drop, supported by a talented and expert team. <\/p>","question_3":"Q3: What is the essence of Laelia? ","answer_3":"<p>Inspired by the Mexican orchid and the pre-Hispanic, ceremonial flower songs of the Nahua, Laelia is dedicated to preserving traditional methods of tequila-making. \n<br><br>\nLaelia is an orchid native to the eastern mountain ranges of Mexico. This delicate flower withstands challenging conditions while preserving its beauty, serving as a significant symbol of strength and resilience.<\/p><p><\/p>","question_4":"Q4: Who makes Laelia Tequila?","answer_4":"<p>Laelia represents the inaugural spirit of Casa Natima, Tequilera de Origen. It reflects the true essence and artistry of our unique contemporary Mexican distillery in Amatitan, under our own NOM 1607.<\/p>","question_5":"Q5: What is Laelia’s Tequila-making process?","answer_5":"<p> Laelia is traditionally made in our own Distillery, NOM 1607, in Amatitan, Jalisco, Mexico. \n<\/p><ul>\n<li>Fully mature agave<\/li>\n<li>Mountain-spring water from the lowland region <\/li>\n<li>Traditional brick oven cooking <\/li>\n<li>Milling in Tahona <\/li> \n<li>Open &amp; natural fermentation with agave fiber <\/li>\n<li>Double distillation in copper pot still <\/li>\n<li>Laelia Blanco: Is rested up to 14 days in American Oak barrels <\/li>\n<li>Laelia Reposado: Aged in French Oak Barrles for 4 to 6 months <\/li>\n<li>ABV: 40% Alc. \/ Vol. <\/li>\n<\/ul>\n<p><\/p>","question_6":"Q6: Where do the agaves we use come from?","answer_6":"<p>Our blue agaves are cultivated in volcanic soil, ensuring they absorb the mineral-rich nutrients that contribute to Laelia’s distinct, earthy flavor. This commitment honors the sacred traditions of tequila, offering you a unique and transparent experience that connects them to the land.<\/p>","question_7":"Q7:  Where to buy Tequila Laelia.","answer_7":"You can own your moment through Laelia Tequila by following this link https:\/\/laeliatequila.com\/","question_8":"","answer_8":"","question_9":"","answer_9":"","question_10":"","answer_10":""}}},"block_order":["15d9d2f4-1bdd-49c8-9a99-58246020f05c"],"custom_css":[".faqs .faqs-item .card-header .title {font-family: \"Roboto Mono\" !important; background: #fbf6f0 !important; font-size: 16px !important;}",".faqs .faqs-item .card-body {background: #fbf6f0 !important; font-size: 14px !important; line-height: 1.5em;}","p {line-height: 1.5em;}",".faqs .faqs-item .card-header:not(.collapsed) + .collapse {background: #fbf6f0 !important;}",".faqs-item {background-color: #fbf6f0 !important;}"],"settings":{"show_breadcrumb":false,"breadcrumb_alignment":"left","breadcrumb_bg":"","breadcrumb_gradient":"","breadcrumb_bg_mb":"#f6f6f6","breadcrumb_gradient_mb":"","show_page_title":false,"page_title_alignment":"left","container":"1170","mg_top_desktop":10,"mg_top_tablet":10,"mg_top_mobile":10,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0,"show_faqs_filter":false,"faqs_text":"","faqs_message_heading":"","faqs_message_text":"","message_method_link_1":"","message_method_text_1":"","message_method_link_2":"","message_method_text_2":"","contact_content_text":"","contact_text":"","contact_link":"","contact_color":"#ffffff","contact_color_border":"#ef6454","contact_color_bg":"#ef6454","contact_color_bg_gradient":"","contact_color_hover":"#ffffff","contact_color_border_hover":"#e93d29","contact_color_bg_hover":"#e93d29","contact_color_bg_gradient_hover":""}},"rich_text_8w9Nta":{"type":"rich-text","blocks":{"text_bVDJ7D":{"type":"text","settings":{"text":"For any further suggestions, comments, or concerns, please reach out to us at <a href:=\"\">customerservice@casanatima.com<\/a>","text_size":16,"text_size_mb":16,"text_line_height":1.5,"margin_top_text":10,"text_color":"#000000","text_width":"800px"}}},"block_order":["text_bVDJ7D"],"settings":{"container":"container","padding_full_width":0,"enable_border_top":false,"enable_border_bottom":false,"color_border_bottom":"#e8e8e8","enable_minus_mg_top":false,"minus_spacing_top":-100,"rich_text_bg":"#fbf6f0","rich_text_bg_gradient":"","enable_column":false,"content_align":"center","mg_top_desktop":30,"mg_top_tablet":30,"mg_top_mobile":30,"mg_bottom_desktop":0,"mg_bottom_tablet":0,"mg_bottom_mobile":0}}},"order":["rich_text_Cf9JHj","main","rich_text_8w9Nta"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_Cf9JHj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qRti8Q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently Asked Questions",
+            "heading_size": 60,
+            "heading_size_mb": 40,
+            "heading_line_height": 1,
+            "heading_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qRti8Q"
+      ],
+      "custom_css": [
+        "* {font-family: \"adobe-handwriting-ernie\", sans-serif; font-weight: 400;}",
+        ".heading {padding: 40px 0px; line-height: 1.4em;}"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#f7f7e1",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 50,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-faqs-page",
+      "blocks": {
+        "15d9d2f4-1bdd-49c8-9a99-58246020f05c": {
+          "type": "paragraph",
+          "settings": {
+            "title": "",
+            "question_1": "Q1: Which is the NOM of Laelia?",
+            "answer_1": "<p>We proudly hold the NOM 1607 for Laelia under Grupo Solave, the holding company of Casa Natima. As a distillery-owned brand crafted in-house, we ensure a seamless journey from our fields to your experience. This commitment guarantees not only traceability but also the highest quality in every sip. </p>",
+            "question_2": "Q2: Who is the Master Distiller of Laelia?",
+            "answer_2": "<p>Carlos R. Huizar, our Master Distiller for Laelia, whose two decades of experience elevate our distillery. As a guardian of tradition, Carlos blends heritage and creativity, ensuring that the essence of this noble spirit shines in every drop, supported by a talented and expert team. </p>",
+            "question_3": "Q3: What is the essence of Laelia? ",
+            "answer_3": "<p>Inspired by the Mexican orchid and the pre-Hispanic, ceremonial flower songs of the Nahua, Laelia is dedicated to preserving traditional methods of tequila-making. \n<br><br>\nLaelia is an orchid native to the eastern mountain ranges of Mexico. This delicate flower withstands challenging conditions while preserving its beauty, serving as a significant symbol of strength and resilience.</p><p></p>",
+            "question_4": "Q4: Who makes Laelia Tequila?",
+            "answer_4": "<p>Laelia represents the inaugural spirit of Casa Natima, Tequilera de Origen. It reflects the true essence and artistry of our unique contemporary Mexican distillery in Amatitan, under our own NOM 1607.</p>",
+            "question_5": "Q5: What is Laelia’s Tequila-making process?",
+            "answer_5": "<p> Laelia is traditionally made in our own Distillery, NOM 1607, in Amatitan, Jalisco, Mexico. \n</p><ul>\n<li>Fully mature agave</li>\n<li>Mountain-spring water from the lowland region </li>\n<li>Traditional brick oven cooking </li>\n<li>Milling in Tahona </li> \n<li>Open &amp; natural fermentation with agave fiber </li>\n<li>Double distillation in copper pot still </li>\n<li>Laelia Blanco: Is rested up to 14 days in American Oak barrels </li>\n<li>Laelia Reposado: Aged in French Oak Barrles for 4 to 6 months </li>\n<li>ABV: 40% Alc. / Vol. </li>\n</ul>\n<p></p>",
+            "question_6": "Q6: Where do the agaves we use come from?",
+            "answer_6": "<p>Our blue agaves are cultivated in volcanic soil, ensuring they absorb the mineral-rich nutrients that contribute to Laelia’s distinct, earthy flavor. This commitment honors the sacred traditions of tequila, offering you a unique and transparent experience that connects them to the land.</p>",
+            "question_7": "Q7:  Where to buy Tequila Laelia.",
+            "answer_7": "You can own your moment through Laelia Tequila by following this link https://laeliatequila.com/",
+            "question_8": "",
+            "answer_8": "",
+            "question_9": "",
+            "answer_9": "",
+            "question_10": "",
+            "answer_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "15d9d2f4-1bdd-49c8-9a99-58246020f05c"
+      ],
+      "custom_css": [
+        ".faqs .faqs-item .card-header .title {font-family: \"Roboto Mono\" !important; background: #fbf6f0 !important; font-size: 16px !important;}",
+        ".faqs .faqs-item .card-body {background: #fbf6f0 !important; font-size: 14px !important; line-height: 1.5em;}",
+        "p {line-height: 1.5em;}",
+        ".faqs .faqs-item .card-header:not(.collapsed) + .collapse {background: #fbf6f0 !important;}",
+        ".faqs-item {background-color: #fbf6f0 !important;}"
+      ],
+      "settings": {
+        "show_breadcrumb": false,
+        "breadcrumb_alignment": "left",
+        "breadcrumb_bg": "",
+        "breadcrumb_gradient": "",
+        "breadcrumb_bg_mb": "#f6f6f6",
+        "breadcrumb_gradient_mb": "",
+        "show_page_title": false,
+        "page_title_alignment": "left",
+        "container": "1170",
+        "mg_top_desktop": 10,
+        "mg_top_tablet": 10,
+        "mg_top_mobile": 10,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0,
+        "show_faqs_filter": false,
+        "faqs_text": "",
+        "faqs_message_heading": "",
+        "faqs_message_text": "",
+        "message_method_link_1": "",
+        "message_method_text_1": "",
+        "message_method_link_2": "",
+        "message_method_text_2": "",
+        "contact_content_text": "",
+        "contact_text": "",
+        "contact_link": "",
+        "contact_color": "#ffffff",
+        "contact_color_border": "#ef6454",
+        "contact_color_bg": "#ef6454",
+        "contact_color_bg_gradient": "",
+        "contact_color_hover": "#ffffff",
+        "contact_color_border_hover": "#e93d29",
+        "contact_color_bg_hover": "#e93d29",
+        "contact_color_bg_gradient_hover": ""
+      }
+    },
+    "rich_text_8w9Nta": {
+      "type": "rich-text",
+      "blocks": {
+        "text_bVDJ7D": {
+          "type": "text",
+          "settings": {
+            "text": "For any further suggestions, comments, or concerns, please reach out to us at <a href:=\"\">customerservice@casanatima.com</a>",
+            "text_size": 16,
+            "text_size_mb": 16,
+            "text_line_height": 1.5,
+            "margin_top_text": 10,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "text_bVDJ7D"
+      ],
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 30,
+        "mg_top_tablet": 30,
+        "mg_top_mobile": 30,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "rich_text_Cf9JHj",
+    "main",
+    "rich_text_8w9Nta"
+  ]
+}
