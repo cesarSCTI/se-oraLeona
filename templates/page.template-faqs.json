@@ -28,7 +28,7 @@
       ],
       "custom_css": [
         "* {font-family: \"Roboto Mono\"; font-weight: 400;}",
-        ".heading {padding: 40px 0px; line-height: 1.4em;}"
+        ".heading {padding: 40px 0px; line-height: 1.4em; letter-spacing: 0px; text-transform: uppercase;}"
       ],
       "settings": {
         "container": "container",
@@ -86,9 +86,9 @@
       "custom_css": [
         ".faqs .faqs-item .card-header .title {font-family: \"Roboto Mono\" !important; background: #f7f7e1 !important; font-size: 16px !important;}",
         ".faqs .faqs-item .card-body {background: #f7f7e1 !important; font-size: 14px !important; line-height: 1.5em;}",
-        "p {line-height: 1.5em;}",
+        "p {line-height: 1.5em; font-family: Charter !important;}",
         ".faqs .faqs-item .card-header:not(.collapsed) + .collapse {background: #f7f7e1 !important;}",
-        ".faqs-item {background-color: #F7F7E1 !important;}"
+        ".faqs-item {background-color: #f7f7e1 !important;}"
       ],
       "settings": {
         "show_breadcrumb": false,
@@ -145,6 +145,9 @@
       },
       "block_order": [
         "text_bVDJ7D"
+      ],
+      "custom_css": [
+        ".rich-text__blocks .rich-text__text {font-family: Charter !important;}"
       ],
       "settings": {
         "container": "container",
