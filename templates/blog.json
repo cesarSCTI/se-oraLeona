@@ -79,9 +79,9 @@
         "heading_color": "#f2efea",
         "overlay_color": "#b00078",
         "overlay_opacity": 35,
-        "gap": 24,
+        "gap": 40,
         "articles_limit": 12,
-        "show_pagination": true
+        "show_pagination": false
       }
     }
   },
