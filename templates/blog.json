@@ -74,7 +74,7 @@
       "type": "Blog-Recipes-list",
       "name": "Blog - Recipes list",
       "settings": {
-        "heading": "RECIPES",
+        "heading": "Blog",
         "bg_color": "#141414",
         "heading_color": "#f2efea",
         "overlay_color": "#b00078",
