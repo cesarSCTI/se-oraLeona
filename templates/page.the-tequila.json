@@ -17,10 +17,10 @@
     "section1_XxNmqn": {
       "type": "section1",
       "custom_css": [
-        "h2.teq-hero__title {font-size: 50px !important; font-weight: 500 !important; top: -45px !important;}",
-        ".teq-hero {padding-top: 50px !important;}",
+        "h2.teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero {padding-top: 40px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 100px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; }}"
+        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 100px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; } .teq-hero {padding-top: 100px !important; }}"
       ],
       "name": "Section 1",
       "settings": {
@@ -39,7 +39,7 @@
     "section1_NdaFYa": {
       "type": "section1",
       "custom_css": [
-        ".teq-hero__title {font-size: 50px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
         "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 100px !important; position: absolute; width: 40%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
         ".teq-hero__p {margin: 0px;}"
@@ -61,7 +61,7 @@
     "section1_9YiDYK": {
       "type": "section1",
       "custom_css": [
-        "h2.teq-hero__title {font-size: 40px !important; font-weight: 500 !important; top: -45px !important;}",
+        "h2.teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
         "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 100px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; }}"
       ],
@@ -82,9 +82,9 @@
     "section1_fiaX99": {
       "type": "section1",
       "custom_css": [
-        ".teq-hero__title {font-size: 40px !important; font-weight: 500 !important; top: -45px !important;}",
+        ".teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 100px !important; position: absolute; width: 70%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 95px !important; position: absolute; width: 70%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
@@ -109,7 +109,7 @@
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important;}",
         "a.button span {font-family: \"Roboto Mono\" !important; font-size: larger;}",
         "a.button {margin: 40px 0px;}",
-        "@media only screen and (max-width: 768px) {.press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; } .section-block-left {order: 2; }}"
+        "@media only screen and (max-width: 768px) {.press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; } .section-block-left {order: 2; } span {font-size: 40px; }}"
       ],
       "name": "t:sections.custom_press_banner.presets.name",
       "settings": {
