@@ -27,7 +27,7 @@
         "heading_qRti8Q"
       ],
       "custom_css": [
-        "* {font-family: \"adobe-handwriting-ernie\", sans-serif; font-weight: 400;}",
+        "* {font-family: \"Roboto Mono\"; font-weight: 400;}",
         ".heading {padding: 40px 0px; line-height: 1.4em;}"
       ],
       "settings": {
@@ -84,11 +84,11 @@
         "15d9d2f4-1bdd-49c8-9a99-58246020f05c"
       ],
       "custom_css": [
-        ".faqs .faqs-item .card-header .title {font-family: \"Roboto Mono\" !important; background: #fbf6f0 !important; font-size: 16px !important;}",
-        ".faqs .faqs-item .card-body {background: #fbf6f0 !important; font-size: 14px !important; line-height: 1.5em;}",
+        ".faqs .faqs-item .card-header .title {font-family: \"Roboto Mono\" !important; background: #f7f7e1 !important; font-size: 16px !important;}",
+        ".faqs .faqs-item .card-body {background: #f7f7e1 !important; font-size: 14px !important; line-height: 1.5em;}",
         "p {line-height: 1.5em;}",
-        ".faqs .faqs-item .card-header:not(.collapsed) + .collapse {background: #fbf6f0 !important;}",
-        ".faqs-item {background-color: #fbf6f0 !important;}"
+        ".faqs .faqs-item .card-header:not(.collapsed) + .collapse {background: #f7f7e1 !important;}",
+        ".faqs-item {background-color: #F7F7E1 !important;}"
       ],
       "settings": {
         "show_breadcrumb": false,
@@ -154,14 +154,14 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": -100,
-        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "center",
         "mg_top_desktop": 30,
         "mg_top_tablet": 30,
         "mg_top_mobile": 30,
-        "mg_bottom_desktop": 0,
+        "mg_bottom_desktop": 60,
         "mg_bottom_tablet": 0,
         "mg_bottom_mobile": 0
       }
