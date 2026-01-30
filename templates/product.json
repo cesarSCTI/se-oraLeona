@@ -42,6 +42,7 @@
         },
         "custom_information_Pxx6AE": {
           "type": "custom_information",
+          "disabled": true,
           "settings": {
             "icon": "",
             "text": "AGAVE<span>  {{ product.metafields.custom.agave.value }}</span>",
@@ -56,6 +57,7 @@
         },
         "custom_information_bnBJVn": {
           "type": "custom_information",
+          "disabled": true,
           "settings": {
             "icon": "",
             "text": "BARREL AGED <span>{{ product.metafields.custom.barrel_aged.value }}</span>",
@@ -70,9 +72,10 @@
         },
         "custom_information_mAAGHE": {
           "type": "custom_information",
+          "disabled": true,
           "settings": {
             "icon": "",
-            "text": "BARREL TYPE <span>{{ product.metafields.custom.barrel_type.value }}</span>",
+            "text": "BARREL TYPE {{ product.metafields.custom.barrel_type.value }}",
             "color_title": "#232323",
             "text_description": "",
             "color_des": "#999999",
