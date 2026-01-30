@@ -2,7 +2,7 @@
   assign blog_handle = section.settings.blog
   assign limit = section.settings.limit | default: 8
 -%}
-
+{{ section.settings.blog }}
 {% if blog_handle != blank and blogs[blog_handle] != blank %}
 <section class="blog-thumbnails">
   <div class="blog-thumbnails__inner">
