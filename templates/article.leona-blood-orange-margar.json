@@ -128,8 +128,8 @@
       "type": "recipies-thumbails",
       "name": "Blog thumbnails",
       "settings": {
-        "blog": "recipies",
-        "limit": 8,
+        "blog": "recipes",
+        "limit": 20,
         "thumb_size": 90,
         "gap": 12,
         "radius": 0,
