@@ -100,7 +100,7 @@
           "type": "custom_information",
           "settings": {
             "icon": "",
-            "text": "TASTE<span> {{ product.metafields.custom.taste.value }}</span>",
+            "text": "TASTE {{ product.metafields.custom.taste.value }}",
             "color_title": "#232323",
             "text_description": "",
             "color_des": "#999999",
@@ -112,6 +112,7 @@
         },
         "custom_img_irD8Ew": {
           "type": "customImg",
+          "disabled": true,
           "settings": {
             "customTextImg": "Recognitions",
             "customImg": "{{ product.metafields.custom.recognition.value }}",
