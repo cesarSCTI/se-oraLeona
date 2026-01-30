@@ -208,8 +208,7 @@
         ".header-navigation .header-logo {max-width: 170px !important;}",
         ".header-nav-full-elements .header-item:nth-child(3) {max-width: 100px !important;}",
         ".header-nav-full-elements .header-item:nth-child(2) {max-width: 800px !important;}",
-        ".flex-wrap {flex-wrap: nowrap !important;}",
-        "#HeaderLanguageList span.text {display: none;}"
+        ".flex-wrap {flex-wrap: nowrap !important;}"
       ],
       "settings": {
         "container": "1170",
