@@ -223,8 +223,8 @@
   "products": {
     "product": {
       "exclusiva": "Por ahora, venta exclusiva en EE. UU.",
-      "add_to_cart": "Add to cart",
-      "adding_to_cart": "Adding to cart...",
+      "add_to_cart": "Agregar al carrito",
+      "adding_to_cart": "Agregando",
       "add_all_to_cart": "Add All to cart",
       "adding_all_to_cart": "Adding All to cart...",
       "added_to_cart": "Added to cart",
