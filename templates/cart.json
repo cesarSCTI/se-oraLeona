@@ -12,7 +12,10 @@
     "main": {
       "type": "main-cart",
       "custom_css": [
-        ".cart-content-empty .cart-actions .button {color: #fff !important;}"
+        ".cart-content-empty .cart-actions .button {color: #fff !important;}",
+        ".cart-actions .button {font-family: \"Roboto Mono\";}",
+        ".cart-actions .button + .button {color: #fff !important;}",
+        ".cart-total-label, .cart-total-value {font-family: Charter !important;}"
       ],
       "settings": {
         "show_breadcrumb": false,
