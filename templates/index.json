@@ -303,7 +303,7 @@
         "a.button {margin-left: 260px !important;}",
         ".press-banner-block-wrapper .section-block-right .desc {line-height: 38px !important; text-align: right !important;}",
         ".press-banner-block-wrapper .section-block-right .title {text-align: right !important;}",
-        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; font-size:12px; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
+        "@media only screen and (max-width: 768px) {a.button {margin-left: 0px !important; font-size: 12px; } .press-banner-block-wrapper .section-block-right .desc {line-height: 28px !important; margin-top: -30px !important; }}"
       ],
       "settings": {
         "container": "1770",
@@ -436,7 +436,7 @@
           "settings": {
             "image": "shopify://shop_images/img-recipe-leona_blood-home.png",
             "title": "Leona Blood Orange",
-            "link": "shopify://blogs/recipes/leona-blood-orange-margarita",
+            "link": "shopify://pages/orange-margarita",
             "overlay_color": "#9f006c",
             "overlay_opacity": 40
           }
