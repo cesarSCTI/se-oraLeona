@@ -436,7 +436,7 @@
           "settings": {
             "image": "shopify://shop_images/img-recipe-leona_blood-home.png",
             "title": "Leona Blood Orange",
-            "link": "shopify://pages/orange-margarita",
+            "link": "shopify://blogs/recipes/leona-blood-orange",
             "overlay_color": "#9f006c",
             "overlay_opacity": 40
           }
