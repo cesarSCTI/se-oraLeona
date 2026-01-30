@@ -15,7 +15,7 @@
         ".cart-content-empty .cart-actions .button {color: #fff !important;}",
         ".cart-actions .button {font-family: \"Roboto Mono\";}",
         ".cart-actions .button + .button {color: #fff !important;}",
-        ".cart-total-label, .cart-total-value {font-family: Charter !important;}"
+        ".cart-total-label,.cart-total-value,.cart-header-item,.cart-item,.cart-note .form-label,.cart-note .form-input, .cart-securityImage-label {font-family: Charter !important;}"
       ],
       "settings": {
         "show_breadcrumb": false,
