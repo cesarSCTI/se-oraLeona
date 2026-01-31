@@ -317,5 +317,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {%- if settings.enable_following_cursor -%}
           {% render 'cursor-fixed', style_cursor: settings.following_cursor_style %}
         {%- endif -%}
+        <div class="backToTheTop">
+            {%render 'backToTheTop' %}
+        </div>
     </body>
 </html>
