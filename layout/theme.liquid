@@ -319,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         {%- endif -%}
     </body>
     <div class="backToTheTop">
-        <a href="#top">
+        <a id="#top" href="#">
         {%render 'backToTheTop' %}
         </a>
     </div>
@@ -346,5 +346,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         .backToTheTop:hover{
             transform:scale(1.2);
         }
+        html {
+  scroll-behavior: smooth; 
+}
     </style>
 </html>
