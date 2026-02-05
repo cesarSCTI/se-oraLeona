@@ -178,7 +178,7 @@
         "slideshow_background": "",
         "slideshow_background_gradient": "",
         "autoplay": true,
-        "slideshow_speed": "10000",
+        "slideshow_speed": "3000",
         "slideshow_transition": "false",
         "dots": "none",
         "dots_color": "#707979",
