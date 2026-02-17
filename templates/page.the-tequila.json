@@ -20,13 +20,13 @@
         "h2.teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero {padding-top: 40px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 100px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; } .teq-hero {padding-top: 100px !important; }}"
+        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 80px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; } .teq-hero {padding-top: 100px !important; }}"
       ],
       "name": "Section 1",
       "settings": {
         "url": "",
         "title": "THE TEQUILA",
-        "image": "shopify://shop_images/img-the_tequila.png",
+        "image": "shopify://shop_images/img-the_tequila2.png",
         "image_alt": "Agave field",
         "body_1": "<p>Made from tahona-crushed agave and wild fermentation, Señora Leona is an “espíritu salvaje” from master distiller Carlos R. Huizar that channels the fierce, untamed power of the lioness.</p>",
         "body_2": "",
@@ -41,14 +41,14 @@
       "custom_css": [
         ".teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 100px !important; position: absolute; width: 40%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 80px !important; position: absolute; width: 40%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
       "settings": {
         "url": "",
         "title": "TAHONA- PRESSED AGAVE",
-        "image": "shopify://shop_images/img-tequila-tahona_pressed_agave.png",
+        "image": "shopify://shop_images/img-tequila-tahona_pressed_agave2.png",
         "image_alt": "Agave field",
         "body_1": "<p>Every bottle of Señora Leona begins with fully ripe agave, slow-cooked for 10 hours and crushed by a traditional tahona wheel. It’s raw and full of character—the first step toward the bold, untamed flavor that defines our tequila.</p>",
         "body_2": "",
@@ -63,7 +63,7 @@
       "custom_css": [
         "h2.teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 100px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; }}"
+        "@media only screen and (min-width: 768px) {h2.teq-hero__title {font-size: 80px !important; position: absolute; width: 100%; } .teq-hero .rte p {font-size: 25px !important; }}"
       ],
       "name": "Section 1",
       "settings": {
@@ -84,14 +84,14 @@
       "custom_css": [
         ".teq-hero__title {font-size: 30px !important; font-weight: 500 !important; top: -45px !important;}",
         ".teq-hero .rte p {font-size: 16px !important; line-height: 1.5em !important;}",
-        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 95px !important; position: absolute; width: 70%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
+        "@media only screen and (min-width: 768px) {.teq-hero__copy {display: flex !important; align-items: center; } .teq-hero__title {font-size: 80px !important; position: absolute; width: 65%; text-align: left; padding-left: 50px; } .teq-hero .rte p {font-size: 25px !important; }}",
         ".teq-hero__p {margin: 0px;}"
       ],
       "name": "Section 1",
       "settings": {
         "url": "",
         "title": "COPPER POT STILL DISTILLATION & BOTTLING",
-        "image": "shopify://shop_images/img-tequila-copper_pot_still_distillation_y_bottling-min.png",
+        "image": "shopify://shop_images/img-tequila-copper_pot_still_distillation_y_bottling2.png",
         "image_alt": "Agave field",
         "body_1": "<p>We double-distill Señora Leona Tequila in classic copper pot stills to refine the spirit while maintaining the agave’s character, then bottle it at 84 proof.</p>",
         "body_2": "",
