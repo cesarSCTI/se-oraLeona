@@ -886,6 +886,11 @@
         "type": "shopify://apps/na-age-verification/blocks/agechecker_y1K8NR3dvv/15fad4c9-4ba9-4c27-8e6c-1f214a81924f",
         "disabled": true,
         "settings": {}
+      },
+      "8141514637927200351": {
+        "type": "shopify://apps/agecheck-18/blocks/age_verification/4429d1e9-fa49-440e-9600-3aa648cf4dd7",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
