@@ -164,6 +164,7 @@
         },
         "custom_information_j33CLN": {
           "type": "custom_information",
+          "disabled": true,
           "settings": {
             "icon": "",
             "text": "We guarantee the security of transactions and payments with our customers.",
