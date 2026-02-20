@@ -462,7 +462,7 @@
       ],
       "name": "Overlay Grid (Blocks)",
       "settings": {
-        "heading": "RECIPES THAT <span>redefines</span> THE RULES",
+        "heading": "RECIPES THAT <span>redefine</span> THE RULES",
         "bg": "#1d181a",
         "gap": 16,
         "radius": 10,
