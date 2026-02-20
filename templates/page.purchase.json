@@ -307,6 +307,7 @@
         },
         "image_pGYnpf": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "enable_image": true,
             "image": "shopify://shop_images/enora_Leona_-purchase_1_Litro.png",
