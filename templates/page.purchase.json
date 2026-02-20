@@ -368,7 +368,7 @@
         ".spotlight-inner .button {max-width: 250px !important;}",
         ".heading {font-family: colfax-web !important;}",
         "a.button:hover {color: #f7f7e1 !important;}",
-        ".container,.body-full-width .wrapper-body .container {padding: 0 25% !important;}",
+        ".container,.body-full-width .wrapper-body .container {padding: 0% 26% !important;}",
         "@media only screen and (max-width: 768px) {.container, .body-full-width .wrapper-body .container {padding: 0 3% !important; }}"
       ],
       "settings": {
