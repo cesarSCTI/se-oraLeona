@@ -72,7 +72,6 @@
         },
         "search_mMhaNt": {
           "type": "search",
-          "disabled": true,
           "settings": {
             "color": "#232323"
           }
@@ -181,7 +180,7 @@
             "show_search": false,
             "show_wishlist": false,
             "show_cart": false,
-            "show_language_currency": true,
+            "show_language_currency": false,
             "text_font_size": 14,
             "show_customer_sticky": false,
             "show_search_sticky": false,
