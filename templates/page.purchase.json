@@ -367,7 +367,8 @@
       "custom_css": [
         ".spotlight-inner .button {max-width: 250px !important;}",
         ".heading {font-family: colfax-web !important;}",
-        "a.button:hover {color: #f7f7e1 !important;}"
+        "a.button:hover {color: #f7f7e1 !important;}",
+        ".container, .body-full-width .wrapper-body .container {padding: 0 30%;}"
       ],
       "settings": {
         "container": "1200",
@@ -375,14 +376,14 @@
         "disable_padding_content": false,
         "mg_minus_desktop": 0,
         "block_layout": "grid",
-        "spotlight_block_swipe_on_mobile": "scroll",
-        "column": "2",
+        "spotlight_block_swipe_on_mobile": "list",
+        "column": "1",
         "column_mb": "1",
         "enable_arrows": false,
         "enable_arrows_mb": true,
         "position_horizontal_slick_arrow": "0",
         "enable_dots": false,
-        "enable_dots_mb": true,
+        "enable_dots_mb": false,
         "display_border_bottom": false,
         "border_color": "#e3e3e3",
         "spotlight_bg": "#fbf6f0",
