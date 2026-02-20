@@ -79,6 +79,7 @@
         },
         "cart_4BrDwk": {
           "type": "cart",
+          "disabled": true,
           "settings": {
             "icon": "1",
             "color": "#000000",
@@ -179,7 +180,7 @@
             "show_customer": false,
             "show_search": false,
             "show_wishlist": false,
-            "show_cart": true,
+            "show_cart": false,
             "show_language_currency": true,
             "text_font_size": 14,
             "show_customer_sticky": false,
