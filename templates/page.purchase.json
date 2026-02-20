@@ -460,6 +460,7 @@
       "block_order": [
         "heading_EEB8kL"
       ],
+      "disabled": true,
       "custom_css": [
         "h2 {font-family: Charter !important; font-weight: 500 !important; line-height: 1.5em !important;}"
       ],
@@ -509,6 +510,7 @@
       "block_order": [
         "heading_6rJ8nn"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text__top {width: 100%; display: flex; justify-content: center;}",
         ".rich-text__blocks h2 {padding-top: 30px !important;}",
