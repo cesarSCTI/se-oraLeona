@@ -18,8 +18,8 @@
       <p class="page-desc">{{ 'templates.404.description' | t }}</p>
 
       <a href="{{ routes.all_products_collection_url }}" class="link body-large">
-        {{ 'templates.404.button' | t }}
-      </a>
+  {{ section.settings.return_button_text }}
+</a>
     </div>
   </div>
 </div>
@@ -332,6 +332,12 @@
           "step": 5,
           "unit": "t:sections.layout.mg_desktop.unit",
           "default": 20
+      },
+      {
+         "type": "text",
+         "id": "return_button_text",
+         "label": "Texto del botón regresar",
+         "default": "Return to store"
       }
     ]
   }
