@@ -878,6 +878,15 @@
           "footer_top_color_link": "#ffffff",
           "footer_top_color_link_hover": "#ffffff"
         }
+      },
+      "age-verification": {
+        "type": "age-verification",
+        "settings": {
+          "background_image": "shopify://shop_images/bg-legal-drinkin-age-SL.png",
+          "title": "ARE YOU LEGAL DRINKIN AGE?",
+          "description": "You must be LEGAL DRINKING AGE to enter this website. This website uses cookies. By entering this site, I agree to the <a href=\"https://senoraleonatequila.com/policies/terms-of-service\">Terms of Service</a> and <a href=\"https://senoraleonatequila.com/policies/privacy-policy\">Privacy Policy.</a>",
+          "legal_age": 18
+        }
       }
     },
     "content_for_index": [],
