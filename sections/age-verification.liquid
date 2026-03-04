@@ -1,0 +1,195 @@
+{% schema %}
+{
+  "name": "Age Verification Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Imagen de fondo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "¿Eres mayor de edad?"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Descripción",
+      "default": "You must be legal drinking age to enter this website."
+    },
+    {
+      "type": "number",
+      "id": "legal_age",
+      "label": "Edad mínima",
+      "default": 18
+    }
+  ],
+  "presets": [
+    {
+      "name": "Age Verification Banner"
+    }
+  ]
+}
+{% endschema %}
+
+<div 
+  id="age-verification"
+  class="age-verification"
+  style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});"
+>
+  <div class="age-overlay"></div>
+
+  <div class="age-content">
+    <h2>{{ section.settings.title }}</h2>
+
+    <div class="age-selectors">
+      <select id="age-day">
+        {% for i in (1..31) %}
+          <option value="{{ i }}">{{ i | prepend: '0' | slice: -2, 2 }}</option>
+        {% endfor %}
+      </select>
+
+      <select id="age-month">
+        {% for i in (1..12) %}
+          <option value="{{ i }}">{{ i | prepend: '0' | slice: -2, 2 }}</option>
+        {% endfor %}
+      </select>
+
+      <select id="age-year">
+        {% assign currentYear = 'now' | date: "%Y" | plus: 0 %}
+        {% for i in (0..100) %}
+          <option value="{{ currentYear | minus: i }}">
+            {{ currentYear | minus: i }}
+          </option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <button id="verify-age" class="age-button">
+      Verificar
+    </button>
+
+    <p class="age-description">
+      {{ section.settings.description }}
+    </p>
+    <p id="errorVerification" style="color: #d62b2b;
+    font-size: 16px;"></p>
+  </div>
+</div>
+
+<style>
+.age-verification {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.age-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.age-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  padding: 40px;
+}
+
+.age-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.age-selectors {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.age-selectors select {
+  padding: 10px;
+  background: white;
+  border: none;
+  min-width: 80px;
+}
+
+.age-button {
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.age-button:hover {
+  opacity: 0.8;
+}
+
+.age-description {
+  font-size: 14px;
+  opacity: 0.9;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const wrapper = document.getElementById("age-verification");
+  const verifyBtn = document.getElementById("verify-age");
+  const legalAge = {{ section.settings.legal_age }};
+
+  const today = new Date();
+  const todayString = today.toISOString().split("T")[0]; // YYYY-MM-DD
+
+  const savedVerification = localStorage.getItem("ageVerified");
+  const savedDate = localStorage.getItem("ageVerifiedDate");
+
+  // Si ya validó y es el mismo día
+  if (savedVerification === "true" && savedDate === todayString) {
+    wrapper.style.display = "none";
+    return;
+  } else {
+    // Si cambió el día, limpiar verificación
+    localStorage.removeItem("ageVerified");
+    localStorage.removeItem("ageVerifiedDate");
+  }
+
+  verifyBtn.addEventListener("click", function() {
+    const day = parseInt(document.getElementById("age-day").value);
+    const month = parseInt(document.getElementById("age-month").value) - 1;
+    const year = parseInt(document.getElementById("age-year").value);
+
+    const birthDate = new Date(year, month, day);
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+
+    if (age >= legalAge) {
+      localStorage.setItem("ageVerified", "true");
+      localStorage.setItem("ageVerifiedDate", todayString);
+      wrapper.style.display = "none";
+    } else {
+      let err = document.getElementById("errorVerification");
+      err.innerHTML = "Necesitas ser mayor de edad";
+    }
+  });
+
+});
+</script>
