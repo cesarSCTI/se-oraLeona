@@ -881,6 +881,10 @@
       },
       "age-verification": {
         "type": "age-verification",
+        "custom_css": [
+          ".age-content h2 {font-size: 30px !important; color: #f7f7e1 !important; line-height: 1.2em !important;}",
+          ".age-description {line-height: 1.2em !important;}"
+        ],
         "settings": {
           "background_image": "shopify://shop_images/bg-legal-drinkin-age-SL.png",
           "title": "ARE YOU LEGAL DRINKIN AGE?",
