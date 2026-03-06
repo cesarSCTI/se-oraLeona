@@ -237,6 +237,7 @@
     },
     "custom_press_banner_MtnxpT": {
       "type": "custom-press-banner",
+      "disabled": true,
       "custom_css": [
         "a.button:hover {color: #f7f7e1 !important;}",
         "a.button {margin-left: 150px !important; margin-top: 30px !important;}",
@@ -297,7 +298,6 @@
     },
     "custom_press_banner_rDLVEq": {
       "type": "custom-press-banner",
-      "disabled": true,
       "custom_css": [
         "a.button:hover {color: #f7f7e1 !important;}",
         "a.button {margin-left: 150px !important; margin-top: 30px !important;}",
