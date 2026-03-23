@@ -15,14 +15,14 @@
         ".cart-content-empty .cart-actions .button {color: #fff !important;}",
         ".cart-actions .button {font-family: \"Roboto Mono\";}",
         ".cart-actions .button + .button {color: #fff !important;}",
-        ".cart-total-label,.cart-total-value,.cart-header-item,.cart-item,.cart-note .form-label,.cart-note .form-input, .cart-securityImage-label {font-family: Charter !important;}"
+        ".cart-total-label,.cart-total-value,.cart-header-item,.cart-item,.cart-note .form-label,.cart-note .form-input,.cart-securityImage-label {font-family: Charter !important;}"
       ],
       "settings": {
         "show_breadcrumb": false,
         "breadcrumb_color": "#999999",
         "breadcrumb_alignment": "left",
         "show_page_title": true,
-        "page_title_color": "#FFFFFF",
+        "page_title_color": "#ffffff",
         "page_title_alignment": "center",
         "container": "1170",
         "side_padding_full_width": 0,
@@ -34,7 +34,7 @@
         "mg_bottom_mobile": 0,
         "enable_sticky_button_checkout_mb": false,
         "enable_dropdown": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "image_ratio": "portrait",
         "portrait_aspect_ratio": 133,
         "show_cart_countdown": false,
@@ -45,7 +45,7 @@
         "cart_countdown_product": "",
         "show_trust_image": true,
         "continue_button_action": "1",
-        "custom_button_link": "shopify://pages/purchase"
+        "custom_button_link": "shopify://products/tequila-blanco-750-ml"
       }
     }
   },
