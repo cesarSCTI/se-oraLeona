@@ -12,8 +12,7 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "rich_text_axxdeF": {
       "type": "rich-text",
@@ -21,11 +20,11 @@
         "heading_bYQKAx": {
           "type": "heading",
           "settings": {
-            "heading": "Laelia Tequila User Generated Content Terms:",
+            "heading": "Señora Leona Tequila User Generated Content Terms:",
             "heading_size": 30,
             "heading_size_mb": 30,
             "heading_line_height": 1,
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         }
       },
@@ -40,7 +39,7 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": 0,
-        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "center",
@@ -63,7 +62,7 @@
             "text_size_mb": 14,
             "text_line_height": 2,
             "margin_top_text": 20,
-            "text_color": "#000",
+            "text_color": "#000000",
             "text_width": "1200px"
           }
         }
@@ -79,7 +78,7 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": 0,
-        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "left",
