@@ -12,8 +12,7 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "rich_text_EANRbH": {
       "type": "rich-text",
@@ -21,7 +20,7 @@
         "heading_9gwF4F": {
           "type": "heading",
           "settings": {
-            "heading": "Laelia Tequila User Generated Content Policy:",
+            "heading": "Señora Leona Tequila User Generated Content Policy:",
             "heading_size": 30,
             "heading_size_mb": 30,
             "heading_line_height": 1,
@@ -40,7 +39,7 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": 0,
-        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "center",
@@ -79,7 +78,7 @@
         "color_border_bottom": "#e8e8e8",
         "enable_minus_mg_top": false,
         "minus_spacing_top": 0,
-        "rich_text_bg": "#fbf6f0",
+        "rich_text_bg": "#f7f7e1",
         "rich_text_bg_gradient": "",
         "enable_column": false,
         "content_align": "left",
