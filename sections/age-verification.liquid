@@ -3,6 +3,22 @@
   "name": "Age Verification Banner",
   "settings": [
     {
+      "type": "select",
+      "id": "verification_mode",
+      "label": "Modo de verificación",
+      "options": [
+        {
+          "value": "birthdate",
+          "label": "Fecha de nacimiento"
+        },
+        {
+          "value": "simple",
+          "label": "Sí / No (botones simples)"
+        }
+      ],
+      "default": "birthdate"
+    },
+    {
       "type": "image_picker",
       "id": "background_image",
       "label": "Imagen de fondo"
@@ -17,13 +33,31 @@
       "type": "textarea",
       "id": "description",
       "label": "Descripción",
-      "default": "You must be legal drinking age to enter this website."
+      "default": "Debes tener la edad legal para consumir alcohol para ingresar a este sitio."
     },
     {
       "type": "number",
       "id": "legal_age",
       "label": "Edad mínima",
       "default": 18
+    },
+    {
+      "type": "text",
+      "id": "btn_yes_label",
+      "label": "Texto botón SÍ (modo simple)",
+      "default": "Sí, soy mayor de edad"
+    },
+    {
+      "type": "text",
+      "id": "btn_no_label",
+      "label": "Texto botón NO (modo simple)",
+      "default": "No, soy menor de edad"
+    },
+    {
+      "type": "textarea",
+      "id": "underage_message",
+      "label": "Mensaje si el usuario es menor de edad",
+      "default": "Lo sentimos, no puedes acceder a este sitio."
     }
   ],
   "presets": [
@@ -34,7 +68,9 @@
 }
 {% endschema %}
 
-<div 
+{% assign mode = section.settings.verification_mode %}
+
+<div
   id="age-verification"
   class="age-verification"
   style="background-image: url({{ section.settings.background_image | image_url: width: 2000 }});"
@@ -42,154 +78,341 @@
   <div class="age-overlay"></div>
 
   <div class="age-content">
+
+    {% comment %} Logo / decorative line {% endcomment %}
+    <div class="age-deco"></div>
+
     <h2>{{ section.settings.title }}</h2>
 
-    <div class="age-selectors">
-      <select id="age-day">
-        {% for i in (1..31) %}
-          <option value="{{ i }}">{{ i | prepend: '0' | slice: -2, 2 }}</option>
-        {% endfor %}
-      </select>
+    {% comment %} ── MODO FECHA DE NACIMIENTO ── {% endcomment %}
+    {% if mode == 'birthdate' %}
+      <p class="age-description">{{ section.settings.description }}</p>
 
-      <select id="age-month">
-        {% for i in (1..12) %}
-          <option value="{{ i }}">{{ i | prepend: '0' | slice: -2, 2 }}</option>
-        {% endfor %}
-      </select>
+      <div class="age-selectors">
+        <div class="select-wrapper">
+          <label>DD</label>
+          <select id="age-day">
+            {% for i in (1..31) %}
+              <option value="{{ i }}">{{ i | prepend: '0' | slice: -2, 2 }}</option>
+            {% endfor %}
+          </select>
+        </div>
 
-      <select id="age-year">
-        {% assign currentYear = 'now' | date: "%Y" | plus: 0 %}
-        {% for i in (0..100) %}
-          <option value="{{ currentYear | minus: i }}">
-            {{ currentYear | minus: i }}
-          </option>
-        {% endfor %}
-      </select>
-    </div>
+        <div class="select-wrapper">
+          <label>MM</label>
+          <select id="age-month">
+            {% for i in (1..12) %}
+              <option value="{{ i }}">{{ i | prepend: '0' | slice: -2, 2 }}</option>
+            {% endfor %}
+          </select>
+        </div>
 
-    <button id="verify-age" class="age-button">
-      Verify
-    </button>
+        <div class="select-wrapper">
+          <label>AAAA</label>
+          <select id="age-year">
+            {% assign currentYear = 'now' | date: "%Y" | plus: 0 %}
+            {% for i in (0..100) %}
+              <option value="{{ currentYear | minus: i }}">{{ currentYear | minus: i }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      </div>
 
-    <p class="age-description">
-      {{ section.settings.description }}
-    </p>
-    <p id="errorVerification" style="color: #d62b2b;
-    font-size: 16px;"></p>
+      <button id="verify-age" class="age-button age-button--primary">
+        Verificar edad
+      </button>
+
+      <p id="errorVerification" class="age-error"></p>
+
+    {% comment %} ── MODO SÍ / NO ── {% endcomment %}
+    {% elsif mode == 'simple' %}
+      <p class="age-description">{{ section.settings.description }}</p>
+
+      <div class="age-simple-buttons">
+        <button id="btn-yes" class="age-button age-button--primary">
+          {{ section.settings.btn_yes_label }}
+        </button>
+        <button id="btn-no" class="age-button age-button--secondary">
+          {{ section.settings.btn_no_label }}
+        </button>
+      </div>
+
+      <div id="underage-message" class="age-underage-msg" style="display:none;">
+        <span>⛔</span>
+        <p>{{ section.settings.underage_message }}</p>
+      </div>
+    {% endif %}
+
   </div>
 </div>
 
 <style>
-.age-verification {
-  position: fixed;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500&display=swap');
 
-.age-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-}
+  .age-verification {
+    position: fixed;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-family: 'Jost', sans-serif;
+  }
 
-.age-content {
-  position: relative;
-  text-align: center;
-  color: white;
-  max-width: 500px;
-  padding: 40px;
-}
+  .age-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.78) 0%,
+      rgba(20, 10, 5, 0.85) 100%
+    );
+  }
 
-.age-content h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
+  .age-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    max-width: 520px;
+    width: 90%;
+    padding: 52px 44px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    border-radius: 2px;
+    animation: fadeUp 0.6s ease both;
+  }
 
-.age-selectors {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 
-.age-selectors select {
-  padding: 10px;
-  background: white;
-  border: none;
-  min-width: 80px;
-}
+  /* Decorative top line */
+  .age-deco {
+    width: 48px;
+    height: 3px;
+    background: #c9a96e;
+    margin: 0 auto 28px;
+    border-radius: 2px;
+  }
 
-.age-button {
-  background: black;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
+  .age-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
 
-.age-button:hover {
-  opacity: 0.8;
-}
+  .age-description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.72);
+    margin: 0 0 32px;
+  }
 
-.age-description {
-  font-size: 15px;
-  line-height: 1.5em;
-}
+  /* ── Selects (modo fecha) ── */
+  .age-selectors {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .select-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .select-wrapper label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #c9a96e;
+    text-transform: uppercase;
+  }
+
+  .select-wrapper select {
+    padding: 10px 8px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    min-width: 72px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+
+  .select-wrapper select:focus {
+    outline: none;
+    border-color: #c9a96e;
+  }
+
+  .select-wrapper select option {
+    background: #1a1208;
+    color: #fff;
+  }
+
+  /* ── Botones ── */
+  .age-button {
+    display: inline-block;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border-radius: 2px;
+  }
+
+  .age-button--primary {
+    background: #c9a96e;
+    color: #1a1208;
+  }
+
+  .age-button--primary:hover {
+    background: #e0c088;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(201,169,110,0.35);
+  }
+
+  .age-button--secondary {
+    background: transparent;
+    color: rgba(255,255,255,0.65);
+    border: 1px solid rgba(255,255,255,0.25);
+  }
+
+  .age-button--secondary:hover {
+    border-color: rgba(255,255,255,0.55);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  /* ── Modo simple: botones apilados ── */
+  .age-simple-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .age-simple-buttons .age-button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* ── Mensaje menor de edad ── */
+  .age-underage-msg {
+    margin-top: 24px;
+    padding: 18px 20px;
+    background: rgba(214, 43, 43, 0.12);
+    border: 1px solid rgba(214, 43, 43, 0.4);
+    border-radius: 2px;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .age-underage-msg span {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .age-underage-msg p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+  }
+
+  /* ── Error (modo fecha) ── */
+  .age-error {
+    margin-top: 14px;
+    font-size: 13px;
+    color: #e06060;
+    min-height: 18px;
+    letter-spacing: 0.3px;
+  }
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  const wrapper = document.getElementById("age-verification");
-  const verifyBtn = document.getElementById("verify-age");
-  const legalAge = {{ section.settings.legal_age }};
+  const wrapper   = document.getElementById("age-verification");
+  const legalAge  = {{ section.settings.legal_age }};
+  const mode      = "{{ section.settings.verification_mode }}";
 
-  const today = new Date();
-  const todayString = today.toISOString().split("T")[0]; // YYYY-MM-DD
+  const today       = new Date();
+  const todayString = today.toISOString().split("T")[0];
 
-  const savedVerification = localStorage.getItem("ageVerified");
-  const savedDate = localStorage.getItem("ageVerifiedDate");
-
-  // Si ya validó y es el mismo día
-  if (savedVerification === "true" && savedDate === todayString) {
+  // ── Revisar si ya verificó hoy ──
+  if (
+    localStorage.getItem("ageVerified") === "true" &&
+    localStorage.getItem("ageVerifiedDate") === todayString
+  ) {
     wrapper.style.display = "none";
     return;
   } else {
-    // Si cambió el día, limpiar verificación
     localStorage.removeItem("ageVerified");
     localStorage.removeItem("ageVerifiedDate");
   }
 
-  verifyBtn.addEventListener("click", function() {
-    const day = parseInt(document.getElementById("age-day").value);
-    const month = parseInt(document.getElementById("age-month").value) - 1;
-    const year = parseInt(document.getElementById("age-year").value);
+  // ── MODO FECHA DE NACIMIENTO ──
+  if (mode === "birthdate") {
+    const verifyBtn = document.getElementById("verify-age");
 
-    const birthDate = new Date(year, month, day);
+    verifyBtn.addEventListener("click", function () {
+      const day   = parseInt(document.getElementById("age-day").value);
+      const month = parseInt(document.getElementById("age-month").value) - 1;
+      const year  = parseInt(document.getElementById("age-year").value);
 
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
+      const birthDate = new Date(year, month, day);
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
 
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-      age--;
-    }
+      if (age >= legalAge) {
+        localStorage.setItem("ageVerified", "true");
+        localStorage.setItem("ageVerifiedDate", todayString);
+        wrapper.style.display = "none";
+      } else {
+        document.getElementById("errorVerification").textContent =
+          "Debes tener al menos " + legalAge + " años para acceder.";
+      }
+    });
+  }
 
-    if (age >= legalAge) {
+  // ── MODO SÍ / NO ──
+  if (mode === "simple") {
+    const btnYes        = document.getElementById("btn-yes");
+    const btnNo         = document.getElementById("btn-no");
+    const underageMsg   = document.getElementById("underage-message");
+
+    btnYes.addEventListener("click", function () {
       localStorage.setItem("ageVerified", "true");
       localStorage.setItem("ageVerifiedDate", todayString);
       wrapper.style.display = "none";
-    } else {
-      let err = document.getElementById("errorVerification");
-      err.innerHTML = "You must be of legal age";
-    }
-  });
+    });
+
+    btnNo.addEventListener("click", function () {
+      btnYes.style.display    = "none";
+      btnNo.style.display     = "none";
+      underageMsg.style.display = "block";
+    });
+  }
 
 });
 </script>
