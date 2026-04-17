@@ -886,7 +886,7 @@
           "a {text-decoration: underline !important;}"
         ],
         "settings": {
-          "verification_mode": "simple",
+          "verification_mode": "birthdate",
           "background_image": "shopify://shop_images/BANNER-LEGALAGE-SENORALEONA_1.png",
           "title": "ARE YOU OF LEGAL DRINKING AGE?",
           "description": "You must be LEGAL DRINKING AGE to enter this website. This website uses cookies. By entering this site, I agree to the <a href=\"https://senoraleonatequila.com/policies/terms-of-service\">Terms of Service</a> and <a href=\"https://senoraleonatequila.com/policies/privacy-policy\">Privacy Policy.</a>",
