@@ -893,7 +893,7 @@
           "legal_age": 21,
           "btn_yes_label": "Yes",
           "btn_no_label": "No",
-          "underage_message": "Lo sentimos, no puedes acceder a este sitio."
+          "underage_message": "We're sorry, but you cannot access this site."
         }
       }
     },
