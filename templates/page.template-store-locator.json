@@ -184,13 +184,13 @@
         "01a2b91b-e433-4e37-a301-d4116a070fcb"
       ],
       "settings": {
-        "show_breadcrumb": true,
+        "show_breadcrumb": false,
         "breadcrumb_alignment": "center",
         "breadcrumb_bg": "",
         "breadcrumb_gradient": "",
         "breadcrumb_bg_mb": "#f6f6f6",
         "breadcrumb_gradient_mb": "",
-        "show_page_title": true,
+        "show_page_title": false,
         "page_title_alignment": "center",
         "container": "container",
         "mg_top_desktop": 0,

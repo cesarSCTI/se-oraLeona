@@ -542,6 +542,7 @@
     },
     "custom_liquid_nzfddx": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": ""
       }
