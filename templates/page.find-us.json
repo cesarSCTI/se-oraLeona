@@ -99,18 +99,18 @@
         "mg_bottom_mobile": 50
       }
     },
+    "custom_liquid_Ux7KXM": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!-- Start Stockist.co widget -->\n<stockist-store-locator data-stockist-widget-tag=\"map_r32nvxw3\">\n  Loading store locator from <a href=\"https://stockist.co\">Stockist store locator</a>...\n</stockist-store-locator>\n<script async src=\"https://stockist.co/embed/v1/widget.min.js\"></script>\n<!-- End Stockist.co widget -->"
+      }
+    },
     "custom_liquid_Y7nzye": {
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
         "custom_liquid": "<style>\n.halo-block-header .title .text {\n        width: 100% !important;\n    }\n@media only screen and (min-width:768px){\n.featured-product {\n    padding: 0px 7% !important;\n}\n}\n</style>"
-      }
-    },
-    "custom_liquid_Ux7KXM": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<!-- Start Stockist.co widget -->\n<p>Loading store locator from <a href=\"https://stockist.co\">Stockist store locator</a>... <script src=\"https://stockist.co/embed/v1/widget.min.js\" async=\"\"></script></p>\n<!-- End Stockist.co widget -->"
       }
     }
   },
