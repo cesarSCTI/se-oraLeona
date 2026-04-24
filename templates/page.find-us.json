@@ -19,6 +19,7 @@
       "blocks": {
         "heading_EEB8kL": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Señora Leona is produced in limited quantities and may be found at the following locations or via specialty e-commerce sites.",
             "heading_size": 30,
@@ -68,13 +69,25 @@
             "heading_line_height": 1.5,
             "heading_color": "#000000"
           }
+        },
+        "text_3WV39F": {
+          "type": "text",
+          "settings": {
+            "text": "<!-- Start Stockist.co widget -->\n<stockist-store-locator data-stockist-widget-tag=\"map_r32nvxw3\">\n  Loading store locator from <a href=\"https://stockist.co\">Stockist store locator</a>...\n</stockist-store-locator>\n<script async src=\"https://stockist.co/embed/v1/widget.min.js\"></script>\n<!-- End Stockist.co widget -->",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_line_height": 1,
+            "margin_top_text": 60,
+            "text_color": "#000000",
+            "text_width": "1920px"
+          }
         }
       },
       "block_order": [
-        "heading_6rJ8nn"
+        "heading_6rJ8nn",
+        "text_3WV39F"
       ],
       "custom_css": [
-        ".rich-text__top {width: 100%; display: flex; justify-content: center;}",
         ".rich-text__blocks h2 {padding-top: 30px !important;}",
         "h2 {font-family: colfax-web !important; line-height: 1.2em !important;}"
       ],
@@ -92,15 +105,16 @@
         "enable_column": false,
         "content_align": "center",
         "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 0,
-        "mg_bottom_desktop": 40,
+        "mg_top_tablet": 40,
+        "mg_top_mobile": 40,
+        "mg_bottom_desktop": 80,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50
       }
     },
     "custom_liquid_Ux7KXM": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<!-- Start Stockist.co widget -->\n<stockist-store-locator data-stockist-widget-tag=\"map_r32nvxw3\">\n  Loading store locator from <a href=\"https://stockist.co\">Stockist store locator</a>...\n</stockist-store-locator>\n<script async src=\"https://stockist.co/embed/v1/widget.min.js\"></script>\n<!-- End Stockist.co widget -->"
