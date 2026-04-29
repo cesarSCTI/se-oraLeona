@@ -447,12 +447,29 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "1777482889765d9caf": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_ihjiYU": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_ihjiYU"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
     "main",
     "1745528623cd042ce2",
     "product-recommendations",
-    "product-recently-viewed"
+    "product-recently-viewed",
+    "1777482889765d9caf"
   ]
 }
