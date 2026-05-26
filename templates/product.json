@@ -348,7 +348,7 @@
       "custom_css": [
         ".kl_reviews__review__author {margin-top: 10px !important;}",
         ".kl_reviews__review__title {line-height: 1.2em !important;}",
-        ".reviews_all_container {margin-left: 80px !important; margin-right: 80px !important;}",
+        ".reviews_all_container {margin-left: 100px !important; margin-right: 100px !important;}",
         "@media only screen and (max-width: 768px) {.reviews_all_container {margin-left: 10px !important; margin-right: 10px !important; }}"
       ],
       "settings": {
