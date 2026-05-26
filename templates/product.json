@@ -334,11 +334,21 @@
         "total_btn_bg_gradient_hover": ""
       }
     },
-    "1745528623cd042ce2": {
+    "177983288765709617": {
       "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_73UTp4": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_73UTp4"
+      ],
       "custom_css": [
         ".kl_reviews__review__author {margin-top: 10px !important;}",
         ".kl_reviews__review__title {line-height: 1.2em !important;}",
+        ".reviews_all_container {margin-left: 80px !important; margin-right: 80px !important;}",
         "@media only screen and (max-width: 768px) {.reviews_all_container {margin-left: 10px !important; margin-right: 10px !important; }}"
       ],
       "settings": {
@@ -454,28 +464,12 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
-    },
-    "1777482889765d9caf": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_product_reviews_ihjiYU": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_product_reviews_ihjiYU"
-      ],
-      "settings": {
-        "include_margins": false
-      }
     }
   },
   "order": [
     "main",
-    "1745528623cd042ce2",
+    "177983288765709617",
     "product-recommendations",
-    "product-recently-viewed",
-    "1777482889765d9caf"
+    "product-recently-viewed"
   ]
 }
