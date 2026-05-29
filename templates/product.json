@@ -121,7 +121,6 @@
         },
         "custom_img_irD8Ew": {
           "type": "customImg",
-          "disabled": true,
           "settings": {
             "customTextImg": "Recognitions",
             "customImg": "{{ product.metafields.custom.recognition.value }}",
