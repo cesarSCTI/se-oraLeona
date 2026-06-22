@@ -145,7 +145,7 @@
           "settings": {
             "qty_style": "1",
             "qty_layout": "1",
-            "spacing_top": 0,
+            "spacing_top": 10,
             "spacing_bottom": 10
           }
         },
