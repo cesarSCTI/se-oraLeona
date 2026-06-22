@@ -142,7 +142,6 @@
         },
         "quantity_selector_4Wggmw": {
           "type": "quantity_selector",
-          "disabled": true,
           "settings": {
             "qty_style": "1",
             "qty_layout": "1",
