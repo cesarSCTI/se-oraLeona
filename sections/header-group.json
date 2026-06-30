@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "<a href=\"https://laeliatequila.com/pages/holiday-offer\">\n  <div class=\"message\">\n    Once-A-Year Sale: 30% Off + Free USA Shipping | Code: BESTDEAL30\n  </div>\n</a>",
+            "text": "<a href=\"https://senoraleonatequila.com/products/tequila-blanco-750-ml\">\n  <div class=\"message\">\n    Free Limited-Edition Jersey When You Add 2 Bottles to Cart\n  </div>\n</a>",
             "btn_color": "#cc0e14",
             "btn_border_color": "#2da116",
             "btn_bg_color": "#727272",
@@ -28,20 +28,19 @@
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "custom_css": [
-        ".announcement-bar__message .message,.announcement-bar__message p {line-height: 1.2em !important;}"
+        ".announcement-bar__message .message,.announcement-bar__message p {line-height: 1.2em !important; font-family: Charter !important;}"
       ],
       "settings": {
         "enable_announcement": true,
         "layout": "slider",
         "enable_close": false,
-        "color_text": "#ffffff",
-        "bg_color_text": "#000000",
+        "color_text": "#F7F7E1",
+        "bg_color_text": "#1D181A",
         "bg_color_text_gradient": "",
         "font_size_text": 18,
         "font_style_text": "normal",
-        "font_weight_text": "600",
+        "font_weight_text": "400",
         "arrow_active": false,
         "content_max_width": 65,
         "padding_top": 8,
