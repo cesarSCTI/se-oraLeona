@@ -37,21 +37,22 @@
 <div class="container-fluid bottom-line" style="background:{{ section.settings.bottom_bg }}; color:{{ section.settings.bottom_text_color }}; padding:20px 0px;">
   <div class="bottomBarInner">
 
-    {% comment %} Logo Hecho en México {% endcomment %}
-    {% if section.settings.mexico_logo != blank %}
-      <div class="mexicoLogo">
-        {{ section.settings.mexico_logo | image_url: width: 400 | image_tag: class: 'mexicoLogoImg', alt: 'Hecho en México' }}
-      </div>
-    {% endif %}
+    {% comment %} Grupo: logo Hecho en México + red social (siempre en la misma línea) {% endcomment %}
+<div class="logoSocialGroup">
+  {% if section.settings.mexico_logo != blank %}
+    <div class="mexicoLogo">
+      {{ section.settings.mexico_logo | image_url: width: 400 | image_tag: class: 'mexicoLogoImg', alt: 'Hecho en México' }}
+    </div>
+  {% endif %}
 
-    {% comment %} Red social: icono + link personalizables. Si no subes icono, usa el snippet original {% endcomment %}
-    {% if section.settings.social_icon != blank %}
-      <a href="{{ section.settings.social_url }}" class="customSocial" target="_blank" rel="noopener" aria-label="{{ section.settings.social_label | default: 'Social media' }}">
-        {{ section.settings.social_icon | image_url: width: 200 | image_tag: class: 'customSocialIcon' }}
-      </a>
-    {% else %}
-      {% render 'footer-social', block: block, social_is_nested: true %}
-    {% endif %}
+  {% if section.settings.social_icon != blank %}
+    <a href="{{ section.settings.social_url }}" class="customSocial" target="_blank" rel="noopener" aria-label="{{ section.settings.social_label | default: 'Social media' }}">
+      {{ section.settings.social_icon | image_url: width: 200 | image_tag: class: 'customSocialIcon' }}
+    </a>
+  {% else %}
+    {% render 'footer-social', block: block, social_is_nested: true %}
+  {% endif %}
+</div>
 
     <div class="areaFooter">{{ section.settings.areaFooter }}</div>
 
