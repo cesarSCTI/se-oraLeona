@@ -1,13 +1,13 @@
 <div class="container-fluid" style="background:{{ section.settings.bg }};padding:50px 0px" id="footer">
-  
+
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12 firstPart">
         {% if section.settings.logo != blank %}
-          {{ section.settings.logo | image_url: height: 150 | image_tag: class: 'logo' }}
+          {{ section.settings.logo | image_url: height: 400 | image_tag: class: 'logo' }}
         {% endif %}
        <div class="customtext1">{{ section.settings.text1 }}</div>
-       <div class="customtext2">{{ section.settings.text2 }}</div> 
+       <div class="customtext2">{{ section.settings.text2 }}</div>
         <div class="areaFooterLinks">
       {% assign menu_handle = section.settings.menu2 %}
       {% if linklists[menu_handle] %}
@@ -23,7 +23,7 @@
       {% endif %}
     </div>
          {% if section.settings.logo2 != blank %}
-          {{ section.settings.logo2 | image_url: width: 300 | image_tag: class: 'echo' }}
+          {{ section.settings.logo2 | image_url: width: 600 | image_tag: class: 'echo' }}
         {% endif %}
       </div>
       <div class="col-md-6 col-sm-12" style="text-align:center;">
@@ -32,10 +32,29 @@
     </div>
   </div>
 </div>
-<div class="container-fluid bottom-line" style="background:#9F036D; color:#F7F7E1; padding:20px 0px;">
-  <div class="row" style="justify-content: center; align-items:center;">
+
+{% comment %} ===== Barra inferior: todo centrado en una fila ===== {% endcomment %}
+<div class="container-fluid bottom-line" style="background:{{ section.settings.bottom_bg }}; color:{{ section.settings.bottom_text_color }}; padding:20px 0px;">
+  <div class="bottomBarInner">
+
+    {% comment %} Logo Hecho en México {% endcomment %}
+    {% if section.settings.mexico_logo != blank %}
+      <div class="mexicoLogo">
+        {{ section.settings.mexico_logo | image_url: width: 400 | image_tag: class: 'mexicoLogoImg', alt: 'Hecho en México' }}
+      </div>
+    {% endif %}
+
+    {% comment %} Red social: icono + link personalizables. Si no subes icono, usa el snippet original {% endcomment %}
+    {% if section.settings.social_icon != blank %}
+      <a href="{{ section.settings.social_url }}" class="customSocial" target="_blank" rel="noopener" aria-label="{{ section.settings.social_label | default: 'Social media' }}">
+        {{ section.settings.social_icon | image_url: width: 200 | image_tag: class: 'customSocialIcon' }}
+      </a>
+    {% else %}
+      {% render 'footer-social', block: block, social_is_nested: true %}
+    {% endif %}
+
     <div class="areaFooter">{{ section.settings.areaFooter }}</div>
-     {% render 'footer-social', block: block, social_is_nested: true %}
+
     <div class="areaFooterLinks">
       {% assign menu_handle = section.settings.menu %}
       {% if linklists[menu_handle] %}
@@ -50,8 +69,10 @@
         <p>No menu selected or menu is empty.</p>
       {% endif %}
     </div>
+
   </div>
 </div>
+
 {% style %}
   .row{
     display:flex;
@@ -79,10 +100,60 @@
     flex-direction:column;
     gap:50px;
   }
+
+  /* ===== Tamaños personalizables (escritorio) ===== */
+  #footer .logo{
+    height:{{ section.settings.logo_height }}px;
+    width:auto;
+  }
+  #footer .echo{
+    width:{{ section.settings.logo2_width }}px;
+    height:auto;
+    max-width:100%;
+  }
+  .customtext1 {
+    font-size:{{ section.settings.text1_size }}px;
+  }
+  .customtext2 {
+    font-size:{{ section.settings.text2_size }}px;
+  }
+  #footer h5{
+    font-size:{{ section.settings.title_size }}px;
+  }
+
+  /* ===== Barra inferior centrada ===== */
+  .bottomBarInner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:{{ section.settings.bottom_gap }}px;
+    width:100%;
+  }
+  .mexicoLogo{
+    display:flex;
+    align-items:center;
+  }
+  .mexicoLogoImg{
+    width:{{ section.settings.mexico_logo_width }}px;
+    height:auto;
+    display:block;
+  }
+  .customSocial{
+    display:flex;
+    align-items:center;
+  }
+  .customSocialIcon{
+    width:{{ section.settings.social_icon_size }}px;
+    height:{{ section.settings.social_icon_size }}px;
+    object-fit:contain;
+    display:block;
+  }
+
   .areaFooter{
     font-family: 'Roboto Mono';
     text-transform:uppercase;
-    padding:30px 0px;
+    padding:0px;
     font-weight:600;
   }
   .areaFooterLinks ul {
@@ -91,34 +162,37 @@
     padding: 0px;
     margin: 0px;
     margin-left:20px;
-}
+  }
   .areaFooterLinks li {
     list-style:none;
     font-family: 'Roboto Mono';
     text-transform:uppercase;
     font-weight:600;
-}
+  }
+  .bottom-line .areaFooterLinks a{
+    color:{{ section.settings.bottom_text_color }};
+    text-decoration:none;
+  }
   #footer a.link.link--text.list-social__link {
     background: #000;
-}
+  }
   #footer svg.icon {
     fill: #fff !important;
-}
-.bottom-line .list-social__link{
-  background:transparent !important;
-  color: #fff !important;
-}
-.list-social__item{
-  margin:0px !important;
-}
-.emailContact {
+  }
+  .bottom-line .list-social__link{
+    background:transparent !important;
+    color: #fff !important;
+  }
+  .list-social__item{
+    margin:0px !important;
+  }
+  .emailContact {
     display: flex;
     justify-content: flex-end;
     font-size: larger;
-}
-.customtext1 {
-    font-size: large;
-}
+  }
+
+  /* ===== Móvil ===== */
   @media only screen and (max-width:768px){
     .col-sm-12{
       width:100%;
@@ -126,17 +200,60 @@
     .areaFooterLinks ul{
       flex-direction:column;
       text-align:center;
+      margin-left:0px;
+    }
+    .bottomBarInner{
+      flex-direction:column;
+      gap:{{ section.settings.bottom_gap_mobile }}px;
+      text-align:center;
+    }
+    /* Tamaños específicos para móvil */
+    #footer .logo{
+      height:{{ section.settings.logo_height_mobile }}px;
+    }
+    #footer .echo{
+      width:{{ section.settings.logo2_width_mobile }}px;
+    }
+    #footer h5{
+      font-size:{{ section.settings.title_size_mobile }}px;
+    }
+    .customtext1{
+      font-size:{{ section.settings.text1_size_mobile }}px;
+    }
+    .customtext2{
+      font-size:{{ section.settings.text2_size_mobile }}px;
+    }
+    .mexicoLogoImg{
+      width:{{ section.settings.mexico_logo_width_mobile }}px;
+    }
+    .customSocialIcon{
+      width:{{ section.settings.social_icon_size_mobile }}px;
+      height:{{ section.settings.social_icon_size_mobile }}px;
     }
   }
-  {% endstyle %}
+{% endstyle %}
+
 {% schema %}
   {
     "name": "Footer 8",
     "settings": [
       {
+        "type": "header",
+        "content": "Contenido principal"
+      },
+      {
         "type": "text",
         "id": "text1",
         "label": "text 1"
+      },
+      {
+        "type": "range",
+        "id": "text1_size",
+        "label": "Tamaño text 1 (px)",
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "default": 18
       },
       {
         "type": "text",
@@ -144,24 +261,91 @@
         "label": "text 2"
       },
       {
+        "type": "range",
+        "id": "text2_size",
+        "label": "Tamaño text 2 (px)",
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "default": 16
+      },
+      {
         "type": "color",
         "id": "bg",
-        "label": "bakcground"
+        "label": "Background",
+        "default": "#1E1A1B"
       },
       {
         "type": "image_picker",
         "id": "logo",
-        "label": "logo"
+        "label": "Logo"
+      },
+      {
+        "type": "range",
+        "id": "logo_height",
+        "label": "Altura del logo (px)",
+        "min": 50,
+        "max": 400,
+        "step": 10,
+        "default": 150
       },
       {
         "type": "image_picker",
         "id": "logo2",
-        "label": "logo 2"
+        "label": "Logo 2"
+      },
+      {
+        "type": "range",
+        "id": "logo2_width",
+        "label": "Ancho del logo 2 (px)",
+        "min": 100,
+        "max": 600,
+        "step": 10,
+        "default": 300
       },
       {
         "type": "textarea",
         "id": "title",
         "label": "Title"
+      },
+      {
+        "type": "range",
+        "id": "title_size",
+        "label": "Tamaño del title (px)",
+        "min": 12,
+        "max": 60,
+        "step": 1,
+        "default": 24
+      },
+      {
+        "type": "link_list",
+        "id": "menu2",
+        "label": "Menu 2"
+      },
+      {
+        "type": "header",
+        "content": "Barra inferior"
+      },
+      {
+        "type": "color",
+        "id": "bottom_bg",
+        "label": "Color de fondo barra inferior",
+        "default": "#9F036D"
+      },
+      {
+        "type": "color",
+        "id": "bottom_text_color",
+        "label": "Color de texto barra inferior",
+        "default": "#F7F7E1"
+      },
+      {
+        "type": "range",
+        "id": "bottom_gap",
+        "label": "Espacio entre elementos (px)",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "default": 40
       },
       {
         "type": "textarea",
@@ -174,14 +358,132 @@
         "label": "Menu"
       },
       {
-        "type": "link_list",
-        "id": "menu2",
-        "label": "Menu 2"
+        "type": "header",
+        "content": "Logo Hecho en México"
+      },
+      {
+        "type": "image_picker",
+        "id": "mexico_logo",
+        "label": "Logo Hecho en México"
+      },
+      {
+        "type": "range",
+        "id": "mexico_logo_width",
+        "label": "Ancho del logo (px)",
+        "min": 30,
+        "max": 200,
+        "step": 5,
+        "default": 60
+      },
+      {
+        "type": "header",
+        "content": "Red social"
+      },
+      {
+        "type": "image_picker",
+        "id": "social_icon",
+        "label": "Icono de red social"
+      },
+      {
+        "type": "url",
+        "id": "social_url",
+        "label": "Link de la red social"
+      },
+      {
+        "type": "text",
+        "id": "social_label",
+        "label": "Nombre de la red (accesibilidad)",
+        "default": "Instagram"
+      },
+      {
+        "type": "range",
+        "id": "social_icon_size",
+        "label": "Tamaño del icono (px)",
+        "min": 15,
+        "max": 100,
+        "step": 5,
+        "default": 30
+      },
+      {
+        "type": "header",
+        "content": "Tamaños en móvil"
+      },
+      {
+        "type": "range",
+        "id": "logo_height_mobile",
+        "label": "Altura del logo (px)",
+        "min": 40,
+        "max": 300,
+        "step": 10,
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "logo2_width_mobile",
+        "label": "Ancho del logo 2 (px)",
+        "min": 80,
+        "max": 400,
+        "step": 10,
+        "default": 200
+      },
+      {
+        "type": "range",
+        "id": "title_size_mobile",
+        "label": "Tamaño del title (px)",
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "default": 18
+      },
+      {
+        "type": "range",
+        "id": "text1_size_mobile",
+        "label": "Tamaño text 1 (px)",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "default": 15
+      },
+      {
+        "type": "range",
+        "id": "text2_size_mobile",
+        "label": "Tamaño text 2 (px)",
+        "min": 10,
+        "max": 30,
+        "step": 1,
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "mexico_logo_width_mobile",
+        "label": "Ancho logo Hecho en México (px)",
+        "min": 30,
+        "max": 150,
+        "step": 5,
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "social_icon_size_mobile",
+        "label": "Tamaño icono red social (px)",
+        "min": 15,
+        "max": 80,
+        "step": 5,
+        "default": 25
+      },
+      {
+        "type": "range",
+        "id": "bottom_gap_mobile",
+        "label": "Espacio entre elementos barra inferior (px)",
+        "min": 5,
+        "max": 50,
+        "step": 5,
+        "default": 15
       }
     ],
     "presets": [
       {
-        "name": "Footer 8",
+        "name": "Footer 8"
       }
     ],
     "enabled_on": {
