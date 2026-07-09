@@ -168,6 +168,13 @@
     object-fit:contain;
     display:block;
   }
+  .logoSocialGroup{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:{{ section.settings.bottom_gap }}px;
+  }
 
   .areaFooter{
     font-family: 'Roboto Mono';
@@ -252,6 +259,9 @@
     .customSocialIcon{
       width:{{ section.settings.social_icon_size_mobile }}px;
       height:{{ section.settings.social_icon_size_mobile }}px;
+    }
+    .logoSocialGroup{
+      gap:{{ section.settings.bottom_gap_mobile }}px;
     }
   }
 {% endstyle %}
