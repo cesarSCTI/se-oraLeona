@@ -13,23 +13,42 @@
   "sections": {
     "footer_08_jy8NBP": {
       "type": "footer-08",
-      "custom_css": [
-        "* {color: #f7f7e1 !important; line-height: 1; text-align: center;}",
-        ".areaFooterLinks ul {gap: 80px !important; margin-left: 0px !important; font-size: 18px !important;}",
-        "svg.icon {fill: #f7f7e1 !important; width: 15px !important; height: 15px !important;}",
-        "h6 {text-align: left !important;}",
-        "#sib-container a {text-align: left !important;}",
-        "@media only screen and (max-width: 768px) {.areaFooterLinks ul {gap: 25px !important; font-size: 13px !important; flex-direction: column !important; line-height: 1.2em !important; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "text1": "A tequila Crafted by Casa Natima",
+        "text1_size": 18,
         "text2": "",
+        "text2_size": 16,
         "bg": "#1d181a",
+        "footer_text_color": "#f7f7e1",
         "logo": "shopify://shop_images/Senora_Leona_Logo-blanco.png",
+        "logo_height": 140,
+        "logo2_width": 300,
         "title": "<div class=\"klaviyo-form-XBXaBQ\"></div>\n<br>\n<div class=\"emailContact\">\nhola@senoraleonatequila.com\n</div>\n<!-----MEXICO ---->",
+        "title_size": 15,
+        "menu2": "main-menu",
+        "menu_font_size": 16,
+        "menu_gap": 80,
+        "bottom_bg": "#9f036d",
+        "bottom_text_color": "#f7f7e1",
+        "bottom_gap": 40,
         "areaFooter": "",
         "menu": "footer",
-        "menu2": "main-menu"
+        "mexico_logo": "shopify://shop_images/logo_hecho_en_mexico_blanco.png",
+        "mexico_logo_width": 60,
+        "social_url": "https://www.instagram.com/senoraleonatequila/",
+        "social_label": "Instagram",
+        "social_icon_size": 20,
+        "logo_height_mobile": 90,
+        "logo2_width_mobile": 110,
+        "title_size_mobile": 13,
+        "text1_size_mobile": 14,
+        "text2_size_mobile": 14,
+        "menu_font_size_mobile": 13,
+        "menu_gap_mobile": 20,
+        "mexico_logo_width_mobile": 60,
+        "social_icon_size_mobile": 20,
+        "bottom_gap_mobile": 20
       }
     },
     "custom_liquid_rpfW4X": {
