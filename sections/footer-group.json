@@ -14,7 +14,7 @@
     "footer_08_jy8NBP": {
       "type": "footer-08",
       "custom_css": [
-        ".mexicoLogoImg {margin-right: 30px !important;}"
+        ".mexicoLogoImg {margin-right: 50px !important;}"
       ],
       "settings": {
         "text1": "A tequila Crafted by Casa Natima",
