@@ -19,6 +19,42 @@
       "default": "birthdate"
     },
     {
+      "type": "header",
+      "content": "Frecuencia del banner"
+    },
+    {
+      "type": "select",
+      "id": "reset_mode",
+      "label": "¿Cada cuánto se vuelve a pedir la verificación?",
+      "options": [
+        {
+          "value": "session",
+          "label": "Cada sesión (al cerrar el navegador)"
+        },
+        {
+          "value": "days",
+          "label": "Cada cierta cantidad de días"
+        },
+        {
+          "value": "never",
+          "label": "Nunca (solo la primera vez)"
+        }
+      ],
+      "default": "days",
+      "info": "Con 'Cada sesión' el banner reaparece en cada nueva sesión de navegación. Con 'Nunca' solo se muestra una vez por dispositivo."
+    },
+    {
+      "type": "number",
+      "id": "reset_days",
+      "label": "Días antes de volver a mostrar el banner",
+      "default": 1,
+      "info": "Solo aplica si elegiste 'Cada cierta cantidad de días'."
+    },
+    {
+      "type": "header",
+      "content": "Contenido"
+    },
+    {
       "type": "image_picker",
       "id": "background_image",
       "label": "Imagen de fondo"
@@ -350,23 +386,57 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  const wrapper   = document.getElementById("age-verification");
-  const legalAge  = {{ section.settings.legal_age }};
-  const mode      = "{{ section.settings.verification_mode }}";
+  const wrapper  = document.getElementById("age-verification");
+  const legalAge = {{ section.settings.legal_age | default: 18 }};
+  const mode     = "{{ section.settings.verification_mode }}";
 
-  const today       = new Date();
-  const todayString = today.toISOString().split("T")[0];
+  // ── Configuración de reinicio (desde el editor de temas) ──
+  const resetMode = "{{ section.settings.reset_mode | default: 'days' }}"; // session | days | never
+  const resetDays = {{ section.settings.reset_days | default: 1 }};
 
-  // ── Revisar si ya verificó hoy ──
-  if (
-    localStorage.getItem("ageVerified") === "true" &&
-    localStorage.getItem("ageVerifiedDate") === todayString
-  ) {
+  const KEY_FLAG = "ageVerified";
+  const KEY_TIME = "ageVerifiedAt";
+
+  // Limpiar la clave del sistema anterior (basado en fecha calendario)
+  localStorage.removeItem("ageVerifiedDate");
+
+  const today = new Date();
+
+  // ── ¿Sigue vigente la verificación? ──
+  function isStillVerified() {
+    if (resetMode === "session") {
+      return sessionStorage.getItem(KEY_FLAG) === "true";
+    }
+
+    if (localStorage.getItem(KEY_FLAG) !== "true") return false;
+    if (resetMode === "never") return true;
+
+    // Modo "days": comparar contra el timestamp guardado
+    const verifiedAt = parseInt(localStorage.getItem(KEY_TIME), 10);
+    if (isNaN(verifiedAt)) return false;
+
+    const elapsedMs = Date.now() - verifiedAt;
+    const limitMs   = resetDays * 24 * 60 * 60 * 1000;
+    return elapsedMs < limitMs;
+  }
+
+  // ── Guardar la verificación según el modo elegido ──
+  function saveVerification() {
+    if (resetMode === "session") {
+      sessionStorage.setItem(KEY_FLAG, "true");
+    } else {
+      localStorage.setItem(KEY_FLAG, "true");
+      localStorage.setItem(KEY_TIME, Date.now().toString());
+    }
+  }
+
+  if (isStillVerified()) {
     wrapper.style.display = "none";
     return;
   } else {
-    localStorage.removeItem("ageVerified");
-    localStorage.removeItem("ageVerifiedDate");
+    localStorage.removeItem(KEY_FLAG);
+    localStorage.removeItem(KEY_TIME);
+    sessionStorage.removeItem(KEY_FLAG);
   }
 
   // ── MODO FECHA DE NACIMIENTO ──
@@ -384,8 +454,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
 
       if (age >= legalAge) {
-        localStorage.setItem("ageVerified", "true");
-        localStorage.setItem("ageVerifiedDate", todayString);
+        saveVerification();
         wrapper.style.display = "none";
       } else {
         document.getElementById("errorVerification").textContent =
@@ -396,19 +465,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ── MODO SÍ / NO ──
   if (mode === "simple") {
-    const btnYes        = document.getElementById("btn-yes");
-    const btnNo         = document.getElementById("btn-no");
-    const underageMsg   = document.getElementById("underage-message");
+    const btnYes      = document.getElementById("btn-yes");
+    const btnNo       = document.getElementById("btn-no");
+    const underageMsg = document.getElementById("underage-message");
 
     btnYes.addEventListener("click", function () {
-      localStorage.setItem("ageVerified", "true");
-      localStorage.setItem("ageVerifiedDate", todayString);
+      saveVerification();
       wrapper.style.display = "none";
     });
 
     btnNo.addEventListener("click", function () {
-      btnYes.style.display    = "none";
-      btnNo.style.display     = "none";
+      btnYes.style.display      = "none";
+      btnNo.style.display       = "none";
       underageMsg.style.display = "block";
     });
   }
